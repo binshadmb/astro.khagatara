@@ -1,3 +1,14 @@
+import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Payment Successful | Khagatara',
+  robots: {
+    index: false,
+    follow: false,
+  },
+}
+
 export default function Success() {
   return (
     <main className="page">
@@ -11,9 +22,9 @@ export default function Success() {
         <div className="success-note">
           Check your email for your full Vedic numerology report PDF.
         </div>
-        <a href="/" className="btn-link">
+        <Link href="/" className="btn-link">
           Calculate Another Report
-        </a>
+        </Link>
       </div>
     </main>
   )
