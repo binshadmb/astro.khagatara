@@ -16,10 +16,10 @@ import Calculator from '../../components/Calculator'
 import BookPromo from '../../components/BookPromo'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     lang: string
     slug: string
-  }
+  }>
 }
 
 // ─── Resolve topic and load markdown content ──────────────────────────────────
@@ -51,7 +51,7 @@ function getPageData(lang: string, slug: string) {
 
 // ─── Generate Metadata dynamically for SEO ────────────────────────────────────
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { lang, slug } = params
+  const { lang, slug } = await params
   const data = getPageData(lang, slug)
   if (!data) return {}
 
@@ -132,8 +132,8 @@ function parseMarkdown(md: string) {
 }
 
 // ─── Core Page Render ─────────────────────────────────────────────────────────
-export default function UniversalPage({ params }: PageProps) {
-  const { lang, slug } = params
+export default async function UniversalPage({ params }: PageProps) {
+  const { lang, slug } = await params
   const data = getPageData(lang, slug)
 
   if (!data) {
