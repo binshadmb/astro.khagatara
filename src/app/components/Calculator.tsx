@@ -234,9 +234,14 @@ export default function Calculator({ lang }: CalculatorProps) {
         body: JSON.stringify({ name, dob, city: 'London' })
       })
       const data = await res.json()
+      if (!res.ok || !data.checkout_url) {
+        throw new Error(data.detail || 'Payment failed')
+      }
       window.location.href = data.checkout_url
-    } catch {
+    } catch (err: any) {
+      console.error(err)
       setError(t.errorPayment)
+      alert(t.errorPayment)
     }
     setLoading(false)
   }
