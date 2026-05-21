@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import { Suspense, useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'   // ← THE FIX
 
 // ─── Account creation form ────────────────────────────────────────────────────
@@ -89,14 +89,16 @@ function useReportPolling(sessionId: string | null) {
       return
     }
 
+    const activeSessionId = sessionId
+
     async function poll() {
       attemptsRef.current += 1
       setProgress(p => Math.min(p + Math.random() * 6, 85))
 
       try {
         const params = new URLSearchParams({
-          session_id: sessionId,
-          sessionid: sessionId,
+          session_id: activeSessionId,
+          sessionid: activeSessionId,
         })
 
         const res = await fetch(
@@ -147,7 +149,7 @@ function useReportPolling(sessionId: string | null) {
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
-export default function Success() {
+function SuccessContent() {
   const searchParams = useSearchParams()           // ← reads URL params correctly in client components
   const email     = searchParams.get('email')    ?? undefined
   const sessionId = searchParams.get('session_id') ?? searchParams.get('sessionid')
@@ -283,5 +285,13 @@ export default function Success() {
         }
       `}</style>
     </main>
+  )
+}
+
+export default function Success() {
+  return (
+    <Suspense fallback={<main className="page" />}>
+      <SuccessContent />
+    </Suspense>
   )
 }
