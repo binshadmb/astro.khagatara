@@ -12,11 +12,13 @@ export const metadata: Metadata = {
 interface SuccessProps {
   searchParams: {
     email?: string
+    session_id?: string
   }
 }
 
 export default function Success({ searchParams }: SuccessProps) {
   const email = searchParams.email
+  const sessionId = searchParams.session_id
 
   return (
     <main className="page">
@@ -42,12 +44,18 @@ export default function Success({ searchParams }: SuccessProps) {
           </div>
 
           <div className="delivery-email">
-            {email || "your email address"}
+            {email || "Email used at checkout"}
           </div>
 
           <div className="delivery-time">
             Usually delivered within 1-3 minutes.
           </div>
+
+          {sessionId && (
+            <div className="delivery-session">
+              Order reference: {sessionId}
+            </div>
+          )}
         </div>
 
         <div className="progress-wrapper">
@@ -112,6 +120,14 @@ export default function Success({ searchParams }: SuccessProps) {
           margin-top: 10px;
           opacity: 0.8;
           font-size: 14px;
+        }
+
+        .delivery-session {
+          margin-top: 12px;
+          font-size: 11px;
+          line-height: 1.5;
+          opacity: 0.55;
+          word-break: break-all;
         }
 
         .progress-wrapper {
