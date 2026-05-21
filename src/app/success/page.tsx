@@ -94,8 +94,13 @@ function useReportPolling(sessionId: string | null) {
       setProgress(p => Math.min(p + Math.random() * 6, 85))
 
       try {
+        const params = new URLSearchParams({
+          session_id: sessionId,
+          sessionid: sessionId,
+        })
+
         const res = await fetch(
-          `https://khagatara-api.onrender.com/report-status?session_id=${sessionId}`
+          `https://khagatara-api.onrender.com/report-status?${params.toString()}`
         )
 
         if (!res.ok) {
@@ -106,9 +111,11 @@ function useReportPolling(sessionId: string | null) {
         const data = await res.json()
         setDebugMsg(`Poll ${attemptsRef.current}: status=${data.status}`)
 
-        if (data.status === 'done' || data.download_url) {
+        const reportUrl = data.download_url ?? data.downloadurl ?? null
+
+        if (data.status === 'done' && reportUrl) {
           setStatus('done')
-          setDownloadUrl(data.download_url ?? null)
+          setDownloadUrl(reportUrl)
           setProgress(100)
           if (intervalRef.current) clearInterval(intervalRef.current)
           return
@@ -143,7 +150,7 @@ function useReportPolling(sessionId: string | null) {
 export default function Success() {
   const searchParams = useSearchParams()           // ← reads URL params correctly in client components
   const email     = searchParams.get('email')    ?? undefined
-  const sessionId = searchParams.get('session_id')  // string | null
+  const sessionId = searchParams.get('session_id') ?? searchParams.get('sessionid')
 
   const { status, downloadUrl, progress, debugMsg } = useReportPolling(sessionId)
 
