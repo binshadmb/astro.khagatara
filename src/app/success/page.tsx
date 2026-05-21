@@ -1,203 +1,274 @@
+'use client'
+
 import Link from 'next/link'
-import type { Metadata } from 'next'
+import { useState, useEffect, useRef } from 'react'
 
-export const metadata: Metadata = {
-  title: 'Payment Successful | Khagatara',
-  robots: {
-    index: false,
-    follow: false,
-  },
+interface SearchParams {
+  email?: string
+  session_id?: string
 }
 
-interface SuccessProps {
-  searchParams: {
-    email?: string
-    session_id?: string
+// ─── Account creation form ───────────────────────────────────────────────────
+function AccountForm({ email, sessionId }: { email?: string; sessionId?: string }) {
+  const [form, setForm] = useState({ name: '', phone: '', password: '' })
+  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [err, setErr] = useState('')
+
+  async function handleCreate() {
+    if (!form.name || !form.password) { setErr('Name and password are required.'); return }
+    setLoading(true); setErr('')
+    try {
+      const res = await fetch('https://khagatara-api.onrender.com/create-account', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: form.name, phone: form.phone, password: form.password, email, session_id: sessionId })
+      })
+      if (!res.ok) throw new Error('Failed')
+      setSubmitted(true)
+    } catch {
+      setErr('Account creation failed. You can try later from your email link.')
+    }
+    setLoading(false)
   }
+
+  if (submitted) return (
+    <div className="account-box" style={{ textAlign: 'center' }}>
+      <div style={{ fontSize: '1.6rem', marginBottom: 8 }}>🌟</div>
+      <div style={{ color: '#c8901a', fontFamily: 'Cormorant Garamond, serif', fontSize: '1.2rem' }}>Account Created</div>
+      <div style={{ color: '#7a6a5a', fontSize: '0.72rem', marginTop: 6, letterSpacing: '0.06em' }}>Your readings will be saved to your account.</div>
+    </div>
+  )
+
+  return (
+    <div className="account-box">
+      <div className="account-label">Save Your Reading — Create an Account</div>
+      <p className="account-sub">Access your reports anytime, track your cosmic journey.</p>
+
+      <div className="form-row" style={{ marginBottom: '0.75rem' }}>
+        <label htmlFor="acc-name">Full Name</label>
+        <input id="acc-name" type="text" placeholder="Your name" value={form.name}
+          onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
+      </div>
+      <div className="form-row" style={{ marginBottom: '0.75rem' }}>
+        <label htmlFor="acc-phone">Phone (optional)</label>
+        <input id="acc-phone" type="tel" placeholder="+1 234 567 8900" value={form.phone}
+          onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} />
+      </div>
+      <div className="form-row" style={{ marginBottom: '0.75rem' }}>
+        <label htmlFor="acc-email">Email</label>
+        <input id="acc-email" type="email" value={email || ''} readOnly
+          style={{ opacity: 0.6, cursor: 'not-allowed' }} />
+      </div>
+      <div className="form-row" style={{ marginBottom: '1rem' }}>
+        <label htmlFor="acc-pw">Choose a Password</label>
+        <input id="acc-pw" type="password" placeholder="Min. 8 characters" value={form.password}
+          onChange={e => setForm(f => ({ ...f, password: e.target.value }))} />
+      </div>
+
+      {err && <p className="error" style={{ marginBottom: '0.75rem' }}>{err}</p>}
+
+      <button className="cta-btn" onClick={handleCreate} disabled={loading}>
+        {loading ? 'Creating...' : 'Create My Account'}
+      </button>
+    </div>
+  )
 }
 
-export default function Success({ searchParams }: SuccessProps) {
-  const email = searchParams.email
-  const sessionId = searchParams.session_id
+// ─── Poll status ──────────────────────────────────────────────────────────────
+type Status = 'pending' | 'processing' | 'done' | 'error'
+
+function useReportPolling(sessionId?: string) {
+  const [status, setStatus] = useState<Status>('pending')
+  const [downloadUrl, setDownloadUrl] = useState<string | null>(null)
+  const [progress, setProgress] = useState(10) // fake visual progress %
+  const intervalRef = useRef<NodeJS.Timeout | null>(null)
+  const attemptsRef = useRef(0)
+  const MAX_ATTEMPTS = 40 // ~2 minutes at 3s interval
+
+  useEffect(() => {
+    if (!sessionId) return
+
+    async function poll() {
+      attemptsRef.current += 1
+
+      // Nudge fake progress forward (max 85 until done)
+      setProgress(p => Math.min(p + Math.random() * 6, 85))
+
+      try {
+        const res = await fetch(
+          `https://khagatara-api.onrender.com/report-status?session_id=${sessionId}`
+        )
+        const data = await res.json()
+
+        if (data.status === 'done' || data.download_url) {
+          setStatus('done')
+          setDownloadUrl(data.download_url || null)
+          setProgress(100)
+          if (intervalRef.current) clearInterval(intervalRef.current)
+          return
+        }
+
+        if (data.status === 'processing') {
+          setStatus('processing')
+        }
+
+        if (attemptsRef.current >= MAX_ATTEMPTS) {
+          setStatus('error')
+          if (intervalRef.current) clearInterval(intervalRef.current)
+        }
+      } catch {
+        // network blip — keep polling
+      }
+    }
+
+    // First poll after 2s
+    const timeout = setTimeout(() => {
+      poll()
+      intervalRef.current = setInterval(poll, 3000)
+    }, 2000)
+
+    return () => {
+      clearTimeout(timeout)
+      if (intervalRef.current) clearInterval(intervalRef.current)
+    }
+  }, [sessionId])
+
+  return { status, downloadUrl, progress }
+}
+
+// ─── Main page ─────────────────────────────────────────────────────────────── 
+export default function Success({ searchParams }: { searchParams: SearchParams }) {
+  // Next 15 searchParams can be a Promise — handle both
+  const email = (searchParams as any)?.email as string | undefined
+  const sessionId = (searchParams as any)?.session_id as string | undefined
+
+  const { status, downloadUrl, progress } = useReportPolling(sessionId)
+
+  const statusLabel: Record<Status, string> = {
+    pending:    'Consulting the stars…',
+    processing: 'Weaving your cosmic blueprint…',
+    done:       'Your report is ready!',
+    error:      'Taking longer than usual — check your email shortly.',
+  }
 
   return (
     <main className="page">
-      <div className="card success-card">
-        <div className="success-glow"></div>
+      <div className="card" style={{ position: 'relative', overflow: 'hidden' }}>
 
-        <div className="success-icon">
-          ✨
-        </div>
+        {/* ambient glow */}
+        <div style={{
+          position: 'absolute', inset: -100, pointerEvents: 'none',
+          background: 'radial-gradient(circle, rgba(200,144,26,0.13) 0%, transparent 70%)',
+          animation: 'pulseGlow 4s infinite',
+        }} />
+
+        <div className="success-icon">✨</div>
 
         <h1 className="success-title">
-          Your Cosmic Blueprint is Being Forged
+          {status === 'done' ? 'Your Cosmic Blueprint is Ready' : 'Your Cosmic Blueprint is Being Forged'}
         </h1>
 
         <p className="success-text">
-          Payment received successfully.
-          Your personalized Khagatara report is now being generated.
+          {status === 'error'
+            ? 'Payment received. Generation is taking a bit longer — your PDF will arrive by email within 5 minutes.'
+            : 'Payment received successfully. Your personalized Khagatara report is now being generated.'}
         </p>
 
-        <div className="delivery-box">
-          <div className="delivery-label">
-            REPORT DELIVERY EMAIL
+        {/* Delivery box */}
+        <div className="success-note" style={{ marginBottom: '1.5rem' }}>
+          <div style={{ fontSize: '0.62rem', letterSpacing: '0.18em', opacity: 0.6, marginBottom: 8, textTransform: 'uppercase' }}>
+            Report Delivery Email
           </div>
-
-          <div className="delivery-email">
-            {email || "Email used at checkout"}
+          <div style={{ color: '#c8901a', fontSize: '1.1rem', fontWeight: 600, wordBreak: 'break-word' }}>
+            {email || 'Email used at checkout'}
           </div>
-
-          <div className="delivery-time">
-            Usually delivered within 1-3 minutes.
+          <div style={{ marginTop: 8, opacity: 0.75, fontSize: '0.8rem' }}>
+            Usually delivered within 1–3 minutes.
           </div>
-
           {sessionId && (
-            <div className="delivery-session">
-              Order reference: {sessionId}
+            <div style={{ marginTop: 8, fontSize: '0.68rem', opacity: 0.45, wordBreak: 'break-all' }}>
+              Order ref: {sessionId}
             </div>
           )}
         </div>
 
-        <div className="progress-wrapper">
-          <div className="progress-bar"></div>
+        {/* Progress bar */}
+        <div style={{ marginBottom: '0.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
+            <span style={{ fontSize: '0.68rem', color: '#7a6a5a', letterSpacing: '0.08em' }}>
+              {statusLabel[status]}
+            </span>
+            <span style={{ fontSize: '0.68rem', color: '#c8901a' }}>{Math.round(progress)}%</span>
+          </div>
+          <div style={{ width: '100%', height: 6, background: 'rgba(255,255,255,0.06)', borderRadius: 999, overflow: 'hidden' }}>
+            <div style={{
+              height: '100%',
+              width: `${progress}%`,
+              background: 'linear-gradient(90deg, #c8901a, #e8c547)',
+              borderRadius: 999,
+              transition: 'width 0.8s ease',
+            }} />
+          </div>
         </div>
 
-        <div className="success-warning">
-          Please do not close this page while your report is processing.
+        {/* Download button — appears when done */}
+        {status === 'done' && downloadUrl && (
+          <a
+            href={downloadUrl}
+            download
+            className="cta-btn"
+            style={{ display: 'block', textAlign: 'center', marginBottom: '1rem', textDecoration: 'none' }}
+          >
+            ⬇ Download Your PDF Report
+          </a>
+        )}
+
+        {status !== 'done' && (
+          <p style={{ fontSize: '0.72rem', color: '#5a4a3a', letterSpacing: '0.06em', marginTop: '0.75rem', textAlign: 'center' }}>
+            Please do not close this page while your report is processing.
+          </p>
+        )}
+
+        <p style={{ fontSize: '0.7rem', color: '#5a4a3a', letterSpacing: '0.04em', marginTop: '1rem', textAlign: 'center', lineHeight: 1.6 }}>
+          If your PDF does not arrive within 5 minutes, contact:{' '}
+          <span style={{ color: '#c8901a' }}>info@khagatara.com</span>
+        </p>
+
+        {/* ── Account creation ── */}
+        <div style={{ marginTop: '2rem', borderTop: '0.5px solid #2a2330', paddingTop: '1.5rem' }}>
+          <AccountForm email={email} sessionId={sessionId} />
         </div>
 
-        <div className="support-note">
-          If your PDF does not arrive within 5 minutes,
-          contact:
-          <span> info@khagatara.com </span>
-        </div>
-
-        <Link href="/" className="secondary-btn">
+        <Link href="/" className="btn-link" style={{ marginTop: '1.5rem', display: 'block' }}>
           Generate Another Reading
         </Link>
       </div>
 
       <style>{`
-        .success-card {
-          position: relative;
-          overflow: hidden;
+        .account-box {
+          background: #0d0b0f;
+          border: 0.5px solid #2e2535;
+          border-radius: 10px;
+          padding: 1.25rem;
         }
-
-        .success-glow {
-          position: absolute;
-          inset: -100px;
-          background: radial-gradient(
-            circle,
-            rgba(245,197,66,0.15) 0%,
-            transparent 70%
-          );
-          animation: pulseGlow 4s infinite;
+        .account-label {
+          color: #c8901a;
+          font-size: 0.68rem;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          margin-bottom: 0.4rem;
         }
-
-        .delivery-box {
-          margin-top: 24px;
-          padding: 18px;
-          border-radius: 14px;
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(245,197,66,0.15);
-        }
-
-        .delivery-label {
-          font-size: 12px;
-          letter-spacing: 2px;
-          opacity: 0.7;
-          margin-bottom: 10px;
-        }
-
-        .delivery-email {
-          color: #f5c542;
-          font-size: 18px;
-          font-weight: 600;
-          word-break: break-word;
-        }
-
-        .delivery-time {
-          margin-top: 10px;
-          opacity: 0.8;
-          font-size: 14px;
-        }
-
-        .delivery-session {
-          margin-top: 12px;
-          font-size: 11px;
+        .account-sub {
+          color: #5a4a3a;
+          font-size: 0.68rem;
+          letter-spacing: 0.06em;
+          margin-bottom: 1rem;
           line-height: 1.5;
-          opacity: 0.55;
-          word-break: break-all;
         }
-
-        .progress-wrapper {
-          width: 100%;
-          height: 6px;
-          background: rgba(255,255,255,0.08);
-          border-radius: 999px;
-          overflow: hidden;
-          margin-top: 28px;
-        }
-
-        .progress-bar {
-          width: 45%;
-          height: 100%;
-          background: linear-gradient(
-            90deg,
-            #f5c542,
-            #ffd86b
-          );
-          animation: loading 2s infinite;
-        }
-
-        .success-warning {
-          margin-top: 18px;
-          font-size: 14px;
-          opacity: 0.8;
-        }
-
-        .support-note {
-          margin-top: 24px;
-          font-size: 13px;
-          opacity: 0.7;
-          line-height: 1.6;
-        }
-
-        .support-note span {
-          color: #f5c542;
-        }
-
-        .secondary-btn {
-          display: inline-block;
-          margin-top: 30px;
-          padding: 14px 26px;
-          border-radius: 12px;
-          border: 1px solid rgba(245,197,66,0.3);
-          color: #f5c542;
-          text-decoration: none;
-          transition: all 0.3s ease;
-        }
-
-        .secondary-btn:hover {
-          background: rgba(245,197,66,0.08);
-        }
-
-        @keyframes loading {
-          0% {
-            transform: translateX(-120%);
-          }
-          100% {
-            transform: translateX(250%);
-          }
-        }
-
         @keyframes pulseGlow {
-          0%,100% {
-            opacity: 0.5;
-          }
-          50% {
-            opacity: 1;
-          }
+          0%, 100% { opacity: 0.5; }
+          50%       { opacity: 1; }
         }
       `}</style>
     </main>
