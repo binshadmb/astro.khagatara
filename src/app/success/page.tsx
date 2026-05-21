@@ -2,13 +2,9 @@
 
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
+import { useSearchParams } from 'next/navigation'   // ← THE FIX
 
-interface SearchParams {
-  email?: string
-  session_id?: string
-}
-
-// ─── Account creation form ───────────────────────────────────────────────────
+// ─── Account creation form ────────────────────────────────────────────────────
 function AccountForm({ email, sessionId }: { email?: string; sessionId?: string }) {
   const [form, setForm] = useState({ name: '', phone: '', password: '' })
   const [submitted, setSubmitted] = useState(false)
@@ -75,54 +71,60 @@ function AccountForm({ email, sessionId }: { email?: string; sessionId?: string 
   )
 }
 
-// ─── Poll status ──────────────────────────────────────────────────────────────
+// ─── Poll hook ────────────────────────────────────────────────────────────────
 type Status = 'pending' | 'processing' | 'done' | 'error'
 
-function useReportPolling(sessionId?: string) {
-  const [status, setStatus] = useState<Status>('pending')
+function useReportPolling(sessionId: string | null) {
+  const [status, setStatus]       = useState<Status>('pending')
   const [downloadUrl, setDownloadUrl] = useState<string | null>(null)
-  const [progress, setProgress] = useState(10) // fake visual progress %
+  const [progress, setProgress]   = useState(10)
+  const [debugMsg, setDebugMsg]   = useState('')   // visible during dev
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const attemptsRef = useRef(0)
-  const MAX_ATTEMPTS = 40 // ~2 minutes at 3s interval
+  const MAX_ATTEMPTS = 40  // ~2 min at 3 s
 
   useEffect(() => {
-    if (!sessionId) return
+    if (!sessionId) {
+      setDebugMsg('⚠ No session_id in URL — polling skipped')
+      return
+    }
 
     async function poll() {
       attemptsRef.current += 1
-
-      // Nudge fake progress forward (max 85 until done)
       setProgress(p => Math.min(p + Math.random() * 6, 85))
 
       try {
         const res = await fetch(
           `https://khagatara-api.onrender.com/report-status?session_id=${sessionId}`
         )
+
+        if (!res.ok) {
+          setDebugMsg(`Poll ${attemptsRef.current}: HTTP ${res.status}`)
+          return
+        }
+
         const data = await res.json()
+        setDebugMsg(`Poll ${attemptsRef.current}: status=${data.status}`)
 
         if (data.status === 'done' || data.download_url) {
           setStatus('done')
-          setDownloadUrl(data.download_url || null)
+          setDownloadUrl(data.download_url ?? null)
           setProgress(100)
           if (intervalRef.current) clearInterval(intervalRef.current)
           return
         }
 
-        if (data.status === 'processing') {
-          setStatus('processing')
-        }
+        if (data.status === 'processing') setStatus('processing')
 
         if (attemptsRef.current >= MAX_ATTEMPTS) {
           setStatus('error')
           if (intervalRef.current) clearInterval(intervalRef.current)
         }
-      } catch {
-        // network blip — keep polling
+      } catch (e: any) {
+        setDebugMsg(`Poll ${attemptsRef.current}: fetch error — ${e?.message}`)
       }
     }
 
-    // First poll after 2s
     const timeout = setTimeout(() => {
       poll()
       intervalRef.current = setInterval(poll, 3000)
@@ -134,16 +136,16 @@ function useReportPolling(sessionId?: string) {
     }
   }, [sessionId])
 
-  return { status, downloadUrl, progress }
+  return { status, downloadUrl, progress, debugMsg }
 }
 
-// ─── Main page ─────────────────────────────────────────────────────────────── 
-export default function Success({ searchParams }: { searchParams: SearchParams }) {
-  // Next 15 searchParams can be a Promise — handle both
-  const email = (searchParams as any)?.email as string | undefined
-  const sessionId = (searchParams as any)?.session_id as string | undefined
+// ─── Page ─────────────────────────────────────────────────────────────────────
+export default function Success() {
+  const searchParams = useSearchParams()           // ← reads URL params correctly in client components
+  const email     = searchParams.get('email')    ?? undefined
+  const sessionId = searchParams.get('session_id')  // string | null
 
-  const { status, downloadUrl, progress } = useReportPolling(sessionId)
+  const { status, downloadUrl, progress, debugMsg } = useReportPolling(sessionId)
 
   const statusLabel: Record<Status, string> = {
     pending:    'Consulting the stars…',
@@ -156,7 +158,6 @@ export default function Success({ searchParams }: { searchParams: SearchParams }
     <main className="page">
       <div className="card" style={{ position: 'relative', overflow: 'hidden' }}>
 
-        {/* ambient glow */}
         <div style={{
           position: 'absolute', inset: -100, pointerEvents: 'none',
           background: 'radial-gradient(circle, rgba(200,144,26,0.13) 0%, transparent 70%)',
@@ -212,14 +213,17 @@ export default function Success({ searchParams }: { searchParams: SearchParams }
           </div>
         </div>
 
-        {/* Download button — appears when done */}
+        {/* Debug strip — remove before going live */}
+        {debugMsg && (
+          <p style={{ fontSize: '0.6rem', color: '#5a4a3a', marginTop: 4, fontFamily: 'monospace' }}>
+            {debugMsg}
+          </p>
+        )}
+
+        {/* Download button when done */}
         {status === 'done' && downloadUrl && (
-          <a
-            href={downloadUrl}
-            download
-            className="cta-btn"
-            style={{ display: 'block', textAlign: 'center', marginBottom: '1rem', textDecoration: 'none' }}
-          >
+          <a href={downloadUrl} download className="cta-btn"
+            style={{ display: 'block', textAlign: 'center', marginTop: '1rem', textDecoration: 'none' }}>
             ⬇ Download Your PDF Report
           </a>
         )}
@@ -235,9 +239,9 @@ export default function Success({ searchParams }: { searchParams: SearchParams }
           <span style={{ color: '#c8901a' }}>info@khagatara.com</span>
         </p>
 
-        {/* ── Account creation ── */}
+        {/* Account creation */}
         <div style={{ marginTop: '2rem', borderTop: '0.5px solid #2a2330', paddingTop: '1.5rem' }}>
-          <AccountForm email={email} sessionId={sessionId} />
+          <AccountForm email={email} sessionId={sessionId ?? undefined} />
         </div>
 
         <Link href="/" className="btn-link" style={{ marginTop: '1.5rem', display: 'block' }}>
