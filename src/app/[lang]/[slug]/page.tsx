@@ -14,6 +14,7 @@ import {
 } from '../../seo'
 import Calculator from '../../components/Calculator'
 import BookPromo from '../../components/BookPromo'
+import FadeIn from '../../components/FadeIn'
 
 interface PageProps {
   params: Promise<{
@@ -104,6 +105,39 @@ function parseMarkdown(md: string) {
         return <hr key={idx} style={{border: 'none', borderTop: '1px solid #2a2a3a', margin: '24px 0'}} />
       }
 
+      // Collapsible example block
+      if (block.startsWith('Step-by-Step Example') || block.includes('If you were born on')) {
+        return (
+          <details key={idx} style={{marginBottom: '20px', borderLeft: '2px solid #f5c842', paddingLeft: '16px'}}>
+            <summary style={{color: '#f5c842', cursor: 'pointer', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '8px'}}>
+              Show example calculation
+            </summary>
+            <p style={{color: '#e8e0d0', lineHeight: '1.8', fontSize: '0.9rem', marginTop: '10px'}}>
+              {block.replace(/\*\*/g, '')}
+            </p>
+          </details>
+        )
+      }
+
+      // Chaldean number-letter table: lines like "1: A, I, J, Q, Y"
+      const isChaldeanTable = block.split('\n').every(l => /^\d+:/.test(l.trim()))
+      if (isChaldeanTable) {
+        const rows = block.split('\n').map(l => l.trim())
+        return (
+          <div key={idx} style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', marginBottom: '20px'}}>
+            {rows.map((row, i) => {
+              const [num, letters] = row.split(':')
+              return (
+                <div key={i} style={{background: '#1a1628', border: '0.5px solid #2a2330', borderRadius: '8px', padding: '10px 14px'}}>
+                  <span style={{color: '#f5c842', fontWeight: 600, marginRight: '8px'}}>{num.trim()}</span>
+                  <span style={{color: '#e8e0d0', fontSize: '0.85rem'}}>{letters?.trim()}</span>
+                </div>
+              )
+            })}
+          </div>
+        )
+      }
+
       // Unordered Lists
       if (block.startsWith('* ') || block.startsWith('- ')) {
         const items = block.split('\n').map(line => line.replace(/^[\*\-]\s+/, '').trim())
@@ -112,7 +146,7 @@ function parseMarkdown(md: string) {
             {items.map((item, i) => {
               const parts = item.split('**')
               return (
-                <li key={i} style={{marginBottom: '10px', color: '#ccc', lineHeight: '1.7'}}>
+                <li key={i} style={{marginBottom: '10px', color: '#e8e0d0', lineHeight: '1.7'}}>
                   {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#f5c842'}}>{part}</strong> : part)}
                 </li>
               )
@@ -124,7 +158,7 @@ function parseMarkdown(md: string) {
       // Standard Paragraph with bold support
       const parts = block.split('**')
       return (
-        <p key={idx} style={{color: '#ccc', marginBottom: '20px', lineHeight: '1.8', fontSize: '0.95rem'}}>
+        <p key={idx} style={{color: '#e8e0d0', marginBottom: '20px', lineHeight: '1.8', fontSize: '0.95rem'}}>
           {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#f5c842'}}>{part}</strong> : part)}
         </p>
       )
@@ -157,20 +191,23 @@ export default async function UniversalPage({ params }: PageProps) {
       </div>
 
       {/* localized Client-Side Calculator Component */}
-      <Calculator lang={lang} />
+      <FadeIn><Calculator lang={lang} /></FadeIn>
 
       {/* Premium E-Book Promotion Card */}
-      <BookPromo lang={lang} />
+      <FadeIn><BookPromo lang={lang} /></FadeIn>
 
       {/* Gold-Standard Premium SEO Article Content */}
+      <FadeIn>
       <article className="card" style={{maxWidth: '760px', lineHeight: '1.8', marginTop: '32px'}}>
         {parseMarkdown(data.content)}
       </article>
+      </FadeIn>
 
       {/* Dynamic SEO Internal Links: All 7 Topics Localized */}
+      <FadeIn>
       <div className="card link-card">
         <h2>{popularReadingsTitle}</h2>
-        <div className="internal-links">
+        <div className="internal-links" style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem'}}>
           {TOPIC_DEFS.map(t => {
             const path = topicPath(t.key, lang)
             const meta = getTopicMeta(t.key, lang)
@@ -182,11 +219,13 @@ export default async function UniversalPage({ params }: PageProps) {
           })}
         </div>
       </div>
+      </FadeIn>
 
       {/* Dynamic SEO Language Links: Major Global Clusters */}
+      <FadeIn>
       <div className="card link-card">
         <h2>{readInYourLanguageTitle}</h2>
-        <div className="internal-links language-links">
+        <div className="internal-links language-links" style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem'}}>
           {LANGUAGE_CONFIG.slice(0, 15).map(([code, name]) => {
             const path = topicPath(data.topicKey, code)
             return (
@@ -197,6 +236,7 @@ export default async function UniversalPage({ params }: PageProps) {
           })}
         </div>
       </div>
+      </FadeIn>
     </main>
   )
 }
