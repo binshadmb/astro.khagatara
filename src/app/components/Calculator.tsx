@@ -203,9 +203,27 @@ export default function Calculator({ lang }: CalculatorProps) {
 
   const [name, setName] = useState('')
   const [dob, setDob] = useState('')
+  const [birthTime, setBirthTime] = useState('')
+  const [ampm, setAmpm] = useState('AM')
+  const [birthPlace, setBirthPlace] = useState('')
+  const [timeUnknown, setTimeUnknown] = useState(false)
+  const [gender, setGender] = useState('')
   const [result, setResult] = useState<Result | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+
+  const showDisclaimer = timeUnknown || gender === 'prefer_not'
+
+  function buildPayload() {
+    return {
+      name,
+      dob,
+      birth_time: timeUnknown ? '' : birthTime,
+      ampm,
+      birth_place: birthPlace,
+      time_unknown: timeUnknown,
+    }
+  }
 
   async function calculate() {
     if (!name || !dob) return
@@ -215,7 +233,7 @@ export default function Calculator({ lang }: CalculatorProps) {
       const res = await fetch('https://khagatara-api.onrender.com/calculate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, dob, city: 'London' })
+        body: JSON.stringify(buildPayload())
       })
       const data = await res.json()
       setResult(data)
@@ -231,14 +249,14 @@ export default function Calculator({ lang }: CalculatorProps) {
       const res = await fetch('https://khagatara-api.onrender.com/create-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, dob, city: 'London' })
+        body: JSON.stringify(buildPayload())
       })
       const data = await res.json()
       if (!res.ok || !data.checkout_url) {
         throw new Error(data.detail || 'Payment failed')
       }
       window.location.href = data.checkout_url
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err)
       setError(t.errorPayment)
       alert(t.errorPayment)
@@ -265,6 +283,75 @@ export default function Calculator({ lang }: CalculatorProps) {
             onChange={e => setDob(e.target.value)}
           />
         </div>
+        <div className="form-group">
+          <input
+            type="text"
+            placeholder="Place of birth (e.g. Thrissur, India)"
+            value={birthPlace}
+            onChange={e => setBirthPlace(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <div style={{display:'flex', gap:'8px', alignItems:'center'}}>
+            <input
+              type="time"
+              value={birthTime}
+              onChange={e => setBirthTime(e.target.value)}
+              disabled={timeUnknown}
+              style={{flex:1, opacity: timeUnknown ? 0.4 : 1}}
+            />
+            <select
+              value={ampm}
+              onChange={e => setAmpm(e.target.value)}
+              disabled={timeUnknown}
+              style={{
+                background:'var(--surface2)', border:'0.5px solid var(--border2)',
+                borderRadius:'6px', color:'var(--text)', padding:'0.65rem 0.5rem',
+                fontSize:'0.82rem', opacity: timeUnknown ? 0.4 : 1
+              }}
+            >
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+          <label style={{display:'flex', alignItems:'center', gap:'8px', marginTop:'8px', cursor:'pointer', fontSize:'0.72rem', color:'var(--text-low)'}}>
+            <input
+              type="checkbox"
+              checked={timeUnknown}
+              onChange={e => setTimeUnknown(e.target.checked)}
+              style={{accentColor:'var(--accent)'}}
+            />
+            I don&apos;t know my exact birth time
+          </label>
+        </div>
+        <div className="form-group">
+          <div style={{display:'flex', gap:'16px', flexWrap:'wrap'}}>
+            {[['male','Male'],['female','Female'],['prefer_not','Prefer not to say']].map(([val, label]) => (
+              <label key={val} style={{display:'flex', alignItems:'center', gap:'6px', cursor:'pointer', fontSize:'0.82rem', color: gender === val ? 'var(--accent)' : 'var(--text-low)'}}>
+                <input
+                  type="radio"
+                  name={`gender-${lang}`}
+                  value={val}
+                  checked={gender === val}
+                  onChange={() => setGender(val)}
+                  style={{accentColor:'var(--accent)'}}
+                />
+                {label}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {showDisclaimer && (
+          <div style={{
+            background:'var(--surface2)', border:'0.5px solid var(--accent)',
+            borderRadius:'8px', padding:'12px 14px', marginBottom:'12px',
+            fontSize:'0.72rem', color:'var(--text-mid)', lineHeight:'1.6'
+          }}>
+            ⚠️ Some readings may be approximate due to missing birth details. For accurate Nakshatra, Pada, Lagna, and Dasha calculations, exact birth time and birthplace are recommended.
+          </div>
+        )}
+
         <button
           className="btn-primary"
           onClick={calculate}
