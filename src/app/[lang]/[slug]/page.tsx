@@ -113,7 +113,11 @@ function parseMarkdown(md: string) {
               Show example calculation
             </summary>
             <p style={{color: '#e8e0d0', lineHeight: '1.8', fontSize: '0.9rem', marginTop: '10px'}}>
-              {block.replace(/\*\*/g, '')}
+              {block.split('**').map((part, pIdx) =>
+                pIdx % 2 === 1
+                  ? <strong key={pIdx} style={{color: '#ffffff'}}>{part}</strong>
+                  : part
+              )}
             </p>
           </details>
         )
@@ -147,7 +151,7 @@ function parseMarkdown(md: string) {
               const parts = item.split('**')
               return (
                 <li key={i} style={{marginBottom: '10px', color: '#e8e0d0', lineHeight: '1.7'}}>
-                  {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#f5c842'}}>{part}</strong> : part)}
+                  {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#ffffff'}}>{part}</strong> : part)}
                 </li>
               )
             })}
@@ -159,7 +163,7 @@ function parseMarkdown(md: string) {
       const parts = block.split('**')
       return (
         <p key={idx} style={{color: '#e8e0d0', marginBottom: '20px', lineHeight: '1.8', fontSize: '0.95rem'}}>
-          {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#f5c842'}}>{part}</strong> : part)}
+          {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#ffffff'}}>{part}</strong> : part)}
         </p>
       )
     })
