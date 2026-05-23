@@ -31,8 +31,8 @@ function AccountForm({ email, sessionId }: { email?: string; sessionId?: string 
   if (submitted) return (
     <div className="account-box" style={{ textAlign: 'center' }}>
       <div style={{ fontSize: '1.6rem', marginBottom: 8 }}>🌟</div>
-      <div style={{ color: '#c8901a', fontFamily: 'Cormorant Garamond, serif', fontSize: '1.2rem' }}>Account Created</div>
-      <div style={{ color: '#7a6a5a', fontSize: '0.72rem', marginTop: 6, letterSpacing: '0.06em' }}>Your readings will be saved to your account.</div>
+      <div style={{ color: '#e8c547', fontFamily: 'Cormorant Garamond, serif', fontSize: '1.2rem' }}>Account Created</div>
+      <div style={{ color: '#c8b89a', fontSize: '0.72rem', marginTop: 6, letterSpacing: '0.06em' }}>Your readings will be saved to your account.</div>
     </div>
   )
 
@@ -187,17 +187,17 @@ function SuccessContent() {
 
         {/* Delivery box */}
         <div className="success-note" style={{ marginBottom: '1.5rem' }}>
-          <div style={{ fontSize: '0.62rem', letterSpacing: '0.18em', opacity: 0.6, marginBottom: 8, textTransform: 'uppercase' }}>
+          <div style={{ color: '#c8b89a', fontSize: '0.62rem', letterSpacing: '0.18em', opacity: 0.85, marginBottom: 8, textTransform: 'uppercase' }}>
             Report Delivery Email
           </div>
-          <div style={{ color: '#c8901a', fontSize: '1.1rem', fontWeight: 600, wordBreak: 'break-word' }}>
+          <div style={{ color: '#e8c547', fontSize: '1.1rem', fontWeight: 700, wordBreak: 'break-word' }}>
             {email || 'Email used at checkout'}
           </div>
-          <div style={{ marginTop: 8, opacity: 0.75, fontSize: '0.8rem' }}>
+          <div style={{ color: '#c8b89a', marginTop: 8, opacity: 0.9, fontSize: '0.8rem' }}>
             Usually delivered within 1–3 minutes.
           </div>
           {sessionId && (
-            <div style={{ marginTop: 8, fontSize: '0.68rem', opacity: 0.45, wordBreak: 'break-all' }}>
+            <div style={{ color: '#9a8878', marginTop: 8, fontSize: '0.68rem', opacity: 0.75, wordBreak: 'break-all' }}>
               Order ref: {sessionId}
             </div>
           )}
@@ -206,10 +206,10 @@ function SuccessContent() {
         {/* Progress bar */}
         <div style={{ marginBottom: '0.5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-            <span style={{ fontSize: '0.68rem', color: '#7a6a5a', letterSpacing: '0.08em' }}>
+            <span style={{ fontSize: '0.68rem', color: '#c8b89a', letterSpacing: '0.08em' }}>
               {statusLabel[status]}
             </span>
-            <span style={{ fontSize: '0.68rem', color: '#c8901a' }}>{Math.round(progress)}%</span>
+            <span style={{ fontSize: '0.68rem', color: '#e8c547', fontWeight: 700 }}>{Math.round(progress)}%</span>
           </div>
           <div style={{ width: '100%', height: 6, background: 'rgba(255,255,255,0.06)', borderRadius: 999, overflow: 'hidden' }}>
             <div style={{
@@ -238,14 +238,14 @@ function SuccessContent() {
         )}
 
         {status !== 'done' && (
-          <p style={{ fontSize: '0.72rem', color: '#5a4a3a', letterSpacing: '0.06em', marginTop: '0.75rem', textAlign: 'center' }}>
+          <p style={{ fontSize: '0.72rem', color: '#9a8878', letterSpacing: '0.06em', marginTop: '0.75rem', textAlign: 'center' }}>
             Please do not close this page while your report is processing.
           </p>
         )}
 
-        <p style={{ fontSize: '0.7rem', color: '#5a4a3a', letterSpacing: '0.04em', marginTop: '1rem', textAlign: 'center', lineHeight: 1.6 }}>
+        <p style={{ fontSize: '0.7rem', color: '#9a8878', letterSpacing: '0.04em', marginTop: '1rem', textAlign: 'center', lineHeight: 1.6 }}>
           If your PDF does not arrive within 5 minutes, contact:{' '}
-          <span style={{ color: '#c8901a' }}>info@khagatara.com</span>
+          <span style={{ color: '#e8c547', fontWeight: 700 }}>info@khagatara.com</span>
         </p>
 
         {/* Account creation */}
@@ -266,14 +266,14 @@ function SuccessContent() {
           padding: 1.25rem;
         }
         .account-label {
-          color: #c8901a;
+          color: #e8c547;
           font-size: 0.68rem;
           letter-spacing: 0.16em;
           text-transform: uppercase;
           margin-bottom: 0.4rem;
         }
         .account-sub {
-          color: #5a4a3a;
+          color: #c8b89a;
           font-size: 0.68rem;
           letter-spacing: 0.06em;
           margin-bottom: 1rem;
