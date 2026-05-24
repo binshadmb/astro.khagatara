@@ -35,7 +35,7 @@ Vsako število nosi edinstven stil odnosa in energijsko združljivost:
 *   *Potrebno je potrpljenje:* 2, 4
 *   *Odnosni slog:* Potrebuje svobodo, skupno odkrivanje in dinamične spremembe.
 *   **6 (Vzgojitelj):**
-*   *Best Harmony:* 2, 4, 9
+*   *Najboljša harmonija:* 2, 4, 9
 *   *Potrebno je potrpljenje:* 1, 5
 *   *Slog odnosa:* Potrebuje globoko družinsko harmonijo, skrb in skupno odgovornost.
 *   **7 (Iskalec):**
@@ -73,7 +73,7 @@ To ni naključno poročilo, ki ga ustvari generična programska oprema. To je po
 
 ### Kaj čaka v vašem osebnem 8-stranskem načrtu (PDF)?
 
-*   **Vaš vibracijski podpis:**Globoka analiza vašega Števila življenjske poti, vašega Imenskega števila (kaldejski sistem) in tihega klica vaše duševne želje.
+*   **Vaš vibracijski podpis:**Globoka analiza vašega števila življenjske poti, vašega števila imena (kaldejski sistem) in tihega klica vašega duševnega nagona.
 *   **Usklajenost zakonske zveze in harmonija odnosov:**Razumevanje vzorcev vaših odnosov, kako vaša rojstna karta privlači specifične energije in tradicionalnih matematičnih ključev za gradnjo globokih, trajnih zakonskih vezi, ki temeljijo na združljivosti.
 *   **Vaše podporne energije:**Tradicionalni vpogled v barve, resonanco dragih kamnov in dneve poravnave, ki spodbujajo osredotočenost, harmonijo in pozitivnost v vašem vsakdanjem življenju.
 *   **Razumevanje vašega trenutnega časovnega cikla (Vimshottari Dasha):**Raziskovanje tradicionalnega planetarnega obdobja, ki ga trenutno doživljate, ki služi kot starodavni okvir za osebno razmišljanje, potrpežljivost in notranji čas.

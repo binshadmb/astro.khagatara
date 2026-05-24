@@ -41,7 +41,7 @@ La oss beregne tallene for navnet**MARIA**:
 
 ## Navneendringer og tradisjonell karma
 
-Mange vurderer å endre navn eller adoptere et kallenavn etter å ha lært numerologien. Hvis du legger til eller fjerner en enkelt bokstav, endres navnets numeriske vibrasjon fullstendig. Imidlertid, i Védic-tradisjonen, inneholder det nøyaktige navnet du ble gitt ved fødselen din dypeste vibrasjonsplan og karma. Det anbefales sterkt å studere og hedre fødselsnavnet ditt først før du gjør bevisste justeringer.
+Mange vurderer å endre navn eller adoptere et kallenavn etter å ha lært numerologien deres. Hvis du legger til eller fjerner en enkelt bokstav, endres navnets numeriske vibrasjon fullstendig. Imidlertid, i Védic-tradisjonen, inneholder det nøyaktige navnet du ble gitt ved fødselen din dypeste vibrasjonsplan og karma. Det anbefales sterkt å studere og hedre fødselsnavnet ditt først før du gjør bevisste justeringer.
 
 ---
 
@@ -53,6 +53,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

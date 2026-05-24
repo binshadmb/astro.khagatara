@@ -14,7 +14,7 @@ Jyotish ass e Sanskrit Wuert dat heescht "Wëssenschaft vum Liicht" oder "Wësse
 
 Déi grouss Wëssenschaft vu Jyotish ass an dräi Kär Pilieren opgedeelt:
 
-1.**Ganita (Astronomie a Berechnung):**Déi mathematesch Fondatioun. Et berechent déi exakt Positioune vun de Stären a Planéiten mat Hëllef vum sidereschen Zodiac - déi aktuell kierperlech Positioune vun de Stärebiller um Himmel haut.
+1.**Ganita (Astronomie a Berechnung):**Déi mathematesch Fondatioun. Et berechent déi exakt Positioune vun de Stären a Planéiten mat dem sidereschen Zodiac - déi aktuell kierperlech Positioune vun de Stärebiller um Himmel haut.
 2.**Hora (Natal Studie):**D'Analyse vun der individueller Gebuertskaart. Et studéiert wéi d'planetaresch Ausrichtung bei der Gebuert dem Charakter vun engem Individuum, Stäerkten a Liewenswee entspriechen.
 3.**Samhita (Mundane Studie):**D'Studie vu kollektiven Eventer, natierleche Musteren an déi breet Zyklen vu mënschlechen Zivilisatiounen.
 
@@ -37,7 +37,7 @@ D'Nakshatras sinn déi 27 Moundhären vun der Védic Astrologie - d'Stärebiller
 
 ---
 
-## De Vimshottari Dasha: Planetary Cycles
+## De Vimshottari Dasha: Planetaresch Zyklen
 
 De Vimshottari Dasha ass dee meescht vertrauenswürdege System vu planetaresche Perioden zu Jyotish. Et gesäit e komplette potenzielle mënschleche Liewenszyklus vun 120 Joer als eng Sequenz vu planetaresche Perioden, jidderee vun enger vun den néng planetareschen Energien regéiert:
 
@@ -55,12 +55,12 @@ De Vimshottari Dasha ass dee meescht vertrauenswürdege System vu planetaresche 
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomeschen Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
+Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomesche Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
 
 ### Wat waart an Ärem perséinlechen 8-Säit Blueprint (PDF)?
 
 *   **Är Vibratiounssignatur:**Déif Analyse vun Ärem Liewenswee Nummer, Ärem Nummnummer (Chaldean System), an de rouege Ruff vun Ärem Soul Urge.
 *   **Bestietnes Ausrichtung & Relatioun Harmonie:**Verstinn Är Relatiounsmuster, wéi Är Gebuertsdiagramm spezifesch Energien unzitt, an déi traditionell mathematesch Schlëssele fir déif, dauerhaft Bestietnesbindungen op Basis vu Kompatibilitéit ze bauen.
 *   **Är Ënnerstëtzend Energien:**Traditionell Abléck iwwer Faarwen, Edelsteen Resonanz, an Deeg vun der Ausrichtung déi Fokus, Harmonie a Positivitéit an Ärem Alldag encouragéieren.
-*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, als antike Kader fir perséinlech Reflexioun, Gedold an banneschten Timing déngt.
+*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, déngt als en antike Kader fir perséinlech Reflexioun, Gedold an bannenzegen Timing.
 *   **Notiz vun der Reflexioun:**Dëse Bericht ass eng Etude vu mathematesche Mustere, entwéckelt fir Selbstreflektioun a perséinleche Wuesstum z'ënnerstëtzen.

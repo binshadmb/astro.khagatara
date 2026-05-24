@@ -15,11 +15,11 @@ Glavna števila (11, 22 in 33) vsebujejo dvomestno število enakih števil, ki p
 Število 11 odlikuje več edinstvenih lastnosti:
 
 *   **Povečana intuicija:**Dostop do subtilnih vpogledov in občutkov, ki so zelo natančni. Njihov notranji glas je njihov največji kompas.
-*   **Globoka občutljivost:**Empatična sposobnost globokega občutenja okoliških energij in čustev.
+*   **Globoka občutljivost:** An empathetic ability to feel surrounding energies and emotions deeply.
 *   **Kakovost navdiha:**Naravna sposobnost navdihovanja, povzdigovanja in deljenja vizije z drugimi.
 *   **Notranji dualizem:**Ravnovesje med aktivnim zagonom (1) in dojemljivo potrpežljivostjo (2) ustvarja čudovit motor za notranjo rast.
 *   **Višji namen:**Tiha želja po smiselnem življenju, iskanje usklajenosti in samozavedanja v vseh prizadevanjih.
-*   **Energetska občutljivost:**Zelo aktivna živčna in duševna energija, ki zahteva prizemljeno osredotočenost in pozornost.
+*   **Energetska občutljivost:**Zelo aktivna živčna in mentalna energija, ki zahteva prizemljeno osredotočenost in pozornost.
 
 ---
 
@@ -51,7 +51,7 @@ To ni naključno poročilo, ki ga ustvari generična programska oprema. To je po
 
 ### Kaj čaka v vašem osebnem 8-stranskem načrtu (PDF)?
 
-*   **Vaš vibracijski podpis:**Globoka analiza vašega Števila življenjske poti, vašega Imenskega števila (kaldejski sistem) in tihega klica vaše duševne želje.
+*   **Vaš vibracijski podpis:**Globoka analiza vašega števila življenjske poti, vašega števila imena (kaldejski sistem) in tihega klica vašega duševnega nagona.
 *   **Usklajenost zakonske zveze in harmonija odnosov:**Razumevanje vzorcev vaših odnosov, kako vaša rojstna karta privlači specifične energije in tradicionalnih matematičnih ključev za gradnjo globokih, trajnih zakonskih vezi, ki temeljijo na združljivosti.
 *   **Vaše podporne energije:**Tradicionalni vpogled v barve, resonanco dragih kamnov in dneve poravnave, ki spodbujajo osredotočenost, harmonijo in pozitivnost v vašem vsakdanjem življenju.
 *   **Razumevanje vašega trenutnega časovnega cikla (Vimshottari Dasha):**Raziskovanje tradicionalnega planetarnega obdobja, ki ga trenutno doživljate, ki služi kot starodavni okvir za osebno razmišljanje, potrpežljivost in notranji čas.

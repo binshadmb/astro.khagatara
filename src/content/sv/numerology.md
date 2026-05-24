@@ -1,6 +1,6 @@
 # Gratis numerologiläsning: Upptäck din kosmiska plan
 
-Numerologi är ett av världens äldsta självupptäcktssystem. I tusentals år har kulturer över hela världen använt siffror för att förstå personlighet, relationer och livets naturliga flöde. Idag kan du beräkna din livsväg och kosmiska tal helt gratis med vårt integrerade kaldeiska och vediska numerologisystem.
+Numerologi är ett av världens äldsta självupptäcktssystem. I tusentals år har kulturer över hela världen använt siffror för att förstå personlighet, relationer och livets naturliga flöde. Idag kan du beräkna din livsväg och dina kosmiska tal helt gratis med vårt integrerade kaldeiska och vediska numerologisystem.
 
 ---
 
@@ -10,7 +10,7 @@ Ditt livsvägsnummer är det viktigaste numret i ditt numerologiska diagram. Det
 
 ---
 
-## Hur man beräknar din livsvägsnummer
+## Hur man beräknar ditt livsvägsnummer
 
 För att beräkna ditt livsvägsnummer summerar du alla siffror i ditt födelsedatum (dag, månad och år) och reducerar dem till en enstaka siffra mellan 1 och 9.
 
@@ -41,7 +41,7 @@ Varje nummer från 1 till 9 och Master Numbers bär en specifik energi:
 *   **9 (The Humanitarian):**Medkännande, generös, osjälvisk och allmänt vis.
 *   **11 (Master Intuitive):**Inspirerande, högkänslig och andligt medveten.
 *   **22 (Master Builder):**Begåvad med förmågan att förvandla storslagna idéer till solid verklighet.
-*   **33 (mästarlärare):**Det vägledande ljuset för universell kärlek och andlig visdom.
+*   **33 (Mästerlärare):**Det vägledande ljuset för universell kärlek och andlig visdom.
 
 ---
 

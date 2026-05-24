@@ -31,8 +31,8 @@ Nakshatraene er de 27 månehusene til Védic Astrology - stjernebildene som mån
 *   **Migashira:**Nysgjerrighet, søking og sensitiv utforskning.
 *   **Ardra:**Rensende stormer og kreativ fornyelse.
 *   **Punarvasu:**Restaurering, beskyttelse og ny begynnelse.
-*   **Pushya:**Åndelig næring, visdom og omsorg.
-*   **Ashlesha:**Mystikk, dybde og fokusert indre kraft.
+*   **Pushya:** Spiritual nourishment, wisdom, and care.
+*   **Ashlesha:** Mystery, depth, and focused inner power.
 *   *(Og 18 flere vakre Nakshatras, som hver bærer sin egen unike vibrasjonsenergi)*
 
 ---
@@ -46,7 +46,7 @@ Vimshottari Dasha er det mest pålitelige systemet av planetariske perioder i Jy
 *   **Søn (6 år):**Indre styrke, fokus, hensikt og klarhet.
 *   **Måne (10 år):**Emosjonell pleie, mottakelighet og familierøtter.
 *   **Mars (7 år):**Vital energi, fokus, mot og handling.
-*   **Rahu (18 år):**Ambisjon, utenlandske horisonter og verdslige lærdommer.
+*   **Rahu (18 år):** Ambition, foreign horizons, and worldly lessons.
 *   **Jupiter (16 år):**Visdom, åndelig vekst, ekspansjon og studier.
 *   **Saturn (19 år):**Disiplin, ansvar, tålmodighet og solid læring.
 *   **Mercury (17 år):**Intellektuell klarhet, handel og kommunikasjon.
@@ -61,6 +61,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

@@ -57,7 +57,7 @@ Elk nummer heeft een unieke relationele stijl en energetische compatibiliteit:
 
 *   **Nummer 11 in relaties:**Zoekt diepe spirituele verbinding. Harmoniseert prachtig met 2, 6 en andere hoofdnummers. Heeft een partner nodig die hun hoge gevoeligheid en emotionele diepgang respecteert.
 *   **Nummer 22 in relaties:**Zoekt partners met visie en gedeelde waarden. Compatibel met 4, 8 en 11. Richt zich op het samen bouwen van een stabiel fundament voor de lange termijn.
-*   **Nummer 33 in relaties:**Uiterst verzorgend en meelevend. Harmoniseert goed met 6, 9 en 11. Streeft naar onvoorwaardelijke steun en warme zorg voor hun partner.
+*   **Nummer 33 in relaties:**Zeer verzorgend en meelevend. Harmoniseert goed met 6, 9 en 11. Streeft naar onvoorwaardelijke steun en warme zorg voor hun partner.
 
 ---
 

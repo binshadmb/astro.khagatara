@@ -6,7 +6,7 @@ Jūsų astrologijos diagrama yra daug daugiau nei paprastas planetų ir ženklų
 
 ## Kas yra „Vedic Astrology Chart“?
 
-„Vedic Astrology Chart“, tradiciškai žinomas kaip a**Kundali**arba**gimimo diagrama**, yra puikus geometrinis planetų padėties žemėlapis tiksliai jūsų gimimo momentu. Skirtingai nuo Vakarų horoskopų, Jyotish naudoja**siderinis zodiakas**- faktinės planetų ir žvaigždynų fizinės padėties danguje šiandien, todėl tai labai tiksli.
+„Vedic Astrology Chart“, tradiciškai žinomas kaip a**Kundali**arba**gimimo diagrama**, yra tobulas geometrinis planetų padėties žemėlapis tiksliai jūsų gimimo momentu. Skirtingai nuo Vakarų horoskopų, Jyotish naudoja**siderinis zodiakas**- faktinės planetų ir žvaigždynų fizinės padėties danguje šiandien, todėl tai labai tiksli.
 
 ---
 

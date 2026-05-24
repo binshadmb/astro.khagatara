@@ -14,7 +14,7 @@ Masternummer (11, 22 og 33) har et tosiffer med identiske tall, som representere
 
 Tallet 11 er preget av flere unike kvaliteter:
 
-*   **Økt intuisjon:**Tilgang til subtil innsikt og magefølelser som er svært presise. Deres indre stemme er deres største kompass.
+*   **Økt intuisjon:**Tilgang til subtile innsikter og magefølelser som er svært presise. Deres indre stemme er deres største kompass.
 *   **Dyp følsomhet:**En empatisk evne til å føle omgivende energier og følelser dypt.
 *   **Inspirerende kvalitet:**En naturlig evne til å inspirere, løfte og dele visjoner med andre.
 *   **Indre dualisme:**Balanserer mellom aktiv drivkraft (1) og mottakelig tålmodighet (2), og skaper en vakker motor for indre vekst.
@@ -25,7 +25,7 @@ Tallet 11 er preget av flere unike kvaliteter:
 
 ## Nummer 11 i forhold og harmoni
 
-I forhold søker de med tallet 11 autentiske, dype og oppriktige forbindelser. De trives naturlig når partneren deres respekterer deres høye sensitivitet og unike livssyn. Hengivne og dypt omsorgsfulle, de blomstrer sammen med partnere som tilbyr stabilitet og følelsesmessig forankring. Deres største numeriske harmoni finnes ofte med tallene 2, 6 og andre mastertall.
+I forhold søker de med tallet 11 autentiske, dype og oppriktige forbindelser. De trives naturlig når partneren deres respekterer deres høye følsomhet og unike livssyn. Hengivne og dypt omsorgsfulle, de blomstrer sammen med partnere som tilbyr stabilitet og følelsesmessig forankring. Deres største numeriske harmoni finnes ofte med tallene 2, 6 og andre mastertall.
 
 ---
 
@@ -53,6 +53,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

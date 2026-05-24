@@ -1,6 +1,6 @@
 # Gratis födelsediagram: Din Védic Kundali Online
 
-Ditt födelsekort är en karta över himlen vid det exakta ögonblicket för din födelse. Det är en ögonblicksbild av universum i det exakta ögonblicket du kom till den här världen. Védic Astrology, med mer än 5 000 år av historia, använder detta diagram för att avslöja din inre potential, naturliga böjelser och de kosmiska cyklerna som formar din energi.
+Ditt födelsekort är en karta över himlen vid det exakta ögonblicket för din födelse. Det är en ögonblicksbild av universum i det exakta ögonblicket du kom till den här världen. Védic Astrology, med mer än 5 000 års historia, använder detta diagram för att avslöja din inre potential, naturliga böjelser och de kosmiska cyklerna som formar din energi.
 
 ---
 
@@ -12,12 +12,12 @@ Till skillnad från västerländsk astrologi som förlitar sig mycket på soltec
 
 ## De 12 Védic måntecken (Rashi)
 
-Védic zodiaken är uppdelad i 12 tecken, vart och ett bär på en unik energi:
+Védic zodiaken är uppdelad i 12 tecken, som vart och ett bär en unik energi:
 
 *   **Mesha (Vädur):**Banbrytande, modig och passionerad.
-*   **Vrishabha (Oxen):**Stabil, tålmodig och mycket uthållig.
+*   **Vrishabha (Oxen):** Stable, patient, and highly persevering.
 *   **Mithuna (Tvillingarna):**Nyfiken, kommunikativ och mycket mångsidig.
-*   **Karka (cancer):**Intuitiv, skyddande och djupt känslomässig.
+*   **Karka (Cancer):**Intuitiv, skyddande och djupt känslomässig.
 *   **Simha (Leo):**Kreativ, generös och naturligt auktoritativ.
 *   **Kanya (Jungfru):**Analytisk, engagerad och mycket hjälpsam.
 *   **Tula (Vågen):**Harmonisk, rättvis och naturligt diplomatisk.

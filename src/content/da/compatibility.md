@@ -1,6 +1,6 @@
 # Numerologisk kompatibilitet: Kærlighed og forholdsharmoni
 
-Numerologi kan afsløre en hel del om den energetiske kompatibilitet mellem to individer. Every Life Path Number bærer specifikke vibrationer, der naturligt harmonerer med bestemte tal og skaber muligheder for vækst og tålmodighed med andre. At udforske disse tilpasninger hjælper dig med at forstå relationsdynamikker og vokse sammen bevidst.
+Numerologi kan afsløre en hel del om den energetiske kompatibilitet mellem to individer. Every Life Path Number bærer specifikke vibrationer, der naturligt harmonerer med bestemte tal og skaber muligheder for vækst og tålmodighed med andre. At udforske disse tilpasninger hjælper dig med at forstå relationsdynamikken og vokse sammen bevidst.
 
 ---
 
@@ -18,7 +18,7 @@ Hvert nummer har en unik relationel stil og energisk kompatibilitet:
 *   *Bedste harmoni:* 3, 5, 9
 *   *Har brug for tålmodighed:* 4, 8
 *   *Relationel stil:* Har brug for uafhængighed, vækst og gensidig beundring.
-*   **2 (fredsstifteren):**
+*   **2 (Fredsstifteren):**
 *   *Bedste harmoni:* 6, 8, 9
 *   *Har brug for tålmodighed:* 1, 5
 *   *Relationel stil:* Har brug for dyb følelsesmæssig harmoni, sikkerhed og stille støtte.
@@ -73,7 +73,7 @@ Dette er ikke en tilfældig rapport genereret af generisk software. Det er et de
 
 ### Hvad venter der i dit personlige 8-siders plan (PDF)?
 
-*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og din sjælstrangs tavse kald.
+*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og det tavse kald fra din sjælstrang.
 *   **Ægteskabstilpasning og forholdsharmoni:**Forstå dine forholdsmønstre, hvordan dit fødselshoroskop tiltrækker specifikke energier og de traditionelle matematiske nøgler til at opbygge dybe, varige ægteskabelige bånd baseret på kompatibilitet.
 *   **Dine støttende energier:**Traditionel indsigt i farver, ædelstensresonans og dage med tilpasning, der tilskynder til fokus, harmoni og positivitet i dit daglige liv.
 *   **Forstå din nuværende tidscyklus (Vimshottari Dasha):**Udforskning af den traditionelle planetariske periode, du i øjeblikket oplever, og tjener som en gammel ramme for personlig refleksion, tålmodighed og indre timing.

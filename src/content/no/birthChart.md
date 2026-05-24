@@ -15,11 +15,11 @@ I motsetning til vestlig astrologi som er sterkt avhengig av soltegnet, fokusere
 Védic dyrekretsen er delt inn i 12 tegn, som hver bærer en unik energi:
 
 *   **Mesha (Væren):**Banebrytende, modig og lidenskapelig.
-*   **Vrishabha (Taurus):**Stabil, tålmodig og svært utholdende.
+*   **Vrishabha (Tyren):**Stabil, tålmodig og svært utholdende.
 *   **Mithuna (Tvillingene):**Nysgjerrig, kommunikativ og svært allsidig.
 *   **Karka (kreft):**Intuitiv, beskyttende og dypt emosjonell.
-*   **Simha (Leo):** Creative, generous, and naturally authoritative.
-*   **Kanya (Jomfru):** Analytical, dedicated, and highly helpful.
+*   **Simha (Leo):**Kreativ, sjenerøs og naturlig autoritativ.
+*   **Kanya (Jomfru):**Analytisk, dedikert og svært hjelpsom.
 *   **Tula (Vekten):**Harmonisk, rettferdig og naturlig diplomatisk.
 *   **Vrishchika (Escorpio):**Intens, transformativ og dypt fokusert.
 *   **Dhanu (Skytten):**Filosofisk, eventyrlysten og optimistisk.
@@ -49,6 +49,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

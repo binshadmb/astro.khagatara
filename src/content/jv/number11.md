@@ -6,7 +6,7 @@ Angka 11 minangka salah siji saka telung Angka Master sing bergengsi ing numerol
 
 ## Apa nomer Master?
 
-Angka Master (11, 22, lan 33) nggawa angka pindho angka sing padha, sing nuduhake geter ganda sing konsentrasi banget. 11 nggawa geter kaping pindho 1, 22 nggawa geter kaping pindho 2, lan 33 nggawa geter kaping pindho 3. Resonansi ganda iki nggambarake potensial kesadaran sing luwih dhuwur, diiringi pelajaran urip khusus sing nyengkuyung disiplin pribadi sing jero.
+Angka Master (11, 22, lan 33) nggawa digit kaping pindho saka nomer sing padha, sing nuduhake geter ganda sing konsentrasi banget. 11 nggawa geter kaping pindho 1, 22 nggawa geter kaping pindho 2, lan 33 nggawa geter kaping pindho 3. Resonansi ganda iki nggambarake potensial kesadaran sing luwih dhuwur, diiringi pelajaran urip khusus sing nyengkuyung disiplin pribadi sing jero.
 
 ---
 
@@ -25,13 +25,13 @@ Nomer 11 dibedakake karo sawetara kuwalitas unik:
 
 ## Nomer 11 ing Hubungan lan Harmoni
 
-Ing sesambetan, sing duwe nomer 11 golek sambungan asli, jero, lan tulus. Dheweke tuwuh kanthi alami nalika pasangane ngajeni sensitivitas sing dhuwur lan pandangan unik babagan urip. Pengabdian lan banget ngrawat, dheweke berkembang bebarengan karo mitra sing menehi stabilitas lan landasan emosional. Harmoni numerik paling gedhe asring ditemokake karo nomer 2, 6, lan Nomer Master liyane.
+Ing sesambetan, sing duwe nomer 11 golek sambungan asli, jero, lan tulus. Dheweke kanthi alami berkembang nalika pasangane ngajeni sensitivitas sing dhuwur lan pandangan unik babagan urip. Pengabdian lan banget ngrawat, dheweke berkembang bebarengan karo mitra sing menehi stabilitas lan landasan emosional. Harmoni numerik sing paling gedhe asring ditemokake karo nomer 2, 6, lan Nomer Master liyane.
 
 ---
 
 ## Nomer 11 ing Fokus & Alignment Saben
 
-Individu kanthi nomer 11 berkembang ing lingkungan sing ngidini dheweke nggunakake persepsi intuisi lan visi kreatif. Dheweke unggul ing bidang sing ana gandhengane karo seni, musik, nulis, bimbingan pribadi, psikologi, lan konseling. Dheweke dianjurake banget kanggo mbangun rutinitas saben dina sing ndhukung fokus lan tenang mental, ngindhari tugas mekanik sing bola-bali banget sing ora cocog karo drive batin.
+Individu kanthi nomer 11 berkembang ing lingkungan sing ngidini dheweke nggunakake persepsi intuisi lan visi kreatif. Dheweke unggul ing bidang sing ana gandhengane karo seni, musik, nulis, tuntunan pribadi, psikologi, lan konseling. Dheweke dianjurake banget kanggo mbangun rutinitas saben dina sing ndhukung fokus lan tenang mental, ngindhari tugas mekanik sing bola-bali banget sing ora cocog karo drive batin.
 
 ---
 
@@ -41,7 +41,7 @@ Telung Nomer Master makili frekuensi spiritual sing béda:
 
 *   **11 (Wawasan):**Fokus ing intuisi, inspirasi, lan kesadaran spiritual sing jero.
 *   **22 (Sang Tukang Bangunan):**Fokus ing visi praktis, mbangun dhasar sing langgeng, lan mujudake gagasan.
-*   **33 (Guru):**Fokus ing dhukungan universal, layanan welas asih, lan kawicaksanan nurturing.
+*   **33 (Guru):**Fokus ing dhukungan universal, layanan welas asih, lan nurturing kawicaksanan.
 
 ---
 
@@ -53,6 +53,6 @@ Iki dudu laporan acak sing digawe dening piranti lunak umum. Iki minangka peta k
 
 *   **Tandha Getaran Panjenengan:**Analisis jero babagan Nomer Path Urip, Nomer Jeneng (sistem Chaldean), lan panggilan bisu saka Jiwa sampeyan.
 *   **Keselarasan Perkawinan & Keselarasan Hubungan:**Ngerteni pola hubungan sampeyan, carane grafik lair sampeyan narik energi tartamtu, lan kunci matematika tradisional kanggo mbangun ikatan perkawinan sing jero lan langgeng adhedhasar kompatibilitas.
-*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positip ing urip saben dina.
-*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah periode planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
+*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positif ing urip saben dina.
+*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah jaman planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
 *   **Cathetan Refleksi:**Laporan iki minangka studi babagan pola matematika, dirancang kanggo ndhukung refleksi diri lan pertumbuhan pribadi.

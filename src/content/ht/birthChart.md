@@ -12,7 +12,7 @@ Kontrèman ak Astwoloji Lwès la ki depann anpil sou Siy Solèy la, Védic Astwo
 
 ## 12 siy lalin vèdik yo (Rashi)
 
-Zodiac Védic divize an 12 siy, chak gen yon enèji inik:
+Zodiac Védic la divize an 12 siy, chak gen yon enèji inik:
 
 *   **Mesha (Aries):**Pyonye, ​​vanyan, ak pasyone.
 *   **Vrishabha (Taurus):**Ki estab, pasyan, ak trè pèseveran.
@@ -35,7 +35,7 @@ Nakshatra a se zetwal nesans ou a - chato linè kote Lalin nan te abite nan nesa
 
 ---
 
-## Sistèm Dasha a: Sik tan planétaire
+## Sistèm nan Dasha: Sik Tan Planètè
 
 Sistèm Dasha a se youn nan zouti ki pi pwofon Védic Astwoloji. Li divize lavi ou an gwo peryòd ki dirije pa planèt diferan, chak pote yon enfliyans enèjik inik. Konprann Dasha ou ye kounye a pèmèt ou konprann enèji planèt dominan ki enfliyanse konsyans ou kounye a, sipòte konsyans pèsonèl ak atensyon.
 

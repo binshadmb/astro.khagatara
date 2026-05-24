@@ -36,18 +36,18 @@ Duerch d'Präzisioun vun den Equinoxen gëtt et momentan en Ënnerscheed vun ong
 
 ## Verstinn Är energesch Zäitzyklen
 
-Ee vun de wertvollsten Aspekter vum Védic Chart ass seng Fäegkeet fir Energiezyklen iwwer Zäit ze kartéieren. Mat der Vimshottari Dasha a Planetareschen Transits, kënne mir d'planetaresch Perioden verstoen, déi aktuell Är Gedanken, Gesondheet a Bezéiungsfelder beaflossen, e schéine Spigel fir Selbstbewosstsinn a bewosst Liewen ubidden.
+Ee vun de wertvollsten Aspekter vum Védic Chart ass seng Fäegkeet fir Energiezyklen iwwer Zäit ze kartéieren. Mat der Vimshottari Dasha a Planetareschen Transits, kënne mir d'planetaresch Perioden verstoen, déi momentan Är Gedanken, Gesondheet a Bezéiungsfelder beaflossen, e schéine Spigel fir Selbstbewosstsinn a bewosst Liewen ubidden.
 
 ---
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomeschen Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
+Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomesche Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
 
 ### Wat waart an Ärem perséinlechen 8-Säit Blueprint (PDF)?
 
 *   **Är Vibratiounssignatur:**Déif Analyse vun Ärem Liewenswee Nummer, Ärem Nummnummer (Chaldean System), an de rouege Ruff vun Ärem Soul Urge.
 *   **Bestietnes Ausrichtung & Relatioun Harmonie:**Verstinn Är Relatiounsmuster, wéi Är Gebuertsdiagramm spezifesch Energien unzitt, an déi traditionell mathematesch Schlëssele fir déif, dauerhaft Bestietnesbindungen op Basis vu Kompatibilitéit ze bauen.
 *   **Är Ënnerstëtzend Energien:**Traditionell Abléck iwwer Faarwen, Edelsteen Resonanz, an Deeg vun der Ausrichtung déi Fokus, Harmonie a Positivitéit an Ärem Alldag encouragéieren.
-*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, als antike Kader fir perséinlech Reflexioun, Gedold an banneschten Timing déngt.
+*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, déngt als en antike Kader fir perséinlech Reflexioun, Gedold an bannenzegen Timing.
 *   **Notiz vun der Reflexioun:**Dëse Bericht ass eng Etude vu mathematesche Mustere, entwéckelt fir Selbstreflektioun a perséinleche Wuesstum z'ënnerstëtzen.

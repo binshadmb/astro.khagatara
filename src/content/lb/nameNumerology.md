@@ -13,7 +13,7 @@ De Chaldean System ass eng vun den eelste numerologesche Methoden op der Welt, e
 *   **3:**C, G, L, S
 *   **4:**D, M, T
 *   **5:**E, H, N, X
-*   **6:** U, V, W
+*   **6:**U, V, W
 *   **7:**O, Z
 *   **8:**F, P
 
@@ -24,7 +24,7 @@ De Chaldean System ass eng vun den eelste numerologesche Methoden op der Welt, e
 Ären Nummdiagramm besteet aus dräi vital Zuelen:
 
 1.**Ausdrocknummer (Nummnummer):**Berechent mat all de Buschtawen vun Ärem vollen Gebuertsnumm. Et weist Är natierlech Talenter, Stäerkten, a wéi Dir Äert Liewenszweck op d'Welt ausdréckt.
-2.**Soul Urge Number (Häerz Wonsch):**Berechent mat nëmmen de Vokaler vun Ärem Numm. Et enthält Är déifste bannenzeg Motivatiounen, geheime Verlaangen, a wat wierklech Är Séil vu bannen zefriddestellt.
+2.**Soul Urge Number (Häerz Wonsch):**Berechent mat nëmmen de Vokaler vun Ärem Numm. Et weist Är déifste bannenzeg Motivatiounen, geheime Verlaangen, a wat wierklech Är Séil vu bannen zefriddestellt.
 3.**Perséinlechkeet Zuel:**Berechent mat nëmmen de Konsonanten vun Ärem Numm. Et weist wéi anerer Iech gesinn, den direkten Androck deen Dir maacht, an déi baussenzeg Persona déi Dir presentéiert.
 
 ---
@@ -47,12 +47,12 @@ Vill Leit betruechten hiren Numm z'änneren oder e Spëtznumm unzehuelen nodeems
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomeschen Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
+Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomesche Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
 
 ### Wat waart an Ärem perséinlechen 8-Säit Blueprint (PDF)?
 
 *   **Är Vibratiounssignatur:**Déif Analyse vun Ärem Liewenswee Nummer, Ärem Nummnummer (Chaldean System), an de rouege Ruff vun Ärem Soul Urge.
 *   **Bestietnes Ausrichtung & Relatioun Harmonie:**Verstinn Är Relatiounsmuster, wéi Är Gebuertsdiagramm spezifesch Energien unzitt, an déi traditionell mathematesch Schlëssele fir déif, dauerhaft Bestietnesbindungen op Basis vu Kompatibilitéit ze bauen.
 *   **Är Ënnerstëtzend Energien:**Traditionell Abléck iwwer Faarwen, Edelsteen Resonanz, an Deeg vun der Ausrichtung déi Fokus, Harmonie a Positivitéit an Ärem Alldag encouragéieren.
-*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, als antike Kader fir perséinlech Reflexioun, Gedold an banneschten Timing déngt.
+*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, déngt als en antike Kader fir perséinlech Reflexioun, Gedold an bannenzegen Timing.
 *   **Notiz vun der Reflexioun:**Dëse Bericht ass eng Etude vu mathematesche Mustere, entwéckelt fir Selbstreflektioun a perséinleche Wuesstum z'ënnerstëtzen.

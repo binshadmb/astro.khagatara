@@ -1,6 +1,6 @@
 # Gratis geboortekaart: Jou Védic Kundali aanlyn
 
-Jou geboortekaart is die kaart van die hemele op die presiese oomblik van jou geboorte. Dit is 'n momentopname van die heelal op die presiese oomblik wat jy in hierdie wêreld aangekom het. Védic Astrologie, met meer as 5 000 jaar se geskiedenis, gebruik hierdie grafiek om jou innerlike potensiaal, natuurlike neigings en die kosmiese siklusse wat jou energie vorm, te openbaar.
+Jou geboortekaart is die kaart van die hemele op die presiese oomblik van jou geboorte. Dit is 'n momentopname van die heelal op die presiese oomblik wat jy in hierdie wêreld aangekom het. Védic Astrology, met meer as 5 000 jaar se geskiedenis, gebruik hierdie grafiek om jou innerlike potensiaal, natuurlike neigings en die kosmiese siklusse wat jou energie vorm, te openbaar.
 
 ---
 
@@ -16,8 +16,8 @@ Die Védic zodiac word in 12 tekens verdeel, wat elkeen 'n unieke energie dra:
 
 *   **Mesha (Ram):**Baanbreker, moedig en passievol.
 *   **Vrishabha (Stier):**Stabiel, geduldig en hoogs volhardend.
-*   **Mithuna (Tweeling):** Curious, communicative, and highly versatile.
-*   **Karka (Kanker):** Intuitive, protective, and deeply emotional.
+*   **Mithuna (Tweeling):**Nuuskierig, kommunikatief en hoogs veelsydig.
+*   **Karka (Kanker):**Intuïtief, beskermend en diep emosioneel.
 *   **Simha (Leo):**Kreatief, vrygewig en natuurlik gesaghebbend.
 *   **Kanya (Maagd):**Analities, toegewyd en uiters behulpsaam.
 *   **Tula (Weegskaal):**Harmonies, regverdig en natuurlik diplomaties.
@@ -31,7 +31,7 @@ Die Védic zodiac word in 12 tekens verdeel, wat elkeen 'n unieke energie dra:
 
 ## Wat is die Nakshatra of Geboortester?
 
-Die Nakshatra is jou geboortester—die maanhuis waar die Maan by jou geboorte gewoon het. Védic Astrologie verdeel die zodiac in 27 Nakshatras, wat elkeen deur 'n spesifieke energie, heersende godheid en doel beheer word. Jou Nakshatra openbaar jou diepste karakter, geestelike gawes en die spesifieke sterkpunte wat jy in hierdie lewe bemeester het.
+Die Nakshatra is jou geboortester—die maanhuis waar die maan by jou geboorte gewoon het. Védic Astrologie verdeel die zodiac in 27 Nakshatras, elkeen word beheer deur 'n spesifieke energie, heersende godheid en doel. Jou Nakshatra openbaar jou diepste karakter, geestelike gawes en die spesifieke sterkpunte wat jy in hierdie lewe bemeester het.
 
 ---
 

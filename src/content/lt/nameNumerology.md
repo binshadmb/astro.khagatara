@@ -24,7 +24,7 @@ Chaldėjų sistema yra vienas iš seniausių pasaulyje numerologinių metodų, a
 Jūsų vardų lentelę sudaro trys svarbūs skaičiai:
 
 1.**Išraiškos numeris (pavadinimo numeris):**Apskaičiuota naudojant visas jūsų pilno gimimo vardo raides. Tai atskleidžia jūsų prigimtinius talentus, stipriąsias puses ir tai, kaip jūs išreiškiate savo gyvenimo tikslą pasauliui.
-2.**Sielos potraukio skaičius (širdies troškimas):**Apskaičiuota naudojant tik jūsų vardo balses. Tai atskleidžia jūsų giliausią vidinę motyvaciją, slaptus troškimus ir tai, kas tikrai tenkina jūsų sielą iš vidaus.
+2.**Sielos potraukio skaičius (širdies troškimas):**Apskaičiuota naudojant tik jūsų vardo balses. Tai atskleidžia jūsų giliausius vidinius motyvus, slaptus troškimus ir tai, kas iš tikrųjų tenkina jūsų sielą iš vidaus.
 3.**Asmenybės numeris:**Apskaičiuota naudojant tik jūsų vardo priebalsius. Tai atskleidžia, kaip kiti jus suvokia, tiesioginį įspūdį, kurį darote, ir išorinę asmenybę, kurią pristatote.
 
 ---

@@ -25,7 +25,7 @@ Chak nimewo pote yon style relasyon inik ak konpatibilite enèjik:
 *   **3 (Kreyatif la):**
 *   *Pi bon Harmony:* 1, 5, 7
 *   *Bezwen pasyans:* 4, 8
-*   *Stil relasyon:* Bezwen ekspresyon kreyatif, lajwa, ak kominikasyon ouvè.
+*   *Stil Relasyonèl:* Bezwen ekspresyon kreyatif, lajwa, ak kominikasyon ouvè.
 *   **4 (Konstwiksyon an):**
 *   *Pi bon Harmony:* 2, 6, 8
 *   *Bezwen Pasyans:* 3, 5
@@ -56,12 +56,12 @@ Chak nimewo pote yon style relasyon inik ak konpatibilite enèjik:
 ## Mèt Numbers nan renmen
 
 *   **Nimewo 11 nan relasyon:**Chèche koneksyon espirityèl pwofon. Amonize trè byen ak 2, 6, ak lòt nimewo mèt. Bezwen yon patnè ki respekte gwo sansiblite yo ak pwofondè emosyonèl yo.
-*   **Nimewo 22 nan relasyon:**Chèche patnè ki gen vizyon ak valè pataje. Konpatib ak 4, 8, ak 11. Konsantre sou bati yon fondasyon ki estab, alontèm ansanm.
-*   **Nimewo 33 nan relasyon:**Ekstrèmman ankourajan ak konpasyon. Amonize byen ak 6, 9, ak 11. Chèche bay sipò san kondisyon ak swen cho bay patnè yo.
+*   **Number 22 in Relationships:**Chèche patnè ki gen vizyon ak valè pataje. Konpatib ak 4, 8, ak 11. Konsantre sou bati yon fondasyon ki estab, alontèm ansanm.
+*   **Nimewo 33 nan relasyon:**Extremely nurturing and compassionate. Amonize byen ak 6, 9, ak 11. Chèche bay sipò san kondisyon ak swen cho bay patnè yo.
 
 ---
 
-## Vedic konpatibilite: pi lwen pase nimewo yo
+## Védic Compatibility: Beyond the Numbers
 
 Védic Astwoloji entwodui yon bèl, gwo kouch konpatibilite atravè la**Nakshatra Koota sistèm**—yon evalyasyon tradisyonèl 36 pwen ki konpare zetwal nesans de moun. Nan tradisyon Védic, yon nòt 18 pwen oswa plis endike yon fondasyon sipò pou maryaj. Sistèm nan evalye 8 faktè konpatibilite kle, ki gen ladan tanperaman, amoni mantal, sante, aliyman fanmi, ak longèdonn espirityèl.
 

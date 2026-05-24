@@ -30,10 +30,10 @@ Wann Dir den 13. Juni 1981 gebuer sidd:
 
 All Nummer vun 1 bis 9 an d'Masternummeren droen eng spezifesch Energie:
 
-*   **1 (Leader):**Onofhängeg, ambitiéis a pionéierend. Gebuer fir nei Weeër ze schmieden.
-*   **2 (The Peacemaker):**Intuitiv, diplomatesch, geduldig, an déif kollaborativ.
+*   **1 (Leader):**Onofhängeg, ambitiéis a pionéierend. Gebuer fir nei Weeër ze schloen.
+*   **2 (The Peacemaker):**Intuitiv, diplomatesch, geduldig an déif kollaborativ.
 *   **3 (De Kreativ):**Expressiv, kommunikativ, artistesch an natierlech Freed.
-*   **4 (De Builder):**Disziplinéiert, praktesch, stabil, an héich zouverlässeg.
+*   **4 (De Bauer):**Disziplinéiert, praktesch, stabil, an héich zouverlässeg.
 *   **5 (Den Abenteuer):**Free-spirited, villsäiteger, virwëtzeg, an dynamesch.
 *   **6 (The Nurturer):**Verantwortlech, suergfälteg, schützend a familiär orientéiert.
 *   **7 (The Seeker):**Analytesch, déif spirituell, kontemplativ a schlau.
@@ -47,20 +47,20 @@ All Nummer vun 1 bis 9 an d'Masternummeren droen eng spezifesch Energie:
 
 ## Védic vs Western Numerologie
 
-Wärend westlech Numerologie (Pythagorean) héich populär ass,**Védic Numerologie**(ursprénglech am antike Indien) integréiert Zuelen direkt mat astronomeschen Moundtransit.
+Wärend westlech Numerologie (Pythagorean) héich populär ass,**Védic Numerologie**(Urspronk am antike Indien) integréiert Zuelen direkt mat astronomeschen Moundtransit.
 
-Anstatt d'Zuelen isoléiert ze kucken, kombinéiert d'Védic Approche Äre Gebuertsdatum mat Ärem Moundzeechen (**Rashi**), Gebuertsstär (**Nakshatra**), an aktuellen planetareschen Zyklus (**Dasha**). Dëst bitt eng wesentlech méi komplett, déif an harmonesch Vue op Är energesch Ausrichtung.
+Anstatt d'Zuelen isoléiert ze kucken, kombinéiert d'Védic Approche Äre Gebuertsdatum mat Ärem Moundzeechen (**Rashi**), Gebuertsstär (**Nakshatra**), an aktuelle planetareschen Zyklus (**Dasha**). Dëst bitt eng wesentlech méi komplett, déif an harmonesch Vue op Är energesch Ausrichtung.
 
 ---
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomeschen Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
+Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomesche Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
 
 ### Wat waart an Ärem perséinlechen 8-Säit Blueprint (PDF)?
 
 *   **Är Vibratiounssignatur:**Déif Analyse vun Ärem Liewenswee Nummer, Ärem Nummnummer (Chaldean System), an de rouege Ruff vun Ärem Soul Urge.
 *   **Bestietnes Ausrichtung & Relatioun Harmonie:**Verstinn Är Relatiounsmuster, wéi Är Gebuertsdiagramm spezifesch Energien unzitt, an déi traditionell mathematesch Schlëssele fir déif, dauerhaft Bestietnesbindungen op Basis vu Kompatibilitéit ze bauen.
 *   **Är Ënnerstëtzend Energien:**Traditionell Abléck iwwer Faarwen, Edelsteen Resonanz, an Deeg vun der Ausrichtung déi Fokus, Harmonie a Positivitéit an Ärem Alldag encouragéieren.
-*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, als antike Kader fir perséinlech Reflexioun, Gedold an banneschten Timing déngt.
+*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, déngt als en antike Kader fir perséinlech Reflexioun, Gedold an bannenzegen Timing.
 *   **Notiz vun der Reflexioun:**Dëse Bericht ass eng Etude vu mathematesche Mustere, entwéckelt fir Selbstreflektioun a perséinleche Wuesstum z'ënnerstëtzen.

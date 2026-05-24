@@ -6,7 +6,7 @@ Dit fødselshoroskop er kortet over himlen på det nøjagtige tidspunkt for din 
 
 ## Hvad er et Védic fødselshoroskop?
 
-I modsætning til vestlig astrologi, som er stærkt afhængig af soltegnet, fokuserer Védic Astrology på månetegnet - tegnet, hvor månen var placeret ved din fødsel. Dette månetegn, kaldet**Rashi**på sanskrit, repræsenterer din dybeste følelsesmæssige natur, dine instinkter og dit underbevidste sind.
+I modsætning til vestlig astrologi, som er stærkt afhængig af soltegnet, fokuserer Védic Astrology på månetegnet - tegnet, hvor månen var placeret ved din fødsel. Dette månetegn, kaldet**Rashi**på sanskrit repræsenterer din dybeste følelsesmæssige natur, dine instinkter og dit underbevidste sind.
 
 ---
 
@@ -20,7 +20,7 @@ Védic stjernetegn er opdelt i 12 tegn, der hver bærer en unik energi:
 *   **Karka (Kræft):**Intuitiv, beskyttende og dybt følelsesladet.
 *   **Simha (Leo):**Kreativ, generøs og naturligt autoritativ.
 *   **Kanya (Jomfru):**Analytisk, dedikeret og yderst hjælpsom.
-*   **Tula (Vægten):**Harmonisk, retfærdig og naturligt diplomatisk.
+*   **Tula (Vægten):** Harmonious, fair, and naturally diplomatic.
 *   **Vrishchika (Escorpio):**Intens, transformativ og dybt fokuseret.
 *   **Dhanu (Skytten):**Filosofisk, eventyrlysten og optimistisk.
 *   **Makara (Stenbuk):**Disciplineret, ambitiøs og yderst praktisk.
@@ -37,7 +37,7 @@ Nakshatra er din fødselsstjerne - månepalæet, hvor Månen opholdt sig ved din
 
 ## Dasha-systemet: Planetariske tidscyklusser
 
-Dasha-systemet er et af Védic Astrologys mest dybtgående værktøjer. Det deler dit liv op i store perioder styret af forskellige planeter, der hver bringer en unik energisk indflydelse. At forstå din nuværende Dasha giver dig mulighed for at forstå den fremherskende planetariske energi, der påvirker din bevidsthed lige nu, og understøtter personlig bevidsthed og opmærksomhed.
+Dasha-systemet er et af Védic Astrologys mest dybtgående værktøjer. Det deler dit liv op i store perioder styret af forskellige planeter, som hver bringer en unik energisk indflydelse. At forstå din nuværende Dasha giver dig mulighed for at forstå den fremherskende planetariske energi, der påvirker din bevidsthed lige nu, og understøtter personlig bevidsthed og opmærksomhed.
 
 ---
 
@@ -47,7 +47,7 @@ Dette er ikke en tilfældig rapport genereret af generisk software. Det er et de
 
 ### Hvad venter der i dit personlige 8-siders plan (PDF)?
 
-*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og din sjælstrangs tavse kald.
+*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og det tavse kald fra din sjælstrang.
 *   **Ægteskabstilpasning og forholdsharmoni:**Forstå dine forholdsmønstre, hvordan dit fødselshoroskop tiltrækker specifikke energier og de traditionelle matematiske nøgler til at opbygge dybe, varige ægteskabelige bånd baseret på kompatibilitet.
 *   **Dine støttende energier:**Traditionel indsigt i farver, ædelstensresonans og dage med tilpasning, der tilskynder til fokus, harmoni og positivitet i dit daglige liv.
 *   **Forstå din nuværende tidscyklus (Vimshottari Dasha):**Udforskning af den traditionelle planetariske periode, du i øjeblikket oplever, og tjener som en gammel ramme for personlig refleksion, tålmodighed og indre timing.

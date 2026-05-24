@@ -46,7 +46,7 @@ Vimshottari Dasha yra plačiausiai patikima planetinių laikotarpių sistema Dž
 *   **Saulė (6 metai):**Vidinė jėga, dėmesys, tikslas ir aiškumas.
 *   **Mėnulis (10 metų):**Emocinis ugdymas, imlumas ir šeimos šaknys.
 *   **Marsas (7 metai):**Gyvybiška energija, susikaupimas, drąsa ir veiksmas.
-*   **Rahu (18 metų):**Ambicijos, svetimi horizontai ir pasaulinės pamokos.
+*   **Rahu (18 metų):**Ambicijos, svetimi horizontai ir pasaulietiškos pamokos.
 *   **Jupiteris (16 metų):**Išmintis, dvasinis augimas, plėtra ir studijos.
 *   **Saturnas (19 metų):**Disciplina, atsakingumas, kantrybė ir tvirtas mokymasis.
 *   **Mercury (17 metų):**Intelektualus aiškumas, komercija ir bendravimas.

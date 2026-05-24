@@ -41,7 +41,7 @@ Chak nimewo soti nan 1 a 9 ak nimewo Mèt yo pote yon enèji espesifik:
 *   **9 (Imanitè a):**Konpasyon, jenere, dezenterese, ak inivèsèl saj.
 *   **11 (Mèt Entwisyon):**Enspire, trè sansib, ak espirityèlman konsyan.
 *   **22 (Mèt Konstwitè):**Ki gen don ak kapasite nan vire gwo lide nan reyalite solid.
-*   **33 (Mèt Pwofesè):**Limyè k ap gide lanmou inivèsèl ak bon konprann espirityèl la.
+*   **33 (Mèt Pwofesè):**Limyè ki gide lanmou inivèsèl ak bon konprann espirityèl la.
 
 ---
 

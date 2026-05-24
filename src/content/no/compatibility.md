@@ -6,7 +6,7 @@ Numerologi kan avsløre mye om den energiske kompatibiliteten mellom to individe
 
 ## Hvordan numerologisk kompatibilitet fungerer
 
-Numerologisk kompatibilitet er først og fremst basert på å sammenligne Life Path Numbers for to personer. En fullstendig studie evaluerer imidlertid også navnenumre, sjelstrang og personlighetsnumre. Når disse tallene stemmer harmonisk, har forholdsdynamikken en tendens til å flyte med naturlig letthet. Når det er numerisk spenning, representerer det områder hvor større tålmodighet, forståelse og gjensidig respekt er nødvendig.
+Numerologisk kompatibilitet er først og fremst basert på å sammenligne Life Path Numbers for to personer. Imidlertid evaluerer en fullstendig studie også navnenumre, sjelstrang og personlighetsnumre. Når disse tallene stemmer harmonisk, har relasjonsdynamikken en tendens til å flyte med naturlig letthet. Når det er numerisk spenning, representerer det områder hvor større tålmodighet, forståelse og gjensidig respekt er nødvendig.
 
 ---
 
@@ -45,7 +45,7 @@ Hvert nummer har en unik relasjonsstil og energisk kompatibilitet:
 *   **8 (The Executive):**
 *   *Beste harmoni:* 2, 4, 6
 *   *Trenger tålmodighet:* 1, 3
-*   *Relasjonell stil:* Trenger delte ambisjoner, respekt og realistiske mål.
+*   *Relasjonell stil:* Trenger delt ambisjon, respekt og realistiske mål.
 *   **9 (The Humanitarian):**
 *   *Beste harmoni:* 2, 6, 7
 *   *Trenger tålmodighet:* 4, 8
@@ -75,6 +75,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

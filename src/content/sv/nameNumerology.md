@@ -6,7 +6,7 @@ Ditt namn valdes inte av misstag. Enligt forntida numerologi bär varje bokstav 
 
 ## Det kaldeiska systemet för numerologi
 
-Det kaldeiska systemet är en av världens äldsta numerologiska metoder, med ursprung i Mesopotamien för mer än 4 000 år sedan. Medan det pytagoreiska systemet helt enkelt siffrar bokstäver från 1 till 9 i följd, tilldelar det kaldeiska systemet värden baserade på ljudfrekvens, och utelämnar siffran 9 eftersom det ansågs vara heligt:
+Det kaldeiska systemet är en av världens äldsta numerologiska metoder, med ursprung i Mesopotamien för mer än 4 000 år sedan. Medan det pythagoriska systemet helt enkelt siffrar bokstäver från 1 till 9 i följd, tilldelar det kaldeiska systemet värden baserat på ljudfrekvens, och utelämnar siffran 9 eftersom det ansågs heligt:
 
 *   **1:**A, I, J, Q, Y
 *   **2:**B, K, R

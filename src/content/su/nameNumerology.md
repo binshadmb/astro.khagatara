@@ -24,7 +24,7 @@ Sistem Chaldean mangrupikeun salah sahiji metode numerologi pangkolotna di dunya
 Bagan ngaran anjeun diwangun ku tilu nomer penting:
 
 1.**Nomer Ekspresi (Nomer Ngaran):**Diitung nganggo sadaya hurup tina nami kalahiran lengkep anjeun. Éta nembongkeun bakat alami anjeun, kakuatan, sareng kumaha anjeun nganyatakeun tujuan hirup anjeun ka dunya.
-2.**Angka Pangjurung Jiwa (Keinginan Jantung):**Diitung ngan ukur nganggo vokal tina nami anjeun. Éta ngungkabkeun motivasi batin anjeun anu paling jero, cita-cita rusiah, sareng naon anu leres-leres nyugemakeun jiwa anjeun ti jero.
+2.**Angka Pangjurung Jiwa (Keinginan Jantung):**Diitung ngan ukur nganggo vokal tina nami anjeun. Éta ngungkabkeun motivasi batin anu paling jero, angen-angen rusiah, sareng naon anu leres-leres nyugemakeun jiwa anjeun ti jero.
 3.**Nomer kapribadian:**Diitung ngan ukur nganggo konsonan nami anjeun. Ieu nembongkeun kumaha batur ngarasa anjeun, gambaran saharita anjeun nyieun, sarta persona luar anjeun hadir.
 
 ---
@@ -47,12 +47,12 @@ Seueur jalma nganggap ngarobih nami atanapi nganut nickname saatos diajar numero
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Ieu lain laporan acak dihasilkeun ku software generik. Éta mangrupikeun peta kosmis anu lengkep sareng ikhlas anu diitung kalayan akurasi matematik ngagunakeun transit bulan astronomi nyata sareng rumus Védic sareng Chaldean karuhun. Tujuan tunggal kami nyaéta pikeun masihan anjeun kajelasan, hormat, sareng alat anu asli pikeun mendakan diri sareng mindfulness.
+Ieu lain laporan acak dihasilkeun ku software generik. Éta mangrupikeun peta kosmik anu lengkep sareng ikhlas anu diitung kalayan akurasi matematik ngagunakeun transit bulan astronomi nyata sareng rumus Védic sareng Chaldean karuhun. Tujuan tunggal kami nyaéta pikeun masihan anjeun kajelasan, hormat, sareng alat anu asli pikeun mendakan diri sareng mindfulness.
 
 ### Naon anu ngantosan di jero blueprint 8 halaman pribadi anjeun (PDF)?
 
 *   **Tanda Geter Anjeun:**Analisis jero ngeunaan Nomer Jalan Kahirupan anjeun, Nomer Ngaran anjeun (sistem Chaldean), sareng panggero jempé tina Pangjurung Jiwa anjeun.
 *   **alignment Nikah & Hubungan Harmoni:**Ngartos pola hubungan anjeun, kumaha bagan kalahiran anjeun narik énergi khusus, sareng konci matematika tradisional pikeun ngawangun beungkeut perkawinan anu jero sareng langgeng dumasar kana kasaluyuan.
 *   **Énergi Ngadukung anjeun:**Wawasan tradisional ngeunaan warna, résonansi batu permata, sareng dinten alignment anu nyorong fokus, harmoni, sareng positip dina kahirupan sapopoe anjeun.
-*   **Ngartos Siklus Waktos Anjeun Ayeuna (Vimshottari Dasha):**Ngajalajah jaman planet tradisional anu ayeuna anjeun alami, janten kerangka kuno pikeun refleksi pribadi, kasabaran, sareng waktos batin.
+*   **Ngartos Siklus Waktos Anjeun Ayeuna (Vimshottari Dasha):**Ngajalajah jaman planét tradisional anu ayeuna anjeun alami, janten kerangka kuno pikeun refleksi pribadi, kasabaran, sareng waktos batin.
 *   **Catetan Refleksi:**Laporan ieu mangrupa ulikan ngeunaan pola matematik, dirancang pikeun ngarojong muhasabah diri jeung tumuwuhna pribadi.

@@ -16,7 +16,7 @@ Syans vas Jyotish divize an twa poto debaz:
 
 1.**Ganita (Astwonomi ak Kalkil):**Fondasyon matematik la. Li kalkile pozisyon egzak zetwal yo ak planèt yo lè l sèvi avèk zodiac sideral la—pozisyon fizik aktyèl konstelasyon yo nan syèl la jodi a.
 2.**Hora (Etid Natal):**Analiz tablo nesans endividyèl la. Li etidye kijan aliyman planetè yo nan nesans koresponn ak karaktè, fòs, ak chemen lavi yon moun.
-3.**Samhita (Etid Munden):**Etid la nan evènman kolektif, modèl natirèl, ak sik yo laj nan sivilizasyon imen.
+3.**Samhita (Etid Munden):**Etid evènman kolektif, modèl natirèl, ak sik laj sivilizasyon imen yo.
 
 ---
 

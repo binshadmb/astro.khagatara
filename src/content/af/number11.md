@@ -19,7 +19,7 @@ Die nommer 11 word onderskei deur verskeie unieke eienskappe:
 *   **Inspirerende kwaliteit:**'n Natuurlike vermoë om te inspireer, op te hef en visie met ander te deel.
 *   **Innerlike dualisme:**Balanseer tussen aktiewe dryfkrag (1) en ontvanklike geduld (2), wat 'n pragtige motor vir innerlike groei skep.
 *   **Hoër doel:**'n Stille dryfkrag om doelgerig te lewe, op soek na belyning en selfbewustheid in alle pogings.
-*   **Energetiese sensitiwiteit:**'n Hoogs aktiewe senuwee- en verstandelike energie wat gegronde fokus en bewustheid vereis.
+*   **Energetiese sensitiwiteit:**'n Hoogs aktiewe senuwee- en geestelike energie wat gegronde fokus en bewustheid vereis.
 
 ---
 

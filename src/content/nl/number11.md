@@ -1,6 +1,6 @@
 # Betekenis van nummer 11: Master Number Numerologie
 
-Het getal 11 is een van de drie prestigieuze Meestergetallen in de numerologie – naast 22 en 33. In traditionele systemen wordt het nooit teruggebracht tot een enkel cijfer, omdat het een verhoogde spirituele en intuïtieve vibratie met zich meedraagt. Individuen met levenspad nummer 11 worden vaak beschouwd als diepgaande zoekers met een zeer unieke energetische frequentie in dit leven.
+Het getal 11 is een van de drie prestigieuze Meestergetallen in de numerologie – naast 22 en 33. In traditionele systemen wordt het nooit teruggebracht tot een enkel cijfer, omdat het een verhoogde spirituele en intuïtieve vibratie met zich meebrengt. Individuen met levenspad nummer 11 worden vaak beschouwd als diepgaande zoekers met een zeer unieke energetische frequentie in dit leven.
 
 ---
 

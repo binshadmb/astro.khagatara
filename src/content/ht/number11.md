@@ -1,6 +1,6 @@
 # Siyifikasyon Nimewo 11: Mèt Nimewo Numerology
 
-Nimewo 11 la se youn nan twa nimewo Mèt prestijye nan numeroloji—ansanm 22 ak 33. Nan sistèm tradisyonèl yo, li pa janm redwi a yon sèl chif paske li pote yon vibrasyon espirityèl ak entwisyon ki wo. Moun ki gen yon Chemen lavi Nimewo 11 yo souvan konsidere kòm chèchè pwofon ak yon frekans enèjik trè inik nan lavi sa a.
+Nimewo 11 a se youn nan twa nimewo Mèt prestijye nan numeroloji—ansanm 22 ak 33. Nan sistèm tradisyonèl yo, li pa janm redwi a yon sèl chif paske li pote yon vibrasyon espirityèl ak entwisyon ki wo. Moun ki gen yon Chemen lavi Nimewo 11 yo souvan konsidere kòm chèchè pwofon ak yon frekans enèjik trè inik nan lavi sa a.
 
 ---
 

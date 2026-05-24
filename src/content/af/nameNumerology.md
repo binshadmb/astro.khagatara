@@ -41,7 +41,7 @@ Kom ons bereken die getalle vir die naam**MARIA**:
 
 ## Naamsveranderinge en tradisionele karma
 
-Baie mense oorweeg om hul naam te verander of 'n bynaam aan te neem nadat hulle hul numerologie geleer het. Deur selfs 'n enkele letter by te voeg of te verwyder, verander die naam se numeriese vibrasie heeltemal. In Védic-tradisie hou die presiese naam wat jy by geboorte gegee is egter jou diepste vibrasie-bloudruk en karma. Dit word sterk aanbeveel om eers jou geboortenaam te bestudeer en te eer voordat jy bewustelike aanpassings maak.
+Baie mense oorweeg dit om hul naam te verander of 'n bynaam aan te neem nadat hulle hul numerologie geleer het. Deur selfs 'n enkele letter by te voeg of te verwyder, verander die naam se numeriese vibrasie heeltemal. In Védic-tradisie hou die presiese naam wat jy by geboorte gegee is egter jou diepste vibrasie-bloudruk en karma. Dit word sterk aanbeveel om eers jou geboortenaam te bestudeer en te eer voordat jy bewustelike aanpassings maak.
 
 ---
 

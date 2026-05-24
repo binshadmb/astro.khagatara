@@ -30,7 +30,7 @@ Als u geboren bent op 13 juni 1981:
 
 Elk getal van 1 tot en met 9 en de Meestergetallen dragen een specifieke energie:
 
-*   **1 (de leider):**Onafhankelijk, ambitieus en baanbrekend. Geboren om nieuwe wegen in te slaan.
+*   **1 (de leider):**Onafhankelijk, ambitieus en baanbrekend. Geboren om nieuwe paden te bewandelen.
 *   **2 (De Vredestichter):**Intuïtief, diplomatiek, geduldig en diepgaand samenwerkend.
 *   **3 (de creatieve):**Expressief, communicatief, artistiek en van nature vrolijk.
 *   **4 (De bouwer):**Gedisciplineerd, praktisch, stabiel en zeer betrouwbaar.

@@ -1,6 +1,6 @@
 # Nemokamas numerologijos skaitymas: atraskite savo kosminį planą
 
-Numerologija yra viena iš seniausių savęs atradimo sistemų pasaulyje. Tūkstančius metų viso pasaulio kultūros naudojo skaičius, kad suprastų asmenybę, santykius ir natūralią gyvenimo tėkmę. Šiandien galite visiškai nemokamai apskaičiuoti savo gyvenimo kelią ir kosminius skaičius, naudodami mūsų integruotą chaldėjų ir vedų numerologijos sistemą.
+Numerologija yra viena iš seniausių savęs atradimo sistemų pasaulyje. Tūkstančius metų viso pasaulio kultūros naudojo skaičius, kad suprastų asmenybę, santykius ir natūralią gyvenimo tėkmę. Šiandien galite visiškai nemokamai apskaičiuoti savo gyvenimo kelią ir kosminius skaičius, naudodami mūsų integruotą chaldėjų ir vadų numerologijos sistemą.
 
 ---
 
@@ -47,7 +47,7 @@ Kiekvienas skaičius nuo 1 iki 9 ir pagrindiniai skaičiai turi tam tikrą energ
 
 ## „Vedic“ prieš Vakarų numerologiją
 
-Nors Vakarų numerologija (Pitagoro) yra labai populiari,**„Vedic numerologija“.**(kilę iš senovės Indijos) sujungia skaičius tiesiogiai su astronominiu mėnulio tranzitu.
+Nors Vakarų numerologija (Pitagoro) yra labai populiari,**„Vedic numerologija“.**(kilę iš senovės Indijos) sujungia skaičius tiesiogiai su astronominiais Mėnulio tranzitais.
 
 Užuot žiūrėję į skaičius atskirai, „Vedic“ metodas sujungia jūsų gimimo datą su jūsų Mėnulio ženklu (**Rashi**), gimimo žvaigždė (**Nakšatra**) ir dabartinis planetų ciklas (**Daša**). Tai suteikia daug išsamesnį, gilesnį ir harmoningesnį jūsų energetinio suderinimo vaizdą.
 

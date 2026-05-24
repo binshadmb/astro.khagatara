@@ -34,7 +34,7 @@ Hvert tall fra 1 til 9 og mastertallene har en spesifikk energi:
 *   **2 (Fredsstifteren):**Intuitiv, diplomatisk, tålmodig og dypt samarbeidende.
 *   **3 (Den kreative):**Uttrykksfull, kommunikativ, kunstnerisk og naturlig gledelig.
 *   **4 (Byggmesteren):**Disiplinert, praktisk, stabil og svært pålitelig.
-*   **5 (Eventyreren):**Frisinnet, allsidig, nysgjerrig og dynamisk.
+*   **5 (Eventyreren):**Frimodig, allsidig, nysgjerrig og dynamisk.
 *   **6 (The Nurturer):**Ansvarlig, omsorgsfull, beskyttende og familieorientert.
 *   **7 (Søkeren):**Analytisk, dypt åndelig, kontemplativ og klok.
 *   **8 (The Executive):**Autoritativ, viljesterk, ambisiøs og realistisk.
@@ -61,6 +61,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

@@ -6,7 +6,7 @@ Numerologija gali daug atskleisti apie energetinį dviejų asmenų suderinamumą
 
 ## Kaip veikia numerologinis suderinamumas
 
-Numerologijos suderinamumas visų pirma grindžiamas dviejų žmonių gyvenimo kelio skaičių palyginimu. Tačiau išsamus tyrimas taip pat įvertina vardų skaičius, sielos raginimus ir asmenybių skaičius. Kai šie skaičiai harmoningai sutampa, santykių dinamika paprastai sklando natūraliai. Kai yra skaitinė įtampa, tai reiškia sritis, kuriose reikia daugiau kantrybės, supratimo ir abipusės pagarbos.
+Numerologijos suderinamumas visų pirma pagrįstas dviejų žmonių gyvenimo kelio skaičių palyginimu. Tačiau išsamus tyrimas taip pat įvertina vardų skaičius, sielos raginimus ir asmenybių skaičius. Kai šie skaičiai harmoningai sutampa, santykių dinamika paprastai sklando natūraliai. Kai yra skaitmeninė įtampa, tai reiškia sritis, kuriose reikia daugiau kantrybės, supratimo ir abipusės pagarbos.
 
 ---
 
@@ -20,7 +20,7 @@ Kiekvienas skaičius turi unikalų santykių stilių ir energingą suderinamumą
 *   *Santykių stilius:* Reikia nepriklausomybės, augimo ir abipusio susižavėjimo.
 *   **2 (Taikdarys):**
 *   *Geriausia harmonija:* 6, 8, 9
-*   *Needs Patience:* 1, 5
+*   *Reikia kantrybės:* 1, 5
 *   *Santykių stilius:* Reikia gilios emocinės harmonijos, saugumo ir tylios paramos.
 *   **3 (kūryba):**
 *   *Geriausia harmonija:* 1, 5, 7
@@ -57,7 +57,7 @@ Kiekvienas skaičius turi unikalų santykių stilių ir energingą suderinamumą
 
 *   **Skaičius 11 santykiuose:**Ieško gilaus dvasinio ryšio. Puikiai dera su 2, 6 ir kitais pagrindiniais numeriais. Reikia partnerio, kuris gerbtų jų didelį jautrumą ir emocinį gylį.
 *   **Skaičius 22 santykiuose:**Ieško partnerių, turinčių viziją ir bendras vertybes. Suderinamas su 4, 8 ir 11. Pagrindinis dėmesys skiriamas stabilaus, ilgalaikio pagrindo kūrimui kartu.
-*   **Skaičius 33 santykiuose:**Nepaprastai puoselėjantis ir užjaučiantis. Puikiai dera su 6, 9 ir 11. Siekia besąlygiškai palaikyti ir šiltai rūpintis savo partneriu.
+*   **Skaičius 33 santykiuose:**Nepaprastai puoselėjantis ir užjaučiantis. Puikiai dera su 6, 9 ir 11. Siekia suteikti besąlygišką paramą ir šiltą priežiūrą savo partneriui.
 
 ---
 

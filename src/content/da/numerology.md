@@ -31,12 +31,12 @@ Hvis du er født den 13. juni 1981:
 Hvert tal fra 1 til 9 og masternumrene bærer en bestemt energi:
 
 *   **1 (lederen):**Uafhængig, ambitiøs og banebrydende. Født til at gå nye veje.
-*   **2 (fredsstifteren):**Intuitiv, diplomatisk, tålmodig og dybt samarbejdende.
+*   **2 (Fredsstifteren):**Intuitiv, diplomatisk, tålmodig og dybt samarbejdende.
 *   **3 (Den kreative):**Ekspressiv, kommunikativ, kunstnerisk og naturligt glad.
 *   **4 (Byggeren):**Disciplineret, praktisk, stabil og yderst pålidelig.
 *   **5 (Eventyreren):**Frisindet, alsidig, nysgerrig og dynamisk.
 *   **6 (The Nurturer):**Ansvarlig, omsorgsfuld, beskyttende og familieorienteret.
-*   **7 (Søgeren):**Analytisk, dybt spirituel, kontemplativ og klog.
+*   **7 (Søgeren):**Analytisk, dybt åndelig, kontemplativ og klog.
 *   **8 (Bestyrelsen):**Autoritativ, viljestærk, ambitiøs og realistisk.
 *   **9 (Den humanitære):**Medfølende, generøs, uselvisk og universelt klog.
 *   **11 (Master Intuitive):**Inspirerende, højsensitiv og åndeligt bevidst.
@@ -49,7 +49,7 @@ Hvert tal fra 1 til 9 og masternumrene bærer en bestemt energi:
 
 Mens vestlig numerologi (Pythagorean) er meget populær,**Védic Numerologi**(med oprindelse i det gamle Indien) integrerer tal direkte med astronomiske månepassager.
 
-Rather than looking at numbers in isolation, the Védic approach combines your birth date with your Moon Sign (**Rashi**), Fødselsstjerne (**Nakshatra**), og den nuværende planetariske cyklus (**Dasha**). Dette giver et betydeligt mere komplet, dybt og harmonisk overblik over din energiske justering.
+I stedet for at se på tallene isoleret, kombinerer Védic-tilgangen din fødselsdato med dit månetegn (**Rashi**), Fødselsstjerne (**Nakshatra**), og den nuværende planetariske cyklus (**Dasha**). Dette giver et betydeligt mere komplet, dybt og harmonisk overblik over din energiske justering.
 
 ---
 
@@ -64,3 +64,4 @@ Dette er ikke en tilfældig rapport genereret af generisk software. Det er et de
 *   **Dine støttende energier:**Traditionel indsigt i farver, ædelstensresonans og dage med tilpasning, der tilskynder til fokus, harmoni og positivitet i dit daglige liv.
 *   **Forstå din nuværende tidscyklus (Vimshottari Dasha):**Udforskning af den traditionelle planetariske periode, du i øjeblikket oplever, og tjener som en gammel ramme for personlig refleksion, tålmodighed og indre timing.
 *   **Refleksionsnotat:**Denne rapport er en undersøgelse af matematiske mønstre, designet til at understøtte selvrefleksion og personlig vækst.
+ækst.

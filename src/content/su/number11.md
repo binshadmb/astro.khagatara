@@ -12,7 +12,7 @@ Master Numbers (11, 22, jeung 33) mawa dua digit angka idéntik, ngalambangkeun 
 
 ## Ciri Utama Master Nomer 11
 
-Nomer 11 dibédakeun ku sababaraha kualitas unik:
+Jumlah 11 dibédakeun ku sababaraha kualitas unik:
 
 *   **Intuisi ditingkatkeun:**Aksés ka wawasan halus sareng parasaan usus anu pas pisan. sora batin maranéhanana nyaéta kompas greatest maranéhanana.
 *   **Sensitipitas jero:**Kamampuhan empati pikeun ngaraos énergi sareng émosi di sakurilingna.
@@ -40,19 +40,19 @@ Individu anu nomer 11 mekar dina lingkungan anu ngamungkinkeun aranjeunna ngagun
 Tilu Nomer Master ngagambarkeun frékuénsi spiritual anu béda:
 
 *   **11 (The Visionary):**Fokus kana intuisi, inspirasi, sareng kasadaran spiritual anu jero.
-*   **22 (Guru Pangwangun):**Fokus kana visi praktis, ngawangun yayasan anu langgeng, sareng ngawujudkeun ide.
+*   **22 (Guru Pangwangun):**Fokus kana visi praktis, ngawangun pondasi anu langgeng, sareng ngawujudkeun ide.
 *   **33 (Guru):**Fokus kana pangrojong universal, palayanan welas asih, sareng ngasuh hikmah.
 
 ---
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Ieu lain laporan acak dihasilkeun ku software generik. Éta mangrupikeun peta kosmis anu lengkep sareng ikhlas anu diitung kalayan akurasi matematik ngagunakeun transit bulan astronomi nyata sareng rumus Védic sareng Chaldean karuhun. Tujuan tunggal kami nyaéta pikeun masihan anjeun kajelasan, hormat, sareng alat anu asli pikeun mendakan diri sareng mindfulness.
+Ieu lain laporan acak dihasilkeun ku software generik. Éta mangrupikeun peta kosmik anu lengkep sareng ikhlas anu diitung kalayan akurasi matematik ngagunakeun transit bulan astronomi nyata sareng rumus Védic sareng Chaldean karuhun. Tujuan tunggal kami nyaéta pikeun masihan anjeun kajelasan, hormat, sareng alat anu asli pikeun mendakan diri sareng mindfulness.
 
 ### Naon anu ngantosan di jero blueprint 8 halaman pribadi anjeun (PDF)?
 
 *   **Tanda Geter Anjeun:**Analisis jero ngeunaan Nomer Jalan Kahirupan anjeun, Nomer Ngaran anjeun (sistem Chaldean), sareng panggero jempé tina Pangjurung Jiwa anjeun.
 *   **alignment Nikah & Hubungan Harmoni:**Ngartos pola hubungan anjeun, kumaha bagan kalahiran anjeun narik énergi khusus, sareng konci matematika tradisional pikeun ngawangun beungkeut perkawinan anu jero sareng langgeng dumasar kana kasaluyuan.
 *   **Énergi Ngadukung anjeun:**Wawasan tradisional ngeunaan warna, résonansi batu permata, sareng dinten alignment anu nyorong fokus, harmoni, sareng positip dina kahirupan sapopoe anjeun.
-*   **Ngartos Siklus Waktos Anjeun Ayeuna (Vimshottari Dasha):**Ngajalajah jaman planet tradisional anu ayeuna anjeun alami, janten kerangka kuno pikeun refleksi pribadi, kasabaran, sareng waktos batin.
+*   **Ngartos Siklus Waktos Anjeun Ayeuna (Vimshottari Dasha):**Ngajalajah jaman planét tradisional anu ayeuna anjeun alami, janten kerangka kuno pikeun refleksi pribadi, kasabaran, sareng waktos batin.
 *   **Catetan Refleksi:**Laporan ieu mangrupa ulikan ngeunaan pola matematik, dirancang pikeun ngarojong muhasabah diri jeung tumuwuhna pribadi.

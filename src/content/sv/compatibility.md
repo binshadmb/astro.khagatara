@@ -1,6 +1,6 @@
 # Numerologikompatibilitet: Kärlek och relationsharmoni
 
-Numerologi kan avslöja en hel del om den energiska kompatibiliteten mellan två individer. Varje livsvägsnummer bär på specifika vibrationer som naturligt harmoniserar med vissa siffror och skapar möjligheter för tillväxt och tålamod med andra. Att utforska dessa anpassningar hjälper dig att förstå relationsdynamiken och växa tillsammans medvetet.
+Numerologi kan avslöja en hel del om den energetiska kompatibiliteten mellan två individer. Varje livsvägsnummer bär på specifika vibrationer som naturligt harmoniserar med vissa siffror och skapar möjligheter till tillväxt och tålamod med andra. Att utforska dessa anpassningar hjälper dig att förstå relationsdynamiken och växa tillsammans medvetet.
 
 ---
 
@@ -29,7 +29,7 @@ Varje nummer har en unik relationsstil och energisk kompatibilitet:
 *   **4 (byggaren):**
 *   *Bästa harmoni:* 2, 6, 8
 *   *Behöver tålamod:* 3, 5
-*   *Relationell stil:* Behöver stabilitet, tillförlitlighet och strukturerad lojalitet.
+*   *Relationell stil:* Behöver stabilitet, pålitlighet och strukturerad lojalitet.
 *   **5 (Äventyraren):**
 *   *Bästa harmoni:* 1, 3, 7
 *   *Behöver tålamod:* 2, 4
@@ -49,11 +49,11 @@ Varje nummer har en unik relationsstil och energisk kompatibilitet:
 *   **9 (The Humanitarian):**
 *   *Bästa harmoni:* 2, 6, 7
 *   *Behöver tålamod:* 4, 8
-*   *Relationell stil:* Behöver högre syfte, medkänsla och delade ideal.
+*   *Relationell stil:* Behöver ett högre syfte, medkänsla och delade ideal.
 
 ---
 
-## Mästare Numbers in Love
+## Master Numbers in Love
 
 *   **Nummer 11 i relationer:**Söker djup andlig förbindelse. Harmoniserar vackert med 2, 6 och andra masternummer. Behöver en partner som respekterar deras höga känslighet och känslomässiga djup.
 *   **Nummer 22 i relationer:**Söker partners med vision och gemensamma värderingar. Kompatibel med 4, 8 och 11. Fokuserar på att bygga en stabil, långsiktig grund tillsammans.

@@ -1,6 +1,6 @@
 # Gratis Vedische astrologie: het licht van Jyotish online
 
-Jyotish – de Vedische astrologie – staat traditioneel bekend als de ‘wetenschap van het licht’. Met meer dan 5.000 jaar ononderbroken geschiedenis is het een van de meest geavanceerde systemen van zelfinzicht die de mensheid heeft ontwikkeld. In plaats van alleen algemene persoonlijkheidskenmerken te beschrijven, onderzoekt Jyotish de diepe kosmische patronen en tijdcycli die harmonie in je leven helpen brengen.
+Jyotish – de Vedische astrologie – staat traditioneel bekend als de ‘wetenschap van het licht’. Met meer dan 5.000 jaar ononderbroken geschiedenis is het een van de meest geavanceerde systemen van zelfinzicht die de mensheid heeft ontwikkeld. In plaats van alleen algemene persoonlijkheidskenmerken te beschrijven, onderzoekt Jyotish de diepe kosmische patronen en tijdcycli die helpen harmonie in je leven te brengen.
 
 ---
 

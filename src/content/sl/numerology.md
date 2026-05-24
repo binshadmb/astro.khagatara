@@ -22,7 +22,7 @@ Vendar, če je vaša vsota enaka**11, 22 ali 33**, jih ne zmanjšujte. Ti se ime
 2.**Zmanjšajte mesec:**Junij je 6. mesec → 6
 3.**Zmanjšajte leto:**1981 → 1 + 9 + 8 + 1 = 19 → 1 + 9 = 10 → 1 + 0 = 1
 4.**Seštejte vsote:**4 (dan) + 6 (mesec) + 1 (leto) = 11
-*Rezultat:**Life Path 11**— Mojster intuitiven.*
+*Rezultat:**Življenjska pot 11**— Mojster intuitiven.*
 
 ---
 
@@ -31,7 +31,7 @@ Vendar, če je vaša vsota enaka**11, 22 ali 33**, jih ne zmanjšujte. Ti se ime
 Vsako število od 1 do 9 in glavna števila nosijo določeno energijo:
 
 *   **1 (Voditelj):**Neodvisen, ambiciozen in pionirski. Rojen za ustvarjanje novih poti.
-*   **2 (Mirovnik):**Intuitiven, diplomatski, potrpežljiv in pripravljen na sodelovanje.
+*   **2 (Mirovnik):**Intuitiven, diplomatski, potrpežljiv in globoko sodelovalen.
 *   **3 (Ustvarjalno):**Ekspresivna, komunikativna, umetniška in naravno vesela.
 *   **4 (Graditelj):**Discipliniran, praktičen, stabilen in zelo zanesljiv.
 *   **5 (Pustolovec):**Svobodnega duha, vsestranski, radoveden in dinamičen.
@@ -59,7 +59,7 @@ To ni naključno poročilo, ki ga ustvari generična programska oprema. To je po
 
 ### Kaj čaka v vašem osebnem 8-stranskem načrtu (PDF)?
 
-*   **Vaš vibracijski podpis:**Globoka analiza vašega Števila življenjske poti, vašega Imenskega števila (kaldejski sistem) in tihega klica vaše duševne želje.
+*   **Vaš vibracijski podpis:**Globoka analiza vašega števila življenjske poti, vašega števila imena (kaldejski sistem) in tihega klica vašega duševnega nagona.
 *   **Usklajenost zakonske zveze in harmonija odnosov:**Razumevanje vzorcev vaših odnosov, kako vaša rojstna karta privlači specifične energije in tradicionalnih matematičnih ključev za gradnjo globokih, trajnih zakonskih vezi, ki temeljijo na združljivosti.
 *   **Vaše podporne energije:**Tradicionalni vpogled v barve, resonanco dragih kamnov in dneve poravnave, ki spodbujajo osredotočenost, harmonijo in pozitivnost v vašem vsakdanjem življenju.
 *   **Razumevanje vašega trenutnega časovnega cikla (Vimshottari Dasha):**Raziskovanje tradicionalnega planetarnega obdobja, ki ga trenutno doživljate, ki služi kot starodavni okvir za osebno razmišljanje, potrpežljivost in notranji čas.

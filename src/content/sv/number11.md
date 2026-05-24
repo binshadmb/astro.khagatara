@@ -1,12 +1,12 @@
 # Betydelse av nummer 11: Master Number Numerology
 
-Siffran 11 är ett av de tre prestigefyllda mästarnumren i numerologi — vid sidan av 22 och 33. I traditionella system reduceras det aldrig till en enda siffra eftersom det bär en förhöjd andlig och intuitiv vibration. Individer med en livsväg nummer 11 anses ofta vara djupa sökare med en mycket unik energisk frekvens i det här livet.
+Siffran 11 är ett av de tre prestigefyllda mästarnumren i numerologi — vid sidan av 22 och 33. I traditionella system reduceras det aldrig till en enda siffra eftersom det bär en förhöjd andlig och intuitiv vibration. Individer med en livsväg nummer 11 betraktas ofta som djupa sökare med en mycket unik energisk frekvens i det här livet.
 
 ---
 
 ## Vad är ett masternummer?
 
-Masternummer (11, 22 och 33) har en dubbelsiffra med identiska nummer, vilket representerar en högkoncentrerad dubbelvibration. 11 bär en dubbel vibration på 1, 22 bär en dubbel vibration på 2 och 33 bär en dubbel vibration på 3. Denna dubbla resonans representerar en ökad potential för medvetenhet, åtföljd av specifika livslektioner som uppmuntrar djup personlig disciplin.
+Masternummer (11, 22 och 33) har en dubbelsiffra med identiska nummer, vilket representerar en mycket koncentrerad dubbelvibration. 11 bär en dubbel vibration på 1, 22 bär en dubbel vibration på 2 och 33 bär en dubbel vibration på 3. Denna dubbla resonans representerar en ökad potential för medvetenhet, åtföljd av specifika livslektioner som uppmuntrar djup personlig disciplin.
 
 ---
 
@@ -17,7 +17,7 @@ Siffran 11 kännetecknas av flera unika egenskaper:
 *   **Förhöjd intuition:**Tillgång till subtila insikter och magkänsla som är mycket exakta. Deras inre röst är deras största kompass.
 *   **Djup känslighet:**En empatisk förmåga att känna omgivande energier och känslor på djupet.
 *   **Inspirerande kvalitet:**En naturlig förmåga att inspirera, lyfta och dela visioner med andra.
-*   **Inner Dualism:**Balanserar mellan aktiv drivkraft (1) och receptivt tålamod (2), vilket skapar en vacker motor för inre tillväxt.
+*   **Inre dualism:**Balanserar mellan aktiv drivkraft (1) och receptivt tålamod (2), vilket skapar en vacker motor för inre tillväxt.
 *   **Högre syfte:**En tyst strävan att leva målmedvetet, söka anpassning och självmedvetenhet i alla ansträngningar.
 *   **Energisk känslighet:**En mycket aktiv nervös och mental energi som kräver grundad fokus och mindfulness.
 

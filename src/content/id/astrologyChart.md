@@ -6,7 +6,7 @@ Bagan astrologi Anda lebih dari sekadar daftar planet dan tanda sederhana. Ini a
 
 ## Apa itu Bagan Astrologi Véda?
 
-Bagan Astrologi Véda, yang secara tradisional dikenal sebagai a**Kundali**atau**bagan kelahiran**, adalah peta geometris sempurna dari posisi planet pada saat kelahiran Anda. Berbeda dengan horoskop Barat, Jyotish menggunakan**zodiak sidereal**—posisi fisik sebenarnya dari planet-planet dan konstelasi di langit saat ini—menjadikannya sangat akurat.
+Bagan Astrologi Véda, yang secara tradisional dikenal sebagai a**Kundali**atau**bagan kelahiran**, adalah peta geometris sempurna dari posisi planet pada saat kelahiran Anda. Berbeda dengan horoskop Barat, Jyotish menggunakan**zodiak sideris**—posisi fisik sebenarnya dari planet-planet dan konstelasi di langit saat ini—menjadikannya sangat akurat.
 
 ---
 
@@ -28,7 +28,7 @@ Di Jyotish, sembilan benda planet mewakili aspek inti dari kesadaran dan energi 
 
 ## Akurasi Zodiak Sidereal vs. Tropis
 
-Astrologi Barat menggunakan**zodiak tropis**, yang disesuaikan dengan musim dalam setahun. Astrologi Védic menggunakan**zodiak sidereal**, yang ditambatkan pada posisi astronomi sebenarnya dari bintang-bintang.
+Astrologi Barat menggunakan**zodiak tropis**, yang disesuaikan dengan musim dalam setahun. Astrologi Védic menggunakan**zodiak sideris**, yang ditambatkan pada posisi astronomi sebenarnya dari bintang-bintang.
 
 Karena presesi ekuinoks, saat ini terdapat perbedaan sekitar 23 derajat antara kedua sistem. Inilah sebabnya mengapa Tanda Bulan atau Ascendant Védic Anda sering kali berbeda dari tanda Barat Anda—selaras langsung dengan realitas fisik langit malam.
 

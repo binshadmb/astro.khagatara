@@ -31,7 +31,7 @@ Vaša karta z imeni je sestavljena iz treh vitalnih števil:
 
 ## Primer izračuna po korakih
 
-Izračunajmo številke za ime**MARIA**:
+Izračunajmo številke za ime**MARIJA**:
 ***črke:**M (4) + A (1) + R (2) + I (1) + A (1)
 ***Številka izraza:**4 + 1 + 2 + 1 + 1 = 9 *(Humanitarec)*
 ***Samoglasniki (Soul Urge):**A (1) + I (1) + A (1) = 3 *(The Creative)*
@@ -51,7 +51,7 @@ To ni naključno poročilo, ki ga ustvari generična programska oprema. To je po
 
 ### Kaj čaka v vašem osebnem 8-stranskem načrtu (PDF)?
 
-*   **Vaš vibracijski podpis:**Globoka analiza vašega Števila življenjske poti, vašega Imenskega števila (kaldejski sistem) in tihega klica vaše duševne želje.
+*   **Vaš vibracijski podpis:**Globoka analiza vašega števila življenjske poti, vašega števila imena (kaldejski sistem) in tihega klica vašega duševnega nagona.
 *   **Usklajenost zakonske zveze in harmonija odnosov:**Razumevanje vzorcev vaših odnosov, kako vaša rojstna karta privlači specifične energije in tradicionalnih matematičnih ključev za gradnjo globokih, trajnih zakonskih vezi, ki temeljijo na združljivosti.
 *   **Vaše podporne energije:**Tradicionalni vpogled v barve, resonanco dragih kamnov in dneve poravnave, ki spodbujajo osredotočenost, harmonijo in pozitivnost v vašem vsakdanjem življenju.
 *   **Razumevanje vašega trenutnega časovnega cikla (Vimshottari Dasha):**Raziskovanje tradicionalnega planetarnega obdobja, ki ga trenutno doživljate, ki služi kot starodavni okvir za osebno razmišljanje, potrpežljivost in notranji čas.

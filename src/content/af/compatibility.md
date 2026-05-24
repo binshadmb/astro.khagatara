@@ -25,7 +25,7 @@ Elke nommer dra 'n unieke verhoudingstyl en energieke verenigbaarheid:
 *   **3 (The Creative):**
 *   *Beste harmonie:* 1, 5, 7
 *   *Het geduld nodig:* 4, 8
-*   *Relasionele styl:* Benodig kreatiewe uitdrukking, vreugde en oop kommunikasie.
+*   *Verhoudingstyl:* Benodig kreatiewe uitdrukking, vreugde en oop kommunikasie.
 *   **4 (Die Bouer):**
 *   *Beste harmonie:* 2, 6, 8
 *   *Het geduld nodig:* 3, 5

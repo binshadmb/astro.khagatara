@@ -1,6 +1,6 @@
 # Gratis Védic Astrology: The Light of Jyotish Online
 
-Jyotish - Védic Astrology - er traditionelt kendt som "videnskaben om lys." Med mere end 5.000 års ubrudt historie er det et af de mest sofistikerede systemer til selvforståelse udviklet af menneskeheden. I stedet for blot at beskrive generelle personlighedstræk, udforsker Jyotish de dybe kosmiske mønstre og tidscyklusser, der hjælper med at bringe harmoni til dit liv.
+Jyotish – Védic Astrology – er traditionelt kendt som "videnskaben om lys". Med mere end 5.000 års ubrudt historie er det et af de mest sofistikerede systemer til selvforståelse udviklet af menneskeheden. I stedet for blot at beskrive generelle personlighedstræk, udforsker Jyotish de dybe kosmiske mønstre og tidscyklusser, der hjælper med at bringe harmoni til dit liv.
 
 ---
 
@@ -33,7 +33,7 @@ Nakshatras er de 27 månepalæer i Védic Astrology - stjernebillederne, som Må
 *   **Punarvasu:**Restaurering, beskyttelse og frisk begyndelse.
 *   **Pushya:**Åndelig næring, visdom og omsorg.
 *   **Ashlesha:**Mystik, dybde og fokuseret indre kraft.
-*   *(Og 18 flere smukke Nakshatras, som hver bærer sin egen unikke vibrationsenergi)*
+*   *(Og 18 flere smukke Nakshatras, der hver bærer sin egen unikke vibrationsenergi)*
 
 ---
 
@@ -59,7 +59,7 @@ Dette er ikke en tilfældig rapport genereret af generisk software. Det er et de
 
 ### Hvad venter der i dit personlige 8-siders plan (PDF)?
 
-*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og din sjælstrangs tavse kald.
+*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og det tavse kald fra din sjælstrang.
 *   **Ægteskabstilpasning og forholdsharmoni:**Forstå dine forholdsmønstre, hvordan dit fødselshoroskop tiltrækker specifikke energier og de traditionelle matematiske nøgler til at opbygge dybe, varige ægteskabelige bånd baseret på kompatibilitet.
 *   **Dine støttende energier:**Traditionel indsigt i farver, ædelstensresonans og dage med tilpasning, der tilskynder til fokus, harmoni og positivitet i dit daglige liv.
 *   **Forstå din nuværende tidscyklus (Vimshottari Dasha):**Udforskning af den traditionelle planetariske periode, du i øjeblikket oplever, og tjener som en gammel ramme for personlig refleksion, tålmodighed og indre timing.

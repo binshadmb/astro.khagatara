@@ -6,7 +6,7 @@ Astrologidiagrammet ditt er langt mer enn en enkel liste over planeter og tegn. 
 
 ## Hva er et Védic Astrology Chart?
 
-Et Védic Astrology Chart, tradisjonelt kjent som en**Kundali**eller**fødselshoroskop**, er et perfekt geometrisk kart over planetariske posisjoner på ditt eksakte fødselsøyeblikk. I motsetning til vestlige horoskoper, bruker Jyotish**siderisk dyrekrets**– de faktiske fysiske posisjonene til planetene og konstellasjonene på himmelen i dag – noe som gjør den svært nøyaktig.
+Et Védic Astrology Chart, tradisjonelt kjent som en**Kundali**eller**fødselshoroskop**, er et perfekt geometrisk kart over planetariske posisjoner på ditt eksakte fødselsøyeblikk. I motsetning til vestlige horoskoper, bruker Jyotish**siderisk dyrekrets**– de faktiske fysiske posisjonene til planetene og konstellasjonene på himmelen i dag – noe som gjør det svært nøyaktig.
 
 ---
 
@@ -48,6 +48,6 @@ Dette er ikke en tilfeldig rapport generert av generisk programvare. Det er et d
 
 *   **Din vibrasjonssignatur:**Dyp analyse av ditt livsveinummer, ditt navnenummer (kaldeisk system), og det stille kallet til din sjelstrang.
 *   **Ekteskapstilpasning og relasjonsharmoni:**Forstå forholdsmønstrene dine, hvordan fødselshoroskopet tiltrekker seg spesifikke energier, og de tradisjonelle matematiske nøklene til å bygge dype, varige ekteskapelige bånd basert på kompatibilitet.
-*   **Dine støttende energier:**Tradisjonell innsikt i farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
+*   **Dine støttende energier:**Tradisjonell innsikt om farger, edelstensresonans og dager med justering som oppmuntrer til fokus, harmoni og positivitet i hverdagen.
 *   **Forstå din nåværende tidssyklus (Vimshottari Dasha):**Utforske den tradisjonelle planetariske perioden du opplever for øyeblikket, og fungerer som et eldgammelt rammeverk for personlig refleksjon, tålmodighet og indre timing.
 *   **Merknad om refleksjon:**Denne rapporten er en studie av matematiske mønstre, designet for å støtte selvrefleksjon og personlig vekst.

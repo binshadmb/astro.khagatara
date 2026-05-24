@@ -10,7 +10,7 @@ Mastertal (11, 22 og 33) bærer et tocifret med identiske tal, der repræsentere
 
 ---
 
-## Hovedkarakteristika for Master nummer 11
+## Hovedkarakteristika for Master Number 11
 
 Tallet 11 er kendetegnet ved flere unikke kvaliteter:
 
@@ -51,7 +51,7 @@ Dette er ikke en tilfældig rapport genereret af generisk software. Det er et de
 
 ### Hvad venter der i dit personlige 8-siders plan (PDF)?
 
-*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og din sjælstrangs tavse kald.
+*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og det tavse kald fra din sjælstrang.
 *   **Ægteskabstilpasning og forholdsharmoni:**Forstå dine forholdsmønstre, hvordan dit fødselshoroskop tiltrækker specifikke energier og de traditionelle matematiske nøgler til at opbygge dybe, varige ægteskabelige bånd baseret på kompatibilitet.
 *   **Dine støttende energier:**Traditionel indsigt i farver, ædelstensresonans og dage med tilpasning, der tilskynder til fokus, harmoni og positivitet i dit daglige liv.
 *   **Forstå din nuværende tidscyklus (Vimshottari Dasha):**Udforskning af den traditionelle planetariske periode, du i øjeblikket oplever, og tjener som en gammel ramme for personlig refleksion, tålmodighed og indre timing.

@@ -15,7 +15,7 @@ Jyotish är ett sanskritord som betyder "vetenskap om ljus" eller "vetenskap om 
 Den enorma vetenskapen om Jyotish är uppdelad i tre kärnpelare:
 
 1.**Ganita (astronomi och beräkning):**Den matematiska grunden. Den beräknar de exakta positionerna för stjärnorna och planeterna med hjälp av den sideriska zodiaken - de faktiska fysiska positionerna för konstellationerna på himlen idag.
-2.**Hora (Natal Study):**Analysen av det individuella födelsediagrammet. Den studerar hur planetariska inriktningar vid födseln motsvarar en individs karaktär, styrkor och livsväg.
+2.**Hora (Natal Study):**Analysen av det individuella födelsediagrammet. Den studerar hur planetariska anpassningar vid födseln motsvarar en individs karaktär, styrkor och livsväg.
 3.**Samhita (Mundane Study):**Studiet av kollektiva händelser, naturliga mönster och mänskliga civilisationers breda cykler.
 
 ---

@@ -24,12 +24,12 @@ Ilmu pengetahuan Jyotish yang luas dibagi menjadi tiga pilar inti:
 
 Nakshatra adalah 27 rumah bulan dalam Astrologi Védic—rasi bintang yang dilalui Bulan dalam orbit bulanannya. Nakshatra kelahiran Anda adalah salah satu elemen paling penting dari bagan Anda, yang mewakili pengondisian alami pikiran Anda:
 
-*   **Aswini:**Kecepatan, energi penyembuhan, dan awal yang baru.
+*   **Aswini :**Kecepatan, energi penyembuhan, dan awal yang baru.
 *   **Bharani:**Transformasi dan pembaruan mendalam.
 *   **kritik:**Memurnikan fokus, kejelasan, dan disiplin.
 *   **Rohini:**Kreativitas, keindahan, dan kehangatan emosional.
 *   **Mrigashira:**Keingintahuan, pencarian, dan eksplorasi sensitif.
-*   **Ardra :**Membersihkan badai dan pembaruan kreatif.
+*   **Ardra:**Membersihkan badai dan pembaruan kreatif.
 *   **Punarvasu:**Pemulihan, perlindungan, dan awal yang baru.
 *   **dorongan:**Makanan spiritual, kebijaksanaan, dan perhatian.
 *   **Aslesha:**Misteri, kedalaman, dan kekuatan batin yang terfokus.

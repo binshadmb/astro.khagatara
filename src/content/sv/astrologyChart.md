@@ -36,7 +36,7 @@ På grund av dagjämningarnas precision är det för närvarande en skillnad på
 
 ## Förstå dina energiska tidscykler
 
-En av de mest värdefulla aspekterna av Védic-diagrammet är dess förmåga att kartlägga energicykler över tid. Genom att använda Vimshottari Dasha och planetariska transiter kan vi förstå de planetariska perioder som för närvarande påverkar dina tankar, hälsa och relationsfält, vilket ger en vacker spegel för självmedvetenhet och medveten livsstil.
+En av de mest värdefulla aspekterna av Védic-diagrammet är dess förmåga att kartlägga energicykler över tid. Genom att använda Vimshottari Dasha och planetariska transiter kan vi förstå de planetära perioder som för närvarande påverkar dina tankar, hälsa och relationsfält, vilket ger en vacker spegel för självmedvetenhet och medveten livsstil.
 
 ---
 

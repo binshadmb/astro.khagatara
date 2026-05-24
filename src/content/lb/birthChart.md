@@ -18,9 +18,9 @@ De Védic Zodiac ass an 12 Zeechen opgedeelt, déi all eng eenzegaarteg Energie 
 *   **Vrishabha (Taurus):**Stabil, geduldig, an héich persevering.
 *   **Mithuna (Gemini):**Virwëtzeg, kommunikativ, an héich versatile.
 *   **Karka (Kriibs):**Intuitiv, schützend an déif emotional.
-*   **Simha (Leo):**Kreativ, generéis an natierlech autoritär.
+*   **Simha (Leo):**Kreativ, generéis, an natierlech autoritär.
 *   **Kanya (Virgo):**Analytesch, engagéiert an héich hëllefräich.
-*   **Tula (Libra):**Harmonesch, fair an natierlech diplomatesch.
+*   **Tula (Libra):**Harmonesch, fair, an natierlech diplomatesch.
 *   **Vrishchika (Escorpio):**Intens, transformativ, an déif fokusséiert.
 *   **Dhanu (Sagittarius):**Philosophesch, abenteuerlech an optimistesch.
 *   **Makara (Capricorn):**Disziplinéiert, ambitiéis, an héich praktesch.
@@ -43,12 +43,12 @@ Den Dasha System ass ee vun de Védic Astrologie seng déifgräifendst Tools. Et
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomeschen Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
+Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomesche Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
 
 ### Wat waart an Ärem perséinlechen 8-Säit Blueprint (PDF)?
 
 *   **Är Vibratiounssignatur:**Déif Analyse vun Ärem Liewenswee Nummer, Ärem Nummnummer (Chaldean System), an de rouege Ruff vun Ärem Soul Urge.
 *   **Bestietnes Ausrichtung & Relatioun Harmonie:**Verstinn Är Relatiounsmuster, wéi Är Gebuertsdiagramm spezifesch Energien unzitt, an déi traditionell mathematesch Schlëssele fir déif, dauerhaft Bestietnesbindungen op Basis vu Kompatibilitéit ze bauen.
 *   **Är Ënnerstëtzend Energien:**Traditionell Abléck iwwer Faarwen, Edelsteen Resonanz, an Deeg vun der Ausrichtung déi Fokus, Harmonie a Positivitéit an Ärem Alldag encouragéieren.
-*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, als antike Kader fir perséinlech Reflexioun, Gedold an banneschten Timing déngt.
+*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, déngt als en antike Kader fir perséinlech Reflexioun, Gedold an bannenzegen Timing.
 *   **Notiz vun der Reflexioun:**Dëse Bericht ass eng Etude vu mathematesche Mustere, entwéckelt fir Selbstreflektioun a perséinleche Wuesstum z'ënnerstëtzen.

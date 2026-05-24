@@ -24,7 +24,7 @@ Sistem Kasdim minangka salah sawijining metode numerologi paling kuno ing donya,
 Bagan jeneng sampeyan dumadi saka telung nomer penting:
 
 1.**Nomer Ekspresi (Nomer Jeneng):**Dietung nggunakake kabeh huruf saka jeneng lair lengkap. Iki nuduhake bakat alami, kekuwatan, lan cara sampeyan nuduhake tujuan urip sampeyan ing jagad iki.
-2.**Angka Jiwa (Kepinginan Hati):**Dietung mung nggunakake aksara swara jeneng sampeyan. Iki nuduhake motivasi batin sing paling jero, kepinginan rahasia, lan apa sing bener-bener gawe marem jiwa sampeyan.
+2.**Angka Jiwa (Kepinginan Hati):**Dietung mung nggunakake aksara swara jeneng sampeyan. Iki nuduhake motivasi batin sing paling jero, kepinginan rahasia, lan apa sing bener-bener gawe marem jiwa sampeyan saka njero.
 3.**Nomer Pribadi:**Dietung mung nggunakake konsonan jeneng sampeyan. Iki nuduhake carane wong liya ndeleng sampeyan, kesan langsung sing sampeyan lakoni, lan persona njaba sing sampeyan lakoni.
 
 ---
@@ -53,6 +53,6 @@ Iki dudu laporan acak sing digawe dening piranti lunak umum. Iki minangka peta k
 
 *   **Tandha Getaran Panjenengan:**Analisis jero babagan Nomer Path Urip, Nomer Jeneng (sistem Chaldean), lan panggilan bisu saka Jiwa sampeyan.
 *   **Keselarasan Perkawinan & Keselarasan Hubungan:**Ngerteni pola hubungan sampeyan, carane grafik lair sampeyan narik energi tartamtu, lan kunci matematika tradisional kanggo mbangun ikatan perkawinan sing jero lan langgeng adhedhasar kompatibilitas.
-*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positip ing urip saben dina.
-*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah periode planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
+*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positif ing urip saben dina.
+*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah jaman planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
 *   **Cathetan Refleksi:**Laporan iki minangka studi babagan pola matematika, dirancang kanggo ndhukung refleksi diri lan pertumbuhan pribadi.

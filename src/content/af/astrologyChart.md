@@ -36,7 +36,7 @@ As gevolg van die presisie van die eweninge is daar tans 'n verskil van ongeveer
 
 ## Verstaan ​​jou energieke tydsiklusse
 
-Een van die mees waardevolle aspekte van die Védic-kaart is sy vermoë om energiesiklusse oor tyd te karteer. Deur die Vimshottari Dasha en planetêre transito's te gebruik, kan ons die planetêre tydperke verstaan ​​wat tans jou gedagtes, gesondheid en verhoudingsvelde beïnvloed, wat 'n pragtige spieël bied vir selfbewustheid en bewuste lewe.
+Een van die waardevolste aspekte van die Védic-kaart is sy vermoë om energiesiklusse oor tyd te karteer. Deur die Vimshottari Dasha en planetêre transito's te gebruik, kan ons die planetêre tydperke verstaan ​​wat tans jou gedagtes, gesondheid en verhoudingsvelde beïnvloed, wat 'n pragtige spieël bied vir selfbewustheid en bewuste lewe.
 
 ---
 

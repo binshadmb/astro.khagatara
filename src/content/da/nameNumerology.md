@@ -6,7 +6,7 @@ Dit navn blev ikke valgt ved et tilfælde. Ifølge gammel numerologi bærer hver
 
 ## Det kaldæiske system af numerologi
 
-Det kaldæiske system er en af ​​verdens ældste numerologiske metoder, med oprindelse i Mesopotamien for mere end 4.000 år siden. Mens det pythagoræiske system blot nummererer bogstaver fra 1 til 9 sekventielt, tildeler det kaldæiske system værdier baseret på lydfrekvens og udelader tallet 9, da det blev betragtet som helligt:
+Det kaldæiske system er en af ​​verdens ældste numerologiske metoder, med oprindelse i Mesopotamien for mere end 4.000 år siden. Mens det pythagoræiske system simpelthen nummererer bogstaver fra 1 til 9 sekventielt, tildeler det kaldæiske system værdier baseret på lydfrekvens og udelader tallet 9, da det blev betragtet som helligt:
 
 *   **1:**A, I, J, Q, Y
 *   **2:**B, K, R
@@ -24,7 +24,7 @@ Det kaldæiske system er en af ​​verdens ældste numerologiske metoder, med 
 Dit navneskema er sammensat af tre vitale tal:
 
 1.**Udtryksnummer (navnenummer):**Beregnet ved hjælp af alle bogstaverne i dit fulde fødselsnavn. Det afslører dine naturlige talenter, styrker og hvordan du udtrykker dit livsformål til verden.
-2.**Soul Urge Number (hjertetrang):**Beregnet ved kun at bruge vokalerne i dit navn. Det afslører dine dybeste indre motivationer, hemmelige længsler og hvad der virkelig tilfredsstiller din sjæl indefra.
+2.**Soul Urge Number (hjertetrang):**Beregnet ved kun at bruge dit navns vokaler. Det afslører dine dybeste indre motivationer, hemmelige længsler og hvad der virkelig tilfredsstiller din sjæl indefra.
 3.**Personlighedsnummer:**Beregnet ved kun at bruge konsonanterne i dit navn. Det afslører, hvordan andre opfatter dig, det umiddelbare indtryk, du gør, og den ydre persona, du præsenterer.
 
 ---
@@ -51,7 +51,7 @@ Dette er ikke en tilfældig rapport genereret af generisk software. Det er et de
 
 ### Hvad venter der i dit personlige 8-siders plan (PDF)?
 
-*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og din sjælstrangs tavse kald.
+*   **Din vibrationssignatur:**Dyb analyse af dit livsstinummer, dit navnenummer (kaldæiske system) og det tavse kald fra din sjælstrang.
 *   **Ægteskabstilpasning og forholdsharmoni:**Forstå dine forholdsmønstre, hvordan dit fødselshoroskop tiltrækker specifikke energier og de traditionelle matematiske nøgler til at opbygge dybe, varige ægteskabelige bånd baseret på kompatibilitet.
 *   **Dine støttende energier:**Traditionel indsigt i farver, ædelstensresonans og dage med tilpasning, der tilskynder til fokus, harmoni og positivitet i dit daglige liv.
 *   **Forstå din nuværende tidscyklus (Vimshottari Dasha):**Udforskning af den traditionelle planetariske periode, du i øjeblikket oplever, og tjener som en gammel ramme for personlig refleksion, tålmodighed og indre timing.

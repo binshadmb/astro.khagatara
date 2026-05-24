@@ -6,7 +6,7 @@ Numerologi mangrupikeun salah sahiji sistem panemuan diri anu paling kuno di dun
 
 ## Naon Nomer Jalur Kahirupan?
 
-Nomer Jalur Kahirupan anjeun mangrupikeun nomer anu paling penting dina bagan numerologi anjeun. Éta diturunkeun tina nomer pasti tanggal lahir anjeun. Jumlah ieu tindakan minangka eunteung spiritual, nembongkeun Tret kapribadian inti anjeun, bakat alam anjeun, sarta palajaran spiritual husus Anjeun milih ngajajah dina hirupna ieu.
+Nomer Jalur Kahirupan anjeun mangrupikeun nomer anu paling penting dina bagan numerologi anjeun. Éta diturunkeun tina nomer pasti tanggal lahir anjeun. Jumlah ieu tindakan salaku eunteung spiritual, nembongkeun Tret kapribadian inti anjeun, bakat alam anjeun, sarta palajaran spiritual husus Anjeun milih ngajajah dina hirupna ieu.
 
 ---
 
@@ -32,11 +32,11 @@ Unggal angka ti 1 nepi ka 9 jeung Nomer Master mawa énergi husus:
 
 *   **1 (Pamimpin):**Mandiri, ambisius, sareng pioneering. Dilahirkeun pikeun ngajalin jalan anyar.
 *   **2 (Sang Tukang Damai):**Intuitif, diplomatik, sabar, sareng kolaborasi pisan.
-*   **3 (Kréatif):**Ekspresif, komunikatif, artistik, sareng alamiah gumbira.
+*   **3 (Kréatif):**Éksprésif, komunikatif, artistik, sareng gumbira alami.
 *   **4 (Pembina):**Disiplin, praktis, stabil, sareng dipercaya pisan.
 *   **5 (Pangumbara):**Berjiwa bébas, serbaguna, panasaran, sareng dinamis.
 *   **6 (Nu Ngasuh):**Tanggung jawab, paduli, pelindung, sareng berorientasi kulawarga.
-*   **7 (Nu Paluruh):**Analitis, jero spiritual, kontemplatif, sareng wijaksana.
+*   **7 (Nu Paluruh):** Analytical, deeply spiritual, contemplative, and wise.
 *   **8 (Pelaksana):**Otoritatif, niatna kuat, ambisius, sareng realistis.
 *   **9 (Kamanusaan):**Welas asih, berehan, henteu pamrih, sareng wijaksana universal.
 *   **11 (Master Intuitif):**Mereun, kacida sénsitip, sarta sadar spiritual.
@@ -49,18 +49,18 @@ Unggal angka ti 1 nepi ka 9 jeung Nomer Master mawa énergi husus:
 
 Sedengkeun Numerologi Kulon (Pythagoras) pohara populér,**Numerologi Védic**(asalna di India kuno) ngahijikeun angka langsung sareng transit bulan astronomi.
 
-Tinimbang ningali angka dina isolasi, pendekatan Védic ngagabungkeun tanggal lahir anjeun sareng Moon Sign anjeun (**Rashi**), Bintang Kalahiran (**Nakshatra**), jeung siklus planet ayeuna (**Dasha**). Ieu nawiskeun pandangan anu langkung lengkep, jero, sareng harmonis tina alignment énergi anjeun.
+Tinimbang ningali angka sacara misah, pendekatan Védic ngagabungkeun tanggal lahir anjeun sareng Moon Sign anjeun (**Rashi**), Bintang Kalahiran (**Nakshatra**), jeung siklus planet ayeuna (**Dasha**). Ieu nawiskeun pandangan anu langkung lengkep, jero, sareng harmonis tina alignment énergi anjeun.
 
 ---
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Ieu lain laporan acak dihasilkeun ku software generik. Éta mangrupikeun peta kosmis anu lengkep sareng ikhlas anu diitung kalayan akurasi matematik ngagunakeun transit bulan astronomi nyata sareng rumus Védic sareng Chaldean karuhun. Tujuan tunggal kami nyaéta pikeun masihan anjeun kajelasan, hormat, sareng alat anu asli pikeun mendakan diri sareng mindfulness.
+Ieu lain laporan acak dihasilkeun ku software generik. Éta mangrupikeun peta kosmik anu lengkep sareng ikhlas anu diitung kalayan akurasi matematik ngagunakeun transit bulan astronomi nyata sareng rumus Védic sareng Chaldean karuhun. Tujuan tunggal kami nyaéta pikeun masihan anjeun kajelasan, hormat, sareng alat anu asli pikeun mendakan diri sareng mindfulness.
 
 ### Naon anu ngantosan di jero blueprint 8 halaman pribadi anjeun (PDF)?
 
 *   **Tanda Geter Anjeun:**Analisis jero ngeunaan Nomer Jalan Kahirupan anjeun, Nomer Ngaran anjeun (sistem Chaldean), sareng panggero jempé tina Pangjurung Jiwa anjeun.
 *   **alignment Nikah & Hubungan Harmoni:**Ngartos pola hubungan anjeun, kumaha bagan kalahiran anjeun narik énergi khusus, sareng konci matematika tradisional pikeun ngawangun beungkeut perkawinan anu jero sareng langgeng dumasar kana kasaluyuan.
 *   **Énergi Ngadukung anjeun:**Wawasan tradisional ngeunaan warna, résonansi batu permata, sareng dinten alignment anu nyorong fokus, harmoni, sareng positip dina kahirupan sapopoe anjeun.
-*   **Ngartos Siklus Waktos Anjeun Ayeuna (Vimshottari Dasha):**Ngajalajah jaman planet tradisional anu ayeuna anjeun alami, janten kerangka kuno pikeun refleksi pribadi, kasabaran, sareng waktos batin.
+*   **Ngartos Siklus Waktos Anjeun Ayeuna (Vimshottari Dasha):**Ngajalajah jaman planét tradisional anu ayeuna anjeun alami, janten kerangka kuno pikeun refleksi pribadi, kasabaran, sareng waktos batin.
 *   **Catetan Refleksi:**Laporan ieu mangrupa ulikan ngeunaan pola matematik, dirancang pikeun ngarojong muhasabah diri jeung tumuwuhna pribadi.

@@ -6,7 +6,7 @@ Vaša astrološka karta je veliko več kot preprost seznam planetov in znamenj. 
 
 ## Kaj je vedska astrološka karta?
 
-Védic astrološka karta, tradicionalno znana kot a**Kundali**oz**rojstni horoskop**, je popoln geometrični zemljevid položajev planetov v trenutku vašega rojstva. Unlike Western horoscopes, Jyotish uses the**stranski zodiak**—dejanski fizični položaji planetov in ozvezdij na današnjem nebu—zaradi česar je zelo natančen.
+Védic astrološka karta, tradicionalno znana kot a**Kundali**oz**rojstni horoskop**, je popoln geometrični zemljevid položajev planetov v trenutku vašega rojstva. Za razliko od zahodnih horoskopov Jyotish uporablja**stranski zodiak**—dejanski fizični položaji planetov in ozvezdij na današnjem nebu—zaradi česar je zelo natančen.
 
 ---
 
@@ -46,7 +46,7 @@ To ni naključno poročilo, ki ga ustvari generična programska oprema. To je po
 
 ### Kaj čaka v vašem osebnem 8-stranskem načrtu (PDF)?
 
-*   **Vaš vibracijski podpis:**Globoka analiza vašega Števila življenjske poti, vašega Imenskega števila (kaldejski sistem) in tihega klica vaše duševne želje.
+*   **Vaš vibracijski podpis:**Globoka analiza vašega števila življenjske poti, vašega števila imena (kaldejski sistem) in tihega klica vašega duševnega nagona.
 *   **Usklajenost zakonske zveze in harmonija odnosov:**Razumevanje vzorcev vaših odnosov, kako vaša rojstna karta privlači specifične energije in tradicionalnih matematičnih ključev za gradnjo globokih, trajnih zakonskih vezi, ki temeljijo na združljivosti.
 *   **Vaše podporne energije:**Tradicionalni vpogled v barve, resonanco dragih kamnov in dneve poravnave, ki spodbujajo osredotočenost, harmonijo in pozitivnost v vašem vsakdanjem življenju.
 *   **Razumevanje vašega trenutnega časovnega cikla (Vimshottari Dasha):**Raziskovanje tradicionalnega planetarnega obdobja, ki ga trenutno doživljate, ki služi kot starodavni okvir za osebno razmišljanje, potrpežljivost in notranji čas.

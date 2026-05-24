@@ -6,7 +6,7 @@ Bagan astrologi sampeyan luwih akeh tinimbang dhaptar planet lan pratandha sing 
 
 ## Apa iku Grafik Astrologi Védic?
 
-Bagan Astrologi Védic, kanthi tradisional dikenal minangka a**Kundali**utawa**bagan lair**, minangka peta geometris sampurna saka posisi planet ing wayahe lair sing tepat. Boten kados horoskop Barat, Jyotish migunakaken**zodiak sidereal**- posisi fisik nyata planet lan rasi lintang ing langit saiki - dadi akurat banget.
+A Védic Astrology Chart, tradisional dikenal minangka a**Kundali**utawa**bagan lair**, minangka peta geometris sampurna saka posisi planet ing wayahe lair sing tepat. Boten kados horoskop Barat, Jyotish migunakaken**zodiak sidereal**- posisi fisik nyata planet lan rasi lintang ing langit saiki - dadi akurat banget.
 
 ---
 
@@ -30,11 +30,11 @@ Ing Jyotish, sangang badan planet makili aspek inti saka kesadaran lan energi ba
 
 Astrologi Kulon nggunakake**zodiak tropis**, sing ditemtokake kanggo mangsa ing taun. Astrologi Védic nggunakake**zodiak sidereal**, sing digantung ing posisi astronomi lintang-lintang sing nyata.
 
-Amarga precesión saka equinoxes, saiki ana bedane kira-kira 23 derajat antarane loro sistem. Pramila Védic Moon Sign utawa Ascendant asring beda karo tandha Kulon sampeyan - nyelarasake langsung karo kasunyatan fisik ing langit wengi.
+Amarga precesión saka equinoxes, saiki ana bedane kira-kira 23 derajat antarane loro sistem. Pramila Védic Moon Sign utawa Ascendant sampeyan asring beda karo tandha Kulon sampeyan - nyelarasake langsung karo kasunyatan fisik ing langit wengi.
 
 ---
 
-## Ngerti Siklus Wektu Energetik Panjenengan
+## Ngerteni Siklus Wektu Energetik Panjenengan
 
 Salah sawijining aspek sing paling penting ing grafik Védic yaiku kemampuan kanggo nggambar siklus energi sajrone wektu. Nggunakake Vimshottari Dasha lan transit planet, kita bisa ngerti periode planet sing saiki mengaruhi pikirane, kesehatan, lan lapangan hubungan, nyedhiyakake pangilon sing apik kanggo kesadaran diri lan urip sing eling.
 
@@ -48,6 +48,6 @@ Iki dudu laporan acak sing digawe dening piranti lunak umum. Iki minangka peta k
 
 *   **Tandha Getaran Panjenengan:**Analisis jero babagan Nomer Path Urip, Nomer Jeneng (sistem Chaldean), lan panggilan bisu saka Jiwa sampeyan.
 *   **Keselarasan Perkawinan & Keselarasan Hubungan:**Ngerteni pola hubungan sampeyan, carane grafik lair sampeyan narik energi tartamtu, lan kunci matematika tradisional kanggo mbangun ikatan perkawinan sing jero lan langgeng adhedhasar kompatibilitas.
-*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positip ing urip saben dina.
-*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah periode planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
+*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positif ing urip saben dina.
+*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah jaman planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
 *   **Cathetan Refleksi:**Laporan iki minangka studi babagan pola matematika, dirancang kanggo ndhukung refleksi diri lan pertumbuhan pribadi.

@@ -1,6 +1,6 @@
 # Tablo Astwoloji gratis: Dekouvri aliyman Sideral ou
 
-Tablo Astwoloji ou a se byen lwen plis pase yon lis senp planèt ak siy. Li se lang matematik nan syèl la ki ekri nan moman egzak la nan nesans ou. Védic Astwoloji (Jyotish), ki soti nan ansyen peyi Zend, ofri youn nan entèpretasyon ki pi astwonomik presi ak espirityèlman pwofon nan mond lan nan kat cosmic sa a.
+Tablo Astwoloji ou a pi plis pase yon lis senp planèt ak siy. Li se lang matematik nan syèl la ekri nan moman egzak la nan nesans ou. Védic Astwoloji (Jyotish), ki soti nan ansyen peyi Zend, ofri youn nan entèpretasyon ki pi astwonomik egzak ak espirityèlman pwofon nan mond lan nan kat cosmic sa a.
 
 ---
 

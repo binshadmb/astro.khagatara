@@ -15,7 +15,7 @@ Jyotish is 'n Sanskrit-woord wat "wetenskap van lig" of "wetenskap van hemelligg
 Die groot wetenskap van Jyotish word in drie kernpilare verdeel:
 
 1.**Ganita (Astronomie en Berekening):**Die wiskundige grondslag. Dit bereken die presiese posisies van die sterre en planete deur die sideriese zodiac te gebruik—die werklike fisiese posisies van die konstellasies in die lug vandag.
-2.**Hora (Natalse Studie):**Die ontleding van die individuele geboortekaart. Dit bestudeer hoe die planetêre belynings by geboorte ooreenstem met 'n individu se karakter, sterkpunte en lewenspad.
+2.**Hora (Natalse Studie):**Die ontleding van die individuele geboortekaart. Dit bestudeer hoe die planetêre belynings by geboorte ooreenstem met 'n individu se karakter, sterk punte en lewenspad.
 3.**Samhita (Alledaagse studie):**Die studie van kollektiewe gebeure, natuurlike patrone en die breë siklusse van menslike beskawings.
 
 ---

@@ -1,6 +1,6 @@
 # Skaičiaus 11 reikšmė: Pagrindinio skaičiaus numerologija
 
-The number 11 is one of the three prestigious Master Numbers in numerology—alongside 22 and 33. In traditional systems, it is never reduced to a single digit because it carries an elevated spiritual and intuitive vibration. Asmenys, kurių gyvenimo kelias yra 11, dažnai laikomi giliais ieškotojais, turinčiais labai unikalų energetinį dažnį šiame gyvenime.
+Skaičius 11 yra vienas iš trijų prestižinių numerologijos pagrindinių skaičių – kartu su 22 ir 33. Tradicinėse sistemose jis niekada nesumažinamas iki vieno skaitmens, nes jis turi aukštesnę dvasinę ir intuityvią vibraciją. Asmenys, kurių gyvenimo kelias yra 11, dažnai laikomi giliais ieškotojais, turinčiais labai unikalų energetinį dažnį šiame gyvenime.
 
 ---
 

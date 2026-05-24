@@ -1,4 +1,4 @@
-# Bagan Lair Gratis: Panjenengan Védic Kundali Online
+# Bagan Lair Gratis: Védic Kundali Online
 
 Bagan lair sampeyan minangka peta langit ing wayahe pas sampeyan lair. Iki minangka gambar saka jagad iki nalika sampeyan teka ing jagad iki. Astrologi Védic, kanthi sejarah luwih saka 5.000 taun, nggunakake bagan iki kanggo mbukak potensial batin, kecenderungan alam, lan siklus kosmik sing mbentuk energi sampeyan.
 
@@ -16,9 +16,9 @@ Zodiak Védic dipérang dadi 12 tandha, saben nduwèni energi unik:
 
 *   **Mesha (Aries):**Pionir, wani, lan semangat.
 *   **Vrishabha (Taurus):**Mantap, sabar, lan tabah banget.
-*   **Mithuna (Gemini):**Penasaran, komunikatif, lan serba guna.
+*   **Mithuna (Gemini):**Penasaran, komunikatif, lan serbaguna.
 *   **Karka (Kanker):**Intuisi, protèktif, lan emosional banget.
-*   **Simha (Leo):**Kreatif, loman, lan wibawa alami.
+*   **Simha (Leo):**Kreatif, loman, lan wibawa alamiah.
 *   **Kanya (Virgo):**Analitis, darmabakti, lan mbiyantu banget.
 *   **Tula (Libra):**Harmonis, adil, lan alamiah diplomatik.
 *   **Vrishchika (Escorpio):**Intens, transformatif, lan fokus banget.
@@ -49,6 +49,6 @@ Iki dudu laporan acak sing digawe dening piranti lunak umum. Iki minangka peta k
 
 *   **Tandha Getaran Panjenengan:**Analisis jero babagan Nomer Path Urip, Nomer Jeneng (sistem Chaldean), lan panggilan bisu saka Jiwa sampeyan.
 *   **Keselarasan Perkawinan & Keselarasan Hubungan:**Ngerteni pola hubungan sampeyan, carane grafik lair sampeyan narik energi tartamtu, lan kunci matematika tradisional kanggo mbangun ikatan perkawinan sing jero lan langgeng adhedhasar kompatibilitas.
-*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positip ing urip saben dina.
-*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah periode planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
+*   **Energi Dhukungan Panjenengan:**Wawasan tradisional babagan warna, resonansi watu permata, lan dina keselarasan sing nyengkuyung fokus, harmoni, lan positif ing urip saben dina.
+*   **Ngerteni Siklus Wektu Saiki (Vimshottari Dasha):**Njelajah jaman planet tradisional sing saiki sampeyan alami, dadi kerangka kuna kanggo refleksi pribadi, sabar, lan wektu batin.
 *   **Cathetan Refleksi:**Laporan iki minangka studi babagan pola matematika, dirancang kanggo ndhukung refleksi diri lan pertumbuhan pribadi.

@@ -1,6 +1,6 @@
 # Brezplačna Védic Astrology: The Light of Jyotish Online
 
-Jyotish – vedska astrologija – je tradicionalno znana kot »znanost o svetlobi«. Z več kot 5000 leti neprekinjene zgodovine je to eden najbolj izpopolnjenih sistemov samorazumevanja, ki ga je razvilo človeštvo. Jyotish ne opisuje samo splošnih osebnostnih lastnosti, temveč raziskuje globoke kozmične vzorce in časovne cikle, ki pomagajo vnesti harmonijo v vaše življenje.
+Jyotish – vedska astrologija – je tradicionalno znana kot »znanost o svetlobi«. Z več kot 5000 leti neprekinjene zgodovine je to eden najbolj izpopolnjenih sistemov samorazumevanja, ki ga je razvilo človeštvo. Namesto da bi le opisoval splošne osebnostne lastnosti, Jyotish raziskuje globoke kozmične vzorce in časovne cikle, ki pomagajo prinesti harmonijo v vaše življenje.
 
 ---
 
@@ -12,7 +12,7 @@ Jyotish je sanskrtska beseda, ki pomeni "znanost o svetlobi" ali "znanost o nebe
 
 ## Tri veje Jyotisha
 
-Obsežna znanost Jyotish je razdeljena na tri osrednje stebre:
+Obsežna znanost o džjotišu je razdeljena na tri osrednje stebre:
 
 1.**Ganita (Astronomija in računanje):**Matematični temelj. Izračuna natančne položaje zvezd in planetov z uporabo stranskega zodiaka – dejanskih fizičnih položajev ozvezdij na današnjem nebu.
 2.**Hora (Natalna študija):**Analiza individualne rojstne karte. Preučuje, kako se planetarne poravnave ob rojstvu ujemajo s posameznikovim značajem, močmi in življenjsko potjo.
@@ -20,7 +20,7 @@ Obsežna znanost Jyotish je razdeljena na tri osrednje stebre:
 
 ---
 
-## 27 Nakšater: Lunarne palače
+## 27 nakšater: Lunarne palače
 
 Nakšatre so 27 lunarnih dvorcev vedske astrologije – ozvezdja, skozi katera potuje Luna v svoji mesečni orbiti. Vaša rojstna nakšatra je eden najbolj vitalnih elementov vaše karte, ki predstavlja naravno kondicioniranje vašega uma:
 
@@ -42,7 +42,7 @@ Nakšatre so 27 lunarnih dvorcev vedske astrologije – ozvezdja, skozi katera p
 Vimshottari Dasha je najbolj zaupanja vreden sistem planetarnih obdobij v Jyotishu. Celoten potencialni človeški življenjski cikel 120 let obravnava kot zaporedje planetarnih obdobij, od katerih vsako upravlja ena od devetih planetarnih energij:
 
 *   **Ketu (7 let):**Duhovna kontemplacija, notranja refleksija in pretekle korenine.
-*   **Venus (20 Years):**Ustvarjalna harmonija, odnosi in uglajenost.
+*   **Venera (20 let):**Ustvarjalna harmonija, odnosi in uglajenost.
 *   **Sonce (6 let):**Notranja moč, osredotočenost, namen in jasnost.
 *   **Luna (10 let):**Čustvena nega, dovzetnost in družinske korenine.
 *   **Mars (7 let):**Vitalna energija, fokus, pogum in akcija.
@@ -59,7 +59,7 @@ To ni naključno poročilo, ki ga ustvari generična programska oprema. To je po
 
 ### Kaj čaka v vašem osebnem 8-stranskem načrtu (PDF)?
 
-*   **Vaš vibracijski podpis:**Globoka analiza vašega Števila življenjske poti, vašega Imenskega števila (kaldejski sistem) in tihega klica vaše duševne želje.
+*   **Vaš vibracijski podpis:**Globoka analiza vašega števila življenjske poti, vašega števila imena (kaldejski sistem) in tihega klica vašega duševnega nagona.
 *   **Usklajenost zakonske zveze in harmonija odnosov:**Razumevanje vzorcev vaših odnosov, kako vaša rojstna karta privlači specifične energije in tradicionalnih matematičnih ključev za gradnjo globokih, trajnih zakonskih vezi, ki temeljijo na združljivosti.
 *   **Vaše podporne energije:**Tradicionalni vpogled v barve, resonanco dragih kamnov in dneve poravnave, ki spodbujajo osredotočenost, harmonijo in pozitivnost v vašem vsakdanjem življenju.
 *   **Razumevanje vašega trenutnega časovnega cikla (Vimshottari Dasha):**Raziskovanje tradicionalnega planetarnega obdobja, ki ga trenutno doživljate, ki služi kot starodavni okvir za osebno razmišljanje, potrpežljivost in notranji čas.

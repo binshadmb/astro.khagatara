@@ -18,7 +18,7 @@ D'Nummer 11 ënnerscheet sech duerch verschidde eenzegaarteg Qualitéiten:
 *   **Déift Sensibilitéit:**Eng empathesch Fäegkeet fir ronderëm Energien an Emotiounen déif ze fillen.
 *   **Inspirational Qualitéit:**Eng natierlech Kapazitéit fir ze inspiréieren, z'erhéijen an d'Visioun mat aneren ze deelen.
 *   **Innen Dualismus:**Gläichgewiicht tëscht aktive Fuert (1) an empfänglech Gedold (2), schaaft e schéine Motor fir banneschten Wuesstem.
-*   **Méi héich Zweck:**Eng roueg Fuert fir gezielt ze liewen, Ausrichtung a Selbstbewosstsinn an all Bestriewen ze sichen.
+*   **Méi héich Zweck:**E stille Drive fir gezielt ze liewen, Ausrichtung a Selbstbewosstsinn an all Bestriewen ze sichen.
 *   **Energetesch Sensibilitéit:**Eng héich aktiv nervös a geeschteg Energie déi gegrënnte Fokus a Bewosstsinn erfuerdert.
 
 ---
@@ -31,7 +31,7 @@ A Relatiounen, déi mat der Nummer 11 sichen authentesch, déif, an oprecht Verb
 
 ## Nummer 11 am Daily Focus & Alignment
 
-Eenzelpersoune mat der Nummer 11 gedeeft an Ëmfeld, déi et hinnen erlaben hir intuitiv Perceptioun a kreativ Visioun ze benotzen. Si excel a Felder am Zesummenhang mat Konscht, Musek, Schreiwen, perséinlech Leedung, Psychologie, a Berodung. Si sinn héich encouragéiert fir alldeeglech Routine ze bauen déi Fokus a mental Rou ënnerstëtzen, héich repetitive, mechanesch Aufgaben ze vermeiden déi net mat hirem banneschten Drive ausriichten.
+Eenzelpersoune mat der Nummer 11 gedeeft an Ëmfeld, déi hinnen erlaben hir intuitiv Perceptioun a kreativ Visioun ze benotzen. Si excel a Felder am Zesummenhang mat Konscht, Musek, Schreiwen, perséinlech Leedung, Psychologie, a Berodung. Si sinn héich encouragéiert fir alldeeglech Routine ze bauen déi Fokus a mental Rou ënnerstëtzen, héich repetitive, mechanesch Aufgaben ze vermeiden déi net mat hirem banneschten Drive ausriichten.
 
 ---
 
@@ -47,12 +47,12 @@ Déi dräi Masternummeren representéieren ënnerschiddlech spirituell Frequenze
 
 ## Un Espejo de tu Alma: The Personalized Cosmic Blueprint
 
-Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomeschen Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
+Dëst ass keen zoufälleg Bericht generéiert vu generesche Software. Et ass eng detailléiert, oprecht kosmesch Kaart berechent mat mathematescher Präzisioun mat realen astronomesche Moundtransit an Vorfahren Védic a Chaldean Formelen. Eisen eenzegen Zweck ass Iech Kloerheet, Respekt an e richtegt Tool fir Selbstentdeckung a Bewosstsinn ze bidden.
 
 ### Wat waart an Ärem perséinlechen 8-Säit Blueprint (PDF)?
 
 *   **Är Vibratiounssignatur:**Déif Analyse vun Ärem Liewenswee Nummer, Ärem Nummnummer (Chaldean System), an de rouege Ruff vun Ärem Soul Urge.
 *   **Bestietnes Ausrichtung & Relatioun Harmonie:**Verstinn Är Relatiounsmuster, wéi Är Gebuertsdiagramm spezifesch Energien unzitt, an déi traditionell mathematesch Schlëssele fir déif, dauerhaft Bestietnesbindungen op Basis vu Kompatibilitéit ze bauen.
 *   **Är Ënnerstëtzend Energien:**Traditionell Abléck iwwer Faarwen, Edelsteen Resonanz, an Deeg vun der Ausrichtung déi Fokus, Harmonie a Positivitéit an Ärem Alldag encouragéieren.
-*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, als antike Kader fir perséinlech Reflexioun, Gedold an banneschten Timing déngt.
+*   **Ären aktuellen Zäitzyklus verstoen (Vimshottari Dasha):**Entdeckt déi traditionell planetaresch Period déi Dir am Moment erliewt, déngt als en antike Kader fir perséinlech Reflexioun, Gedold an bannenzegen Timing.
 *   **Notiz vun der Reflexioun:**Dëse Bericht ass eng Etude vu mathematesche Mustere, entwéckelt fir Selbstreflektioun a perséinleche Wuesstum z'ënnerstëtzen.
