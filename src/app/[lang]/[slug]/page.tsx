@@ -184,14 +184,36 @@ export default async function UniversalPage({ params }: PageProps) {
   const direction = langConfig ? langConfig[2] : 'ltr'
 
   // Localized section headers
-  const popularReadingsTitle = lang === 'es' ? 'Lecturas Gratuitas Populares' : 'Popular Free Readings'
-  const readInYourLanguageTitle = lang === 'es' ? 'Leer en tu Idioma' : 'Read in Your Language'
+  const popularReadingsTitle: Record<string, string> = {
+    es:'Lecturas Populares', pt:'Leituras Populares', fr:'Lectures Populaires',
+    it:'Letture Popolari', de:'Beliebte Lesungen', hi:'लोकप्रिय पाठ',
+    ar:'قراءات شائعة', 'zh-cn':'热门阅读', 'zh-tw':'熱門閱讀', ja:'人気の読み物',
+    ru:'Популярные чтения', ko:'인기 독서', tr:'Popüler Okumalar',
+    id:'Bacaan Populer', bn:'জনপ্রিয় পাঠ'
+  }
+  const readInYourLanguageTitle: Record<string, string> = {
+    es:'Lee en tu Idioma', pt:'Leia no seu Idioma', fr:'Lisez dans votre Langue',
+    it:'Leggi nella tua Lingua', de:'In deiner Sprache lesen', hi:'अपनी भाषा में पढ़ें',
+    ar:'اقرأ بلغتك', 'zh-cn':'用你的语言阅读', 'zh-tw':'用你的語言閱讀', ja:'あなたの言語で読む',
+    ru:'Читайте на своём языке', ko:'당신의 언어로 읽기', tr:'Dilinizde okuyun',
+    id:'Baca dalam Bahasa Anda', bn:'আপনার ভাষায় পড়ুন'
+  }
 
   return (
     <main className="page" dir={direction}>
-      <div className="header">
-        <h1>Khagatara</h1>
-        <p style={{fontSize: '1rem', opacity: 0.85}}>{langName}</p>
+      <div className="header" style={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'1rem 2rem', borderBottom:'0.5px solid var(--border)'}}>
+        <div>
+          <h1>Khagatara</h1>
+          <p style={{fontSize:'0.85rem', opacity:0.7}}>{langName}</p>
+        </div>
+        <div style={{display:'flex', gap:'0.5rem'}}>
+          <Link href="/en/free-numerology-reading" style={{fontSize:'0.68rem', letterSpacing:'0.1em', textTransform:'uppercase', color:'var(--text-low)', border:'0.5px solid var(--border2)', borderRadius:'20px', padding:'0.4rem 1rem'}}>
+            EN
+          </Link>
+          <Link href="/" style={{fontSize:'0.68rem', letterSpacing:'0.1em', textTransform:'uppercase', color:'var(--text-low)', border:'0.5px solid var(--border2)', borderRadius:'20px', padding:'0.4rem 1rem'}}>
+            ← Home
+          </Link>
+        </div>
       </div>
 
       {/* localized Client-Side Calculator Component */}
@@ -210,7 +232,7 @@ export default async function UniversalPage({ params }: PageProps) {
       {/* Dynamic SEO Internal Links: All 7 Topics Localized */}
       <FadeIn>
       <div className="card link-card">
-        <h2>{popularReadingsTitle}</h2>
+        <h2>{popularReadingsTitle[lang] ?? 'Popular Free Readings'}</h2>
         <div className="internal-links" style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem'}}>
           {TOPIC_DEFS.map(t => {
             const path = topicPath(t.key, lang)
@@ -228,7 +250,7 @@ export default async function UniversalPage({ params }: PageProps) {
       {/* Dynamic SEO Language Links: Major Global Clusters */}
       <FadeIn>
       <div className="card link-card">
-        <h2>{readInYourLanguageTitle}</h2>
+        <h2>{readInYourLanguageTitle[lang] ?? 'Read in Your Language'}</h2>
         <div className="internal-links language-links" style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem'}}>
           {LANGUAGE_CONFIG.slice(0, 15).map(([code, name]) => {
             const path = topicPath(data.topicKey, code)

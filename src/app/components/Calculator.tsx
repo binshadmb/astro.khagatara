@@ -19,178 +19,122 @@ const CALC_LOCALIZATION: Record<string, Record<string, string>> = {
   en: {
     placeholderName: 'Enter your full name',
     placeholderDob: 'Select your birth date',
-    btnCalculate: 'Calculate My Path',
-    btnCalculating: 'Calculating...',
-    gridLifePath: 'Life Path',
-    gridNameNumber: 'Name Number',
-    gridSoulUrge: 'Soul Urge',
-    gridPersonality: 'Personality',
-    titleVedic: '✦ Vedic Reading',
-    labelMoonSign: 'Moon Sign',
-    labelBirthStar: 'Birth Star',
-    labelCurrentDasha: 'Current Dasha',
-    labelPada: 'Pada',
-    labelYears: 'yrs',
+    placeholderPlace: 'Place of birth (e.g. Thrissur, India)',
+    labelTimeUnknown: "I don't know my exact birth time",
+    genderMale: 'Male', genderFemale: 'Female', genderOther: 'Prefer not to say',
+    disclaimerText: 'Some readings may be approximate due to missing birth details. For accurate Nakshatra, Pada, Lagna, and Dasha calculations, exact birth time and birthplace are recommended.',
+    btnCalculate: 'Calculate My Path', btnCalculating: 'Calculating...',
+    gridLifePath: 'Life Path', gridNameNumber: 'Name Number', gridSoulUrge: 'Soul Urge', gridPersonality: 'Personality',
+    titleVedic: '✦ Vedic Reading', labelMoonSign: 'Moon Sign', labelBirthStar: 'Birth Star', labelCurrentDasha: 'Current Dasha', labelPada: 'Pada', labelYears: 'yrs',
     premiumText: 'Your full Vedic report includes complete relationship compatibility, supportive planetary energies, detailed time cycle (Dasha) analysis, and your complete personal soul blueprint PDF.',
-    btnReport: 'Get Full Report — €2.99',
-    btnLoading: 'Loading...',
+    btnReport: 'Get Full Report — €2.99', btnLoading: 'Loading...',
     paymentNote: 'Instant PDF download • Secure payment',
-    errorText: 'Something went wrong. Please try again.',
-    errorPayment: 'Payment failed. Please try again.'
+    errorText: 'Something went wrong. Please try again.', errorPayment: 'Payment failed. Please try again.'
   },
   es: {
     placeholderName: 'Ingresa tu nombre completo',
     placeholderDob: 'Selecciona tu fecha de nacimiento',
-    btnCalculate: 'Calcular Mi Camino',
-    btnCalculating: 'Calculando...',
-    gridLifePath: 'Camino de Vida',
-    gridNameNumber: 'Número del Nombre',
-    gridSoulUrge: 'Impulso del Alma',
-    gridPersonality: 'Personalidad',
-    titleVedic: '✦ Lectura Védica',
-    labelMoonSign: 'Signo Lunar',
-    labelBirthStar: 'Estrella Natal',
-    labelCurrentDasha: 'Ciclo Actual (Dasha)',
-    labelPada: 'Pada',
-    labelYears: 'años',
-    premiumText: 'Tu informe védico completo incluye compatibilidad de relaciones, energías planetarias de armonización, análisis detallado del ciclo de tiempo (Dasha) y tu PDF completo del mapa del alma.',
-    btnReport: 'Obtener Informe Completo — €2.99',
-    btnLoading: 'Cargando...',
+    placeholderPlace: 'Lugar de nacimiento (ej. Madrid, España)',
+    labelTimeUnknown: 'No sé mi hora exacta de nacimiento',
+    genderMale: 'Masculino', genderFemale: 'Femenino', genderOther: 'Prefiero no decirlo',
+    disclaimerText: 'Algunas lecturas pueden ser aproximadas. Para cálculos precisos de Nakshatra, Pada, Lagna y Dasha, se recomienda la hora y lugar exactos de nacimiento.',
+    btnCalculate: 'Calcular Mi Camino', btnCalculating: 'Calculando...',
+    gridLifePath: 'Camino de Vida', gridNameNumber: 'Número del Nombre', gridSoulUrge: 'Impulso del Alma', gridPersonality: 'Personalidad',
+    titleVedic: '✦ Lectura Védica', labelMoonSign: 'Signo Lunar', labelBirthStar: 'Estrella Natal', labelCurrentDasha: 'Ciclo Actual (Dasha)', labelPada: 'Pada', labelYears: 'años',
+    premiumText: 'Tu informe védico completo incluye compatibilidad de relaciones, energías planetarias, análisis detallado del ciclo de tiempo (Dasha) y tu PDF del mapa del alma.',
+    btnReport: 'Obtener Informe Completo — €2.99', btnLoading: 'Cargando...',
     paymentNote: 'Descarga PDF instantánea • Pago seguro',
-    errorText: 'Algo salió mal. Por favor intenta de nuevo.',
-    errorPayment: 'El pago falló. Por favor intenta de nuevo.'
+    errorText: 'Algo salió mal. Por favor intenta de nuevo.', errorPayment: 'El pago falló. Por favor intenta de nuevo.'
   },
   pt: {
     placeholderName: 'Insira seu nome completo',
     placeholderDob: 'Selecione sua data de nascimento',
-    btnCalculate: 'Calcular Meu Caminho',
-    btnCalculating: 'Calculando...',
-    gridLifePath: 'Caminho de Vida',
-    gridNameNumber: 'Número do Nome',
-    gridSoulUrge: 'Desejo da Alma',
-    gridPersonality: 'Personalidade',
-    titleVedic: '✦ Leitura Védica',
-    labelMoonSign: 'Signo Lunar',
-    labelBirthStar: 'Estrela de Nascimento',
-    labelCurrentDasha: 'Ciclo Atual (Dasha)',
-    labelPada: 'Pada',
-    labelYears: 'anos',
-    premiumText: 'Seu relatório védico completo inclui compatibilidade de relacionamento, energias planetárias de suporte, análise detalhada do ciclo de tempo (Dasha) e o PDF do seu mapa da alma.',
-    btnReport: 'Obter Relatório Completo — €2.99',
-    btnLoading: 'Carregando...',
+    placeholderPlace: 'Local de nascimento (ex. Lisboa, Portugal)',
+    labelTimeUnknown: 'Não sei meu horário exato de nascimento',
+    genderMale: 'Masculino', genderFemale: 'Feminino', genderOther: 'Prefiro não dizer',
+    disclaimerText: 'Algumas leituras podem ser aproximadas. Para cálculos precisos de Nakshatra, Pada, Lagna e Dasha, recomenda-se hora e local exatos de nascimento.',
+    btnCalculate: 'Calcular Meu Caminho', btnCalculating: 'Calculando...',
+    gridLifePath: 'Caminho de Vida', gridNameNumber: 'Número do Nome', gridSoulUrge: 'Desejo da Alma', gridPersonality: 'Personalidade',
+    titleVedic: '✦ Leitura Védica', labelMoonSign: 'Signo Lunar', labelBirthStar: 'Estrela de Nascimento', labelCurrentDasha: 'Ciclo Atual (Dasha)', labelPada: 'Pada', labelYears: 'anos',
+    premiumText: 'Seu relatório védico completo inclui compatibilidade de relacionamento, energias planetárias, análise detalhada do ciclo de tempo (Dasha) e o PDF do seu mapa da alma.',
+    btnReport: 'Obter Relatório Completo — €2.99', btnLoading: 'Carregando...',
     paymentNote: 'Download instantâneo em PDF • Pagamento seguro',
-    errorText: 'Algo deu errado. Por favor, tente novamente.',
-    errorPayment: 'Falha no pagamento. Por favor, tente novamente.'
+    errorText: 'Algo deu errado. Por favor, tente novamente.', errorPayment: 'Falha no pagamento. Por favor, tente novamente.'
   },
   fr: {
     placeholderName: 'Entrez votre nom complet',
     placeholderDob: 'Sélectionnez votre date de naissance',
-    btnCalculate: 'Calculer Mon Chemin',
-    btnCalculating: 'Calcul en cours...',
-    gridLifePath: 'Chemin de Vie',
-    gridNameNumber: 'Nombre du Nom',
-    gridSoulUrge: 'Désir de l\'Âme',
-    gridPersonality: 'Personnalité',
-    titleVedic: '✦ Lecture Védique',
-    labelMoonSign: 'Signe Lunaire',
-    labelBirthStar: 'Étoile de Naissance',
-    labelCurrentDasha: 'Cycle Actuel (Dasha)',
-    labelPada: 'Pada',
-    labelYears: 'ans',
-    premiumText: 'Votre rapport védique complet comprend la compatibilité relationnelle, les énergies planétaires de soutien, l\'analyse détaillée du cycle temporel (Dasha) et votre PDF du plan de l\'âme.',
-    btnReport: 'Obtenir le Rapport Complet — 2,99 €',
-    btnLoading: 'Chargement...',
+    placeholderPlace: 'Lieu de naissance (ex. Paris, France)',
+    labelTimeUnknown: "Je ne connais pas mon heure exacte de naissance",
+    genderMale: 'Homme', genderFemale: 'Femme', genderOther: 'Préfère ne pas dire',
+    disclaimerText: "Certaines lectures peuvent être approximatives. Pour des calculs précis de Nakshatra, Pada, Lagna et Dasha, l'heure et le lieu exacts de naissance sont recommandés.",
+    btnCalculate: 'Calculer Mon Chemin', btnCalculating: 'Calcul en cours...',
+    gridLifePath: 'Chemin de Vie', gridNameNumber: 'Nombre du Nom', gridSoulUrge: "Désir de l'Âme", gridPersonality: 'Personnalité',
+    titleVedic: '✦ Lecture Védique', labelMoonSign: 'Signe Lunaire', labelBirthStar: 'Étoile de Naissance', labelCurrentDasha: 'Cycle Actuel (Dasha)', labelPada: 'Pada', labelYears: 'ans',
+    premiumText: "Votre rapport védique complet comprend la compatibilité relationnelle, les énergies planétaires, l'analyse du cycle temporel (Dasha) et votre PDF du plan de l'âme.",
+    btnReport: 'Obtenir le Rapport Complet — 2,99 €', btnLoading: 'Chargement...',
     paymentNote: 'Téléchargement PDF instantané • Paiement sécurisé',
-    errorText: 'Une erreur est survenue. Veuillez réessayer.',
-    errorPayment: 'Échec du paiement. Veuillez réessayer.'
+    errorText: 'Une erreur est survenue. Veuillez réessayer.', errorPayment: 'Échec du paiement. Veuillez réessayer.'
   },
   it: {
     placeholderName: 'Inserisci il tuo nome completo',
     placeholderDob: 'Seleziona la tua data di nascita',
-    btnCalculate: 'Calcola il Mio Cammino',
-    btnCalculating: 'Calcolo in corso...',
-    gridLifePath: 'Cammino di Vita',
-    gridNameNumber: 'Numero del Nome',
-    gridSoulUrge: 'Desiderio dell\'Anima',
-    gridPersonality: 'Personalità',
-    titleVedic: '✦ Lettura Vedica',
-    labelMoonSign: 'Segno Lunare',
-    labelBirthStar: 'Stella di Nascita',
-    labelCurrentDasha: 'Ciclo Attuale (Dasha)',
-    labelPada: 'Pada',
-    labelYears: 'anni',
-    premiumText: 'Il tuo rapporto vedico completo include compatibilità relazionale, energie planetarie di supporto, analisi dettagliata del ciclo temporale (Dasha) e il PDF della tua mappa dell\'anima.',
-    btnReport: 'Ottieni il Rapporto Completo — €2.99',
-    btnLoading: 'Caricamento...',
+    placeholderPlace: 'Luogo di nascita (es. Roma, Italia)',
+    labelTimeUnknown: 'Non conosco la mia ora esatta di nascita',
+    genderMale: 'Maschio', genderFemale: 'Femmina', genderOther: 'Preferisco non dirlo',
+    disclaimerText: 'Alcune letture potrebbero essere approssimative. Per calcoli precisi di Nakshatra, Pada, Lagna e Dasha, si consiglia ora e luogo esatti di nascita.',
+    btnCalculate: 'Calcola il Mio Cammino', btnCalculating: 'Calcolo in corso...',
+    gridLifePath: 'Cammino di Vita', gridNameNumber: 'Numero del Nome', gridSoulUrge: "Desiderio dell'Anima", gridPersonality: 'Personalità',
+    titleVedic: '✦ Lettura Vedica', labelMoonSign: 'Segno Lunare', labelBirthStar: 'Stella di Nascita', labelCurrentDasha: 'Ciclo Attuale (Dasha)', labelPada: 'Pada', labelYears: 'anni',
+    premiumText: "Il tuo rapporto vedico completo include compatibilità relazionale, energie planetarie, analisi del ciclo temporale (Dasha) e il PDF della tua mappa dell'anima.",
+    btnReport: 'Ottieni il Rapporto Completo — €2.99', btnLoading: 'Caricamento...',
     paymentNote: 'Download istantaneo in PDF • Pagamento sicuro',
-    errorText: 'Qualcosa è andato storto. Riprova.',
-    errorPayment: 'Pagamento fallito. Riprova.'
+    errorText: 'Qualcosa è andato storto. Riprova.', errorPayment: 'Pagamento fallito. Riprova.'
   },
   de: {
     placeholderName: 'Geben Sie Ihren vollständigen Namen ein',
     placeholderDob: 'Wählen Sie Ihr Geburtsdatum',
-    btnCalculate: 'Meinen Weg Berechnen',
-    btnCalculating: 'Berechnung läuft...',
-    gridLifePath: 'Lebenszahl',
-    gridNameNumber: 'Namenszahl',
-    gridSoulUrge: 'Seelenimpuls',
-    gridPersonality: 'Persönlichkeit',
-    titleVedic: '✦ Vedische Lesung',
-    labelMoonSign: 'Mondzeichen',
-    labelBirthStar: 'Geburtsstern',
-    labelCurrentDasha: 'Aktueller Dasha-Zyklus',
-    labelPada: 'Pada',
-    labelYears: 'Jahre',
-    premiumText: 'Ihr vollständiger vedischer Bericht enthält Beziehungsanalyse, unterstützende Planetenenergien, detaillierte Dasha-Zeitzyklus-Analyse und Ihr persönliches Seelen-Blueprint-PDF.',
-    btnReport: 'Vollständigen Bericht anfordern — 2,99 €',
-    btnLoading: 'Laden...',
+    placeholderPlace: 'Geburtsort (z.B. Berlin, Deutschland)',
+    labelTimeUnknown: 'Ich kenne meine genaue Geburtszeit nicht',
+    genderMale: 'Männlich', genderFemale: 'Weiblich', genderOther: 'Keine Angabe',
+    disclaimerText: 'Einige Lesungen können ungefähr sein. Für genaue Nakshatra-, Pada-, Lagna- und Dasha-Berechnungen werden genaue Geburtszeit und -ort empfohlen.',
+    btnCalculate: 'Meinen Weg Berechnen', btnCalculating: 'Berechnung läuft...',
+    gridLifePath: 'Lebenszahl', gridNameNumber: 'Namenszahl', gridSoulUrge: 'Seelenimpuls', gridPersonality: 'Persönlichkeit',
+    titleVedic: '✦ Vedische Lesung', labelMoonSign: 'Mondzeichen', labelBirthStar: 'Geburtsstern', labelCurrentDasha: 'Aktueller Dasha-Zyklus', labelPada: 'Pada', labelYears: 'Jahre',
+    premiumText: 'Ihr vollständiger vedischer Bericht enthält Beziehungsanalyse, Planetenenergien, detaillierte Dasha-Analyse und Ihr persönliches Seelen-Blueprint-PDF.',
+    btnReport: 'Vollständigen Bericht anfordern — 2,99 €', btnLoading: 'Laden...',
     paymentNote: 'Sofortiger PDF-Download • Sichere Zahlung',
-    errorText: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
-    errorPayment: 'Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.'
+    errorText: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.', errorPayment: 'Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.'
   },
   hi: {
     placeholderName: 'अपना पूरा नाम दर्ज करें',
     placeholderDob: 'अपनी जन्म तिथि चुनें',
-    btnCalculate: 'मेरा पथ खोजें',
-    btnCalculating: 'गणना हो रही है...',
-    gridLifePath: 'जीवन पथ',
-    gridNameNumber: 'नाम अंक',
-    gridSoulUrge: 'आत्मा इच्छा',
-    gridPersonality: 'व्यक्तित्व',
-    titleVedic: '✦ वैदिक पठन',
-    labelMoonSign: 'चंद्र राशि',
-    labelBirthStar: 'जन्म नक्षत्र',
-    labelCurrentDasha: 'वर्तमान महादशा',
-    labelPada: 'पाद',
-    labelYears: 'वर्ष',
-    premiumText: 'आपकी संपूर्ण वैदिक रिपोर्ट में संबंध अनुकूलता, सहायक सकारात्मक ऊर्जाएं, विस्तृत समय चक्र (दशा) विश्लेषण और आपकी व्यक्तिगत आत्मा का ब्लूप्रिंट PDF शामिल है।',
-    btnReport: 'पूर्ण रिपोर्ट प्राप्त करें — €2.99',
-    btnLoading: 'लोड हो रहा है...',
+    placeholderPlace: 'जन्म स्थान (जैसे मुंबई, भारत)',
+    labelTimeUnknown: 'मुझे अपना सटीक जन्म समय नहीं पता',
+    genderMale: 'पुरुष', genderFemale: 'महिला', genderOther: 'बताना नहीं चाहता',
+    disclaimerText: 'कुछ पठन अनुमानित हो सकते हैं। सटीक नक्षत्र, पाद, लग्न और दशा गणना के लिए सटीक जन्म समय और स्थान आवश्यक है।',
+    btnCalculate: 'मेरा पथ खोजें', btnCalculating: 'गणना हो रही है...',
+    gridLifePath: 'जीवन पथ', gridNameNumber: 'नाम अंक', gridSoulUrge: 'आत्मा इच्छा', gridPersonality: 'व्यक्तित्व',
+    titleVedic: '✦ वैदिक पठन', labelMoonSign: 'चंद्र राशि', labelBirthStar: 'जन्म नक्षत्र', labelCurrentDasha: 'वर्तमान महादशा', labelPada: 'पाद', labelYears: 'वर्ष',
+    premiumText: 'आपकी संपूर्ण वैदिक रिपोर्ट में संबंध अनुकूलता, सहायक ऊर्जाएं, विस्तृत दशा विश्लेषण और आत्मा का ब्लूप्रिंट PDF शामिल है।',
+    btnReport: 'पूर्ण रिपोर्ट प्राप्त करें — €2.99', btnLoading: 'लोड हो रहा है...',
     paymentNote: 'तत्काल PDF डाउनलोड • सुरक्षित भुगतान',
-    errorText: 'कुछ गलत हो गया। कृपया पुनः प्रयास करें।',
-    errorPayment: 'भुगतान विफल रहा। कृपया पुनः प्रयास करें।'
+    errorText: 'कुछ गलत हो गया। कृपया पुनः प्रयास करें।', errorPayment: 'भुगतान विफल रहा। कृपया पुनः प्रयास करें।'
   },
   ar: {
     placeholderName: 'أدخل اسمك الكامل',
     placeholderDob: 'اختر تاريخ ميلادك',
-    btnCalculate: 'احسب مسار حياتي',
-    btnCalculating: 'جاري الحساب...',
-    gridLifePath: 'مسار الحياة',
-    gridNameNumber: 'رقم الاسم',
-    gridSoulUrge: 'رغبة الروح',
-    gridPersonality: 'الشخصية',
-    titleVedic: '✦ القراءة الفيدية',
-    labelMoonSign: 'البرج القمري',
-    labelBirthStar: 'نجم الميلاد',
-    labelCurrentDasha: 'دورة الوقت الحالية (داشا)',
-    labelPada: 'بادا',
-    labelYears: 'سنوات',
-    premiumText: 'يتضمن تقريرك الفيدي الكامل توافق العلاقات، الطاقات الكوكبية الداعمة، تحليل مفصل لدورة الوقت (داشا)، وكتيب PDF الكامل لمخطط روحك.',
-    btnReport: 'احصل على التقرير الكامل — 2.99 €',
-    btnLoading: 'جاري التحميل...',
+    placeholderPlace: 'مكان الميلاد (مثال: القاهرة، مصر)',
+    labelTimeUnknown: 'لا أعرف وقت ميلادي بالضبط',
+    genderMale: 'ذكر', genderFemale: 'أنثى', genderOther: 'أفضل عدم الإفصاح',
+    disclaimerText: 'قد تكون بعض القراءات تقريبية. للحصول على حسابات دقيقة للنكشاترا والباداا واللاجنا والداشا، يُوصى بمعرفة وقت ومكان الميلاد بدقة.',
+    btnCalculate: 'احسب مسار حياتي', btnCalculating: 'جاري الحساب...',
+    gridLifePath: 'مسار الحياة', gridNameNumber: 'رقم الاسم', gridSoulUrge: 'رغبة الروح', gridPersonality: 'الشخصية',
+    titleVedic: '✦ القراءة الفيدية', labelMoonSign: 'البرج القمري', labelBirthStar: 'نجم الميلاد', labelCurrentDasha: 'دورة الوقت الحالية (داشا)', labelPada: 'بادا', labelYears: 'سنوات',
+    premiumText: 'يتضمن تقريرك الفيدي الكامل توافق العلاقات، الطاقات الكوكبية، تحليل مفصل لدورة الوقت (داشا)، وكتيب PDF لمخطط روحك.',
+    btnReport: 'احصل على التقرير الكامل — 2.99 €', btnLoading: 'جاري التحميل...',
     paymentNote: 'تحميل PDF فوري • دفع آمن',
-    errorText: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.',
-    errorPayment: 'فشل الدفع. يرجى المحاولة مرة أخرى.'
+    errorText: 'حدث خطأ ما. يرجى المحاولة مرة أخرى.', errorPayment: 'فشل الدفع. يرجى المحاولة مرة أخرى.'
   }
 }
 
@@ -286,7 +230,7 @@ export default function Calculator({ lang }: CalculatorProps) {
         <div className="form-group">
           <input
             type="text"
-            placeholder="Place of birth (e.g. Thrissur, India)"
+            placeholder={t.placeholderPlace}
             value={birthPlace}
             onChange={e => setBirthPlace(e.target.value)}
           />
@@ -321,12 +265,12 @@ export default function Calculator({ lang }: CalculatorProps) {
               onChange={e => setTimeUnknown(e.target.checked)}
               style={{accentColor:'var(--accent)'}}
             />
-            I don&apos;t know my exact birth time
+            {t.labelTimeUnknown}
           </label>
         </div>
         <div className="form-group">
           <div style={{display:'flex', gap:'16px', flexWrap:'wrap'}}>
-            {[['male','Male'],['female','Female'],['prefer_not','Prefer not to say']].map(([val, label]) => (
+            {([['male', t.genderMale],['female', t.genderFemale],['prefer_not', t.genderOther]] as [string,string][]).map(([val, label]) => (
               <label key={val} style={{display:'flex', alignItems:'center', gap:'6px', cursor:'pointer', fontSize:'0.82rem', color: gender === val ? 'var(--accent)' : 'var(--text-low)'}}>
                 <input
                   type="radio"
@@ -348,7 +292,7 @@ export default function Calculator({ lang }: CalculatorProps) {
             borderRadius:'8px', padding:'12px 14px', marginBottom:'12px',
             fontSize:'0.72rem', color:'var(--text-mid)', lineHeight:'1.6'
           }}>
-            ⚠️ Some readings may be approximate due to missing birth details. For accurate Nakshatra, Pada, Lagna, and Dasha calculations, exact birth time and birthplace are recommended.
+            ⚠️ {t.disclaimerText}
           </div>
         )}
 
