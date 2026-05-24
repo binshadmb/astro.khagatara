@@ -361,3 +361,14 @@ export const TOPIC_DEFS: TopicDef[] = [
     },
   },
 ]
+
+// ─── Convenience map: topic key → { langCode → slug } ────────────────────────
+// Derived from TOPIC_DEFS so there's a single source of truth.
+export const TOPIC_SLUGS: Record<string, Record<string, string>> = Object.fromEntries(
+  TOPIC_DEFS.map(({ key, defaultSlug, slugs }) => [
+    key,
+    Object.fromEntries(
+      LANGUAGE_CONFIG.map(([code]) => [code, slugs[code] ?? defaultSlug])
+    ),
+  ])
+)
