@@ -1,268 +1,408 @@
-import fs from 'fs'
-import path from 'path'
+'use client'
+
 import Link from 'next/link'
-import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
-import { 
-  TOPIC_DEFS, 
-  LANGUAGE_CONFIG, 
-  topicPath, 
-  getTopicMeta, 
-  pageAlternates, 
-  type TopicKey, 
-  type LangCode 
-} from '../../seo'
-import Calculator from '../../components/Calculator'
-import BookPromo from '../../components/BookPromo'
-import FadeIn from '../../components/FadeIn'
+import { useState, useEffect } from 'react'
+import { LANGUAGE_CONFIG, TOPIC_SLUGS } from './seo-config'
+import { CALC_LOCALIZATION } from './calculator-localization'
 
-interface PageProps {
-  params: Promise<{
-    lang: string
-    slug: string
-  }>
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+interface Result {
+  life_path: number
+  name_number: number
+  soul_urge: number
+  personality: number
+  meaning: string
+  rashi: string
+  nakshatra: string
+  nakshatra_pada: number
+  dasha_lord: string
+  dasha_years: number
 }
 
-// ─── Resolve topic and load markdown content ──────────────────────────────────
-function getPageData(lang: string, slug: string) {
-  // Find which topic matches the given localized slug in the given language
-  const topic = TOPIC_DEFS.find(t => {
-    const localizedSlug = t.slugs[lang] ?? t.defaultSlug
-    return localizedSlug === slug
-  })
-
-  if (!topic) return null
-
-  // Resolve content file path: fall back to master English if translation is missing
-  let contentPath = path.join(process.cwd(), 'src', 'content', lang, `${topic.key}.md`)
-  if (!fs.existsSync(contentPath)) {
-    contentPath = path.join(process.cwd(), 'src', 'content', 'master', `${topic.key}.md`)
-  }
-
-  // Fallback check if master is also missing
-  if (!fs.existsSync(contentPath)) return null
-
-  const content = fs.readFileSync(contentPath, 'utf8')
-  return {
-    topicKey: topic.key as TopicKey,
-    topicTitle: topic.defaultSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
-    content
-  }
+interface HomeProps {
+  // When rendered under /[lang]/[slug], Next.js passes params here.
+  // For the root page (/) this will be undefined → falls back to 'en'.
+  params?: { lang?: string }
 }
 
-// ─── Generate Metadata dynamically for SEO ────────────────────────────────────
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { lang, slug } = await params
-  const data = getPageData(lang, slug)
-  if (!data) return {}
+// ─── Component ────────────────────────────────────────────────────────────────
 
-  const meta = getTopicMeta(data.topicKey, lang)
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates: pageAlternates(data.topicKey, lang)
-  }
-}
+export default function Home({ params }: HomeProps) {
+  const lang = params?.lang ?? 'en'
 
-// ─── Pre-render all 700 static routes at build time ───────────────────────────
-export async function generateStaticParams() {
-  const params: Array<{ lang: string; slug: string }> = []
-  
-  for (const [code] of LANGUAGE_CONFIG) {
-    for (const topic of TOPIC_DEFS) {
-      const slug = topic.slugs[code] ?? topic.defaultSlug
-      params.push({
-        lang: code,
-        slug: slug
-      })
+  // Resolve strings: use the lang's translations if available, else fall back to English
+  const t = CALC_LOCALIZATION[lang] ?? CALC_LOCALIZATION['en']
+
+  const [name, setName] = useState('')
+  const [dob, setDob] = useState('')
+  const [birthTime, setBirthTime] = useState('')
+  const [ampm, setAmpm] = useState('AM')
+  const [birthPlace, setBirthPlace] = useState('')
+  const [timeUnknown, setTimeUnknown] = useState(false)
+  const [gender, setGender] = useState('')
+  const [result, setResult] = useState<Result | null>(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [isIndia, setIsIndia] = useState(false)
+
+  useEffect(() => {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone
+    setIsIndia(tz.startsWith('Asia/Kolkata') || tz.startsWith('Asia/Calcutta'))
+  }, [])
+
+  const showDisclaimer = timeUnknown || gender === 'prefer_not'
+
+  function buildPayload() {
+    return {
+      name,
+      dob,
+      birth_time: timeUnknown ? '' : birthTime,
+      ampm,
+      birth_place: birthPlace,
+      time_unknown: timeUnknown,
     }
   }
 
-  return params
-}
-
-// ─── Simple Markdown-to-JSX Parser ───────────────────────────────────────────
-function parseMarkdown(md: string) {
-  return md
-    .split('\n\n')
-    .map((block, idx) => {
-      block = block.trim()
-      if (!block) return null
-
-      // Headings
-      if (block.startsWith('# ')) {
-        return <h2 key={idx} style={{color: '#f5c842', marginBottom: '16px', fontSize: '1.8rem'}}>{block.replace('# ', '')}</h2>
-      }
-      if (block.startsWith('## ')) {
-        return <h3 key={idx} style={{color: '#f5c842', margin: '24px 0 12px', fontSize: '1.3rem'}}>{block.replace('## ', '')}</h3>
-      }
-      if (block.startsWith('### ')) {
-        return <h4 key={idx} style={{color: '#f5c842', margin: '20px 0 10px', fontSize: '1.1rem'}}>{block.replace('### ', '')}</h4>
-      }
-
-      // Horizontal Rule
-      if (block === '---') {
-        return <hr key={idx} style={{border: 'none', borderTop: '1px solid #2a2a3a', margin: '24px 0'}} />
-      }
-
-      // Collapsible example block
-      if (block.startsWith('Step-by-Step Example') || block.includes('If you were born on')) {
-        return (
-          <details key={idx} style={{marginBottom: '20px', borderLeft: '2px solid #f5c842', paddingLeft: '16px'}}>
-            <summary style={{color: '#f5c842', cursor: 'pointer', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '8px'}}>
-              Show example calculation
-            </summary>
-            <p style={{color: '#e8e0d0', lineHeight: '1.8', fontSize: '0.9rem', marginTop: '10px'}}>
-              {block.split('**').map((part, pIdx) =>
-                pIdx % 2 === 1
-                  ? <strong key={pIdx} style={{color: '#ffffff'}}>{part}</strong>
-                  : part
-              )}
-            </p>
-          </details>
-        )
-      }
-
-      // Chaldean number-letter table: lines like "1: A, I, J, Q, Y"
-      const isChaldeanTable = block.split('\n').every(l => /^\d+:/.test(l.trim()))
-      if (isChaldeanTable) {
-        const rows = block.split('\n').map(l => l.trim())
-        return (
-          <div key={idx} style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', marginBottom: '20px'}}>
-            {rows.map((row, i) => {
-              const [num, letters] = row.split(':')
-              return (
-                <div key={i} style={{background: '#1a1628', border: '0.5px solid #2a2330', borderRadius: '8px', padding: '10px 14px'}}>
-                  <span style={{color: '#f5c842', fontWeight: 600, marginRight: '8px'}}>{num.trim()}</span>
-                  <span style={{color: '#e8e0d0', fontSize: '0.85rem'}}>{letters?.trim()}</span>
-                </div>
-              )
-            })}
-          </div>
-        )
-      }
-
-      // Unordered Lists
-      if (block.startsWith('* ') || block.startsWith('- ')) {
-        const items = block.split('\n').map(line => line.replace(/^[\*\-]\s+/, '').trim())
-        return (
-          <ul key={idx} style={{paddingLeft: '20px', marginBottom: '20px', listStyleType: 'disc'}}>
-            {items.map((item, i) => {
-              const parts = item.split('**')
-              return (
-                <li key={i} style={{marginBottom: '10px', color: '#e8e0d0', lineHeight: '1.7'}}>
-                  {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#ffffff'}}>{part}</strong> : part)}
-                </li>
-              )
-            })}
-          </ul>
-        )
-      }
-
-      // Standard Paragraph with bold support
-      const parts = block.split('**')
-      return (
-        <p key={idx} style={{color: '#e8e0d0', marginBottom: '20px', lineHeight: '1.8', fontSize: '0.95rem'}}>
-          {parts.map((part, pIdx) => pIdx % 2 === 1 ? <strong key={pIdx} style={{color: '#ffffff'}}>{part}</strong> : part)}
-        </p>
-      )
-    })
-}
-
-// ─── Core Page Render ─────────────────────────────────────────────────────────
-export default async function UniversalPage({ params }: PageProps) {
-  const { lang, slug } = await params
-  const data = getPageData(lang, slug)
-
-  if (!data) {
-    notFound()
+  async function calculate() {
+    if (!name || !dob) return
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch('https://khagatara-api.onrender.com/calculate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(buildPayload())
+      })
+      const data = await res.json()
+      setResult(data)
+    } catch {
+      setError(t.errorText)
+    }
+    setLoading(false)
   }
 
-  // Resolve language properties
-  const langConfig = LANGUAGE_CONFIG.find(c => c[0] === lang)
-  const langName = langConfig ? langConfig[1] : 'English'
-  const direction = langConfig ? langConfig[2] : 'ltr'
+  async function getFullReport() {
+    setLoading(true)
+    try {
+      if (isIndia) {
+        const res = await fetch('https://khagatara-api.onrender.com/create-checkout-inr', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(buildPayload())
+        })
+        const data = await res.json()
+        if (!res.ok) throw new Error(data.detail || 'Payment failed')
 
-  // Localized section headers
-  const popularReadingsTitle: Record<string, string> = {
-    es:'Lecturas Populares', pt:'Leituras Populares', fr:'Lectures Populaires',
-    it:'Letture Popolari', de:'Beliebte Lesungen', hi:'लोकप्रिय पाठ',
-    ar:'قراءات شائعة', 'zh-cn':'热门阅读', 'zh-tw':'熱門閱讀', ja:'人気の読み物',
-    ru:'Популярные чтения', ko:'인기 독서', tr:'Popüler Okumalar',
-    id:'Bacaan Populer', bn:'জনপ্রিয় পাঠ'
+        const rzp = new (window as any).Razorpay({
+          key:         data.key_id,
+          amount:      data.amount,
+          currency:    data.currency,
+          order_id:    data.order_id,
+          name:        'Khagatara',
+          description: 'Your Complete Vedic Blueprint',
+          prefill:     { name: data.name },
+          theme:       { color: '#c8901a' },
+          handler: function() {
+            window.location.href = 'https://khagatara.com/success'
+          }
+        })
+        rzp.open()
+      } else {
+        const res = await fetch('https://khagatara-api.onrender.com/create-checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(buildPayload())
+        })
+        const data = await res.json()
+        if (!res.ok || !data.checkout_url) throw new Error(data.detail || 'Payment failed')
+        window.location.href = data.checkout_url
+      }
+    } catch (err: unknown) {
+      console.error(err)
+      setError(t.errorPayment)
+    }
+    setLoading(false)
   }
-  const readInYourLanguageTitle: Record<string, string> = {
-    es:'Lee en tu Idioma', pt:'Leia no seu Idioma', fr:'Lisez dans votre Langue',
-    it:'Leggi nella tua Lingua', de:'In deiner Sprache lesen', hi:'अपनी भाषा में पढ़ें',
-    ar:'اقرأ بلغتك', 'zh-cn':'用你的语言阅读', 'zh-tw':'用你的語言閱讀', ja:'あなたの言語で読む',
-    ru:'Читайте на своём языке', ko:'당신의 언어로 읽기', tr:'Dilinizde okuyun',
-    id:'Baca dalam Bahasa Anda', bn:'আপনার ভাষায় পড়ুন'
-  }
+
+  // Resolve nav slugs for the current lang
+  const numerologySlug   = TOPIC_SLUGS?.numerology?.[lang]       ?? 'free-numerology-reading'
+  const astrologySlug    = TOPIC_SLUGS?.astrology?.[lang]        ?? 'free-vedic-astrology'
+  const birthChartSlug   = TOPIC_SLUGS?.birthChart?.[lang]       ?? 'free-birth-chart'
+  const compatSlug       = TOPIC_SLUGS?.compatibility?.[lang]    ?? 'numerology-compatibility'
 
   return (
-    <main className="page" dir={direction}>
-      <div className="header" style={{display:'flex', alignItems:'center', justifyContent:'space-between', padding:'1rem 2rem', borderBottom:'0.5px solid var(--border)'}}>
-        <div>
-          <h1>Khagatara</h1>
-          <p style={{fontSize:'0.85rem', opacity:0.7}}>{langName}</p>
+    <main className="page">
+      <nav className="nav">
+        <div className="nav-logo">
+          <div className="tri-wrap" aria-hidden="true">
+            <div className="tr"><div className="t tu ta"></div><div className="t tu tb"></div><div className="t tu tc"></div></div>
+            <div className="tr"><div className="t tu tb"></div><div className="t tu tc"></div></div>
+            <div className="tr"><div className="t td te"></div></div>
+          </div>
+          <span className="logo-txt">khagatara</span>
         </div>
-        <div style={{display:'flex', gap:'0.5rem'}}>
-          <Link href="/en/free-numerology-reading" style={{fontSize:'0.68rem', letterSpacing:'0.1em', textTransform:'uppercase', color:'var(--text-low)', border:'0.5px solid var(--border2)', borderRadius:'20px', padding:'0.4rem 1rem'}}>
-            EN
-          </Link>
-          <Link href="/" style={{fontSize:'0.68rem', letterSpacing:'0.1em', textTransform:'uppercase', color:'var(--text-low)', border:'0.5px solid var(--border2)', borderRadius:'20px', padding:'0.4rem 1rem'}}>
-            ← Home
-          </Link>
+        <div className="nav-links">
+          <Link href={`/${lang}/${numerologySlug}`}>Readings</Link>
+          <Link href={`/${lang}/${astrologySlug}`}>Astrology</Link>
+          <Link href={`/${lang}/${birthChartSlug}`}>Birth Chart</Link>
+          <Link href={`/${lang}/${compatSlug}`}>Compatibility</Link>
         </div>
-      </div>
+      </nav>
 
-      {/* localized Client-Side Calculator Component */}
-      <FadeIn><Calculator lang={lang} /></FadeIn>
+      <section className="hero">
+        <div className="hero-eyebrow">Vedic numerology</div>
+        <h1 className="hero-title">Discover your<br /><em>cosmic path</em></h1>
+        <p className="hero-sub">Ancient wisdom. Personal insight. Timeless guidance.</p>
 
-      {/* Premium E-Book Promotion Card */}
-      <FadeIn><BookPromo lang={lang} /></FadeIn>
+        <div className="form-card">
+          <div className="form-row">
+            <label htmlFor="name" className="font-mono-crisp text-[var(--text-low)] text-[10px] font-bold uppercase tracking-widest">
+              {t.placeholderName}
+            </label>
+            <input
+              className="font-sans tracking-wide"
+              id="name"
+              type="text"
+              placeholder={t.placeholderName}
+              value={name}
+              onChange={e => setName(e.target.value)}
+            />
+          </div>
+          <div className="form-row">
+            <label htmlFor="dob">{t.placeholderDob}</label>
+            <input
+              id="dob"
+              type="date"
+              value={dob}
+              onChange={e => setDob(e.target.value)}
+            />
+          </div>
+          <div className="form-row">
+            <label htmlFor="birthPlace">{t.placeholderPlace}</label>
+            <input
+              id="birthPlace"
+              type="text"
+              placeholder={t.placeholderPlace}
+              value={birthPlace}
+              onChange={e => setBirthPlace(e.target.value)}
+            />
+          </div>
+          <div className="form-row">
+            <label htmlFor="birthTime">
+              {/* Birth time label — use the disclaimer text as a hint or add a dedicated key if needed */}
+              Birth time
+            </label>
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              <input
+                id="birthTime"
+                type="time"
+                value={birthTime}
+                disabled={timeUnknown}
+                onChange={e => setBirthTime(e.target.value)}
+                style={{
+                  flex: 1,
+                  background: 'var(--surface2)', border: '0.5px solid var(--border2)',
+                  borderRadius: '6px', color: 'var(--text)', padding: '0.65rem 0.5rem',
+                  fontSize: '0.82rem', opacity: timeUnknown ? 0.4 : 1
+                }}
+              />
+              <select
+                value={ampm}
+                disabled={timeUnknown}
+                onChange={e => setAmpm(e.target.value)}
+                style={{
+                  background: 'var(--surface2)', border: '0.5px solid var(--border2)',
+                  borderRadius: '6px', color: 'var(--text)', padding: '0.65rem 0.5rem',
+                  fontSize: '0.82rem', opacity: timeUnknown ? 0.4 : 1
+                }}
+              >
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '8px', cursor: 'pointer', fontSize: '0.72rem', color: 'var(--text-low)' }}>
+              <input
+                type="checkbox"
+                checked={timeUnknown}
+                onChange={e => setTimeUnknown(e.target.checked)}
+                style={{ accentColor: 'var(--accent)' }}
+              />
+              {t.labelTimeUnknown}
+            </label>
+          </div>
+          <div className="form-row">
+            <label>Gender</label>
+            <div style={{ display: 'flex', gap: '16px', marginTop: '4px' }}>
+              {([
+                ['male',       t.genderMale],
+                ['female',     t.genderFemale],
+                ['prefer_not', t.genderOther],
+              ] as [string, string][]).map(([val, label]) => (
+                <label
+                  key={val}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: '6px',
+                    cursor: 'pointer', fontSize: '0.82rem',
+                    color: gender === val ? 'var(--accent)' : 'var(--text-low)'
+                  }}
+                >
+                  <input
+                    type="radio"
+                    name="gender"
+                    value={val}
+                    checked={gender === val}
+                    onChange={() => setGender(val)}
+                    style={{ accentColor: 'var(--accent)' }}
+                  />
+                  {label}
+                </label>
+              ))}
+            </div>
+          </div>
 
-      {/* Gold-Standard Premium SEO Article Content */}
-      <FadeIn>
-      <article className="card" style={{maxWidth: '760px', lineHeight: '1.8', marginTop: '32px'}}>
-        {parseMarkdown(data.content)}
-      </article>
-      </FadeIn>
+          {showDisclaimer && (
+            <div className="bg-[var(--surface2)] border border-[var(--accent)] rounded-lg p-3 mb-3 text-[0.72rem] text-[var(--text)] opacity-90 leading-relaxed font-mono">
+              ⚠️ {t.disclaimerText}
+            </div>
+          )}
 
-      {/* Dynamic SEO Internal Links: All 7 Topics Localized */}
-      <FadeIn>
-      <div className="card link-card">
-        <h2>{popularReadingsTitle[lang] ?? 'Popular Free Readings'}</h2>
-        <div className="internal-links" style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem'}}>
-          {TOPIC_DEFS.map(t => {
-            const path = topicPath(t.key, lang)
-            const meta = getTopicMeta(t.key, lang)
+          <button
+            className="w-full bg-[var(--primary)] text-[var(--background)] font-bold py-3 px-4 rounded-md transition-transform active:scale-[0.98] disabled:opacity-50 hover:brightness-110 tracking-wide uppercase text-xs"
+            onClick={calculate}
+            disabled={loading}
+          >
+            {loading ? t.btnCalculating : t.btnCalculate}
+          </button>
+          {error && <p className="error">{error}</p>}
+        </div>
+      </section>
+
+      {result && (
+        <section className="result-card mt-8 border border-[var(--border-clean)] p-6 bg-[var(--surface)] rounded-lg">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            {([
+              [t.gridLifePath,    result.life_path],
+              [t.gridNameNumber,  result.name_number],
+              [t.gridSoulUrge,    result.soul_urge],
+              [t.gridPersonality, result.personality],
+            ] as [string, number][]).map(([label, value]) => (
+              <div key={label} className="border border-[var(--border-clean)] bg-[var(--surface2)] p-4 rounded text-center">
+                <div className="text-4xl font-bold font-mono-crisp text-[var(--accent)] drop-shadow-[0_0_8px_var(--accent-glow)] antialiased">
+                  {value}
+                </div>
+                <div className="text-[10px] text-[var(--text-low)] uppercase tracking-widest mt-2 font-bold font-mono-crisp">
+                  {label}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="meaning text-[var(--text-high)] font-medium leading-relaxed mb-6 text-sm bg-[var(--surface2)] p-4 rounded border border-[var(--border-clean)]">
+            {result.meaning}
+          </p>
+
+          <div className="border-t border-[var(--border-clean)] pt-4 space-y-2">
+            <div className="text-xs font-bold uppercase tracking-widest text-[var(--secondary)] mb-3 font-mono-crisp">
+              {t.titleVedic}
+            </div>
+            <div className="flex justify-between items-center text-xs py-2 border-b border-[var(--border-clean)] font-mono-crisp">
+              <span className="text-[var(--text)]">{t.labelMoonSign}</span>
+              <span className="font-bold text-[var(--text-high)]">{result.rashi}</span>
+            </div>
+            <div className="flex justify-between items-center text-xs py-2 border-b border-[var(--border-clean)] font-mono-crisp">
+              <span className="text-[var(--text)]">{t.labelBirthStar}</span>
+              <span className="font-bold text-[var(--text-high)]">
+                {result.nakshatra}{' '}
+                <span className="text-[var(--secondary)] font-medium">({t.labelPada}-{result.nakshatra_pada})</span>
+              </span>
+            </div>
+            <div className="flex justify-between items-center text-xs py-2 font-mono-crisp">
+              <span className="text-[var(--text)]">{t.labelCurrentDasha}</span>
+              <span className="font-bold text-[var(--text-high)]">
+                {result.dasha_lord}{' '}
+                <span className="text-[var(--accent)] font-medium">({result.dasha_years} {t.labelYears})</span>
+              </span>
+            </div>
+          </div>
+
+          <div className="premium-blur my-6 p-4 rounded-md bg-[var(--surface2)] bg-opacity-40 border border-[var(--secondary)] border-opacity-20 backdrop-blur-md text-xs text-[var(--text)] leading-relaxed">
+            {t.premiumText}
+          </div>
+
+          <button
+            className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+            onClick={getFullReport}
+            disabled={loading}
+          >
+            {loading ? t.btnLoading : isIndia ? 'Get Full Report - ₹99' : t.btnReport}
+          </button>
+          <p className="payment-note text-center text-[var(--text-low)] text-[0.7rem] mt-2 font-mono">
+            {t.paymentNote}
+          </p>
+        </section>
+      )}
+
+      <section className="section">
+        <div className="section-label">Popular free readings</div>
+        <div className="readings-grid">
+          <Link className="reading-pill" href={`/${lang}/${numerologySlug}`}>Free numerology reading</Link>
+          <Link className="reading-pill" href={`/${lang}/${TOPIC_SLUGS?.nameNumerology?.[lang] ?? 'numerology-by-name'}`}>Numerology by name</Link>
+          <Link className="reading-pill" href={`/${lang}/${TOPIC_SLUGS?.number11?.[lang] ?? 'meaning-of-number-11'}`}>Meaning of number 11</Link>
+          <Link className="reading-pill" href={`/${lang}/${astrologySlug}`}>Free Vedic astrology</Link>
+          <Link className="reading-pill" href={`/${lang}/${birthChartSlug}`}>Free birth chart</Link>
+          <Link className="reading-pill" href={`/${lang}/${compatSlug}`}>Compatibility</Link>
+          <Link className="reading-pill" href={`/${lang}/${TOPIC_SLUGS?.astrologyChart?.[lang] ?? 'free-astrology-chart'}`}>Free astrology chart</Link>
+        </div>
+      </section>
+
+      <section className="features">
+        <div className="feat-card">
+          <div className="feat-icon">01</div>
+          <div className="feat-title">{t.gridLifePath}</div>
+          <div className="feat-desc">Uncover your soul&apos;s purpose and destiny number</div>
+        </div>
+        <div className="feat-card">
+          <div className="feat-icon">02</div>
+          <div className="feat-title">Birth chart</div>
+          <div className="feat-desc">Vedic planetary positions at your moment of birth</div>
+        </div>
+        <div className="feat-card">
+          <div className="feat-icon">03</div>
+          <div className="feat-title">Compatibility</div>
+          <div className="feat-desc">Discover your cosmic match and relationship path</div>
+        </div>
+        <Link href={`/${lang}/${compatSlug}`} className="feat-card feat-card--marriage">
+          <div className="feat-icon">04</div>
+          <div className="feat-title">Relationship &amp; Marriage</div>
+          <div className="feat-desc">Partnership energy, karmic cycles, and relationship timing</div>
+        </Link>
+      </section>
+
+      <div className="divider"></div>
+
+      <section className="lang-section">
+        <div className="section-label">Read in your language</div>
+        <div className="lang-grid">
+          {LANGUAGE_CONFIG.map(([code, name]) => {
+            const slug = TOPIC_SLUGS?.numerology?.[code] ?? 'free-numerology-reading'
             return (
-              <Link key={t.key} href={path}>
-                {meta.title.split(' — ')[0]}
-              </Link>
-            )
-          })}
-        </div>
-      </div>
-      </FadeIn>
-
-      {/* Dynamic SEO Language Links: Major Global Clusters */}
-      <FadeIn>
-      <div className="card link-card">
-        <h2>{readInYourLanguageTitle[lang] ?? 'Read in Your Language'}</h2>
-        <div className="internal-links language-links" style={{display: 'flex', flexWrap: 'wrap', gap: '0.6rem'}}>
-          {LANGUAGE_CONFIG.slice(0, 15).map(([code, name]) => {
-            const path = topicPath(data.topicKey, code)
-            return (
-              <Link key={code} href={path}>
+              <Link key={code} className="lang-pill" href={`/${code}/${slug}`}>
                 {name}
               </Link>
             )
           })}
         </div>
-      </div>
-      </FadeIn>
+      </section>
+
+      <footer className="footer">
+        <div className="footer-txt">© 2026 khagatara.com</div>
+        <div className="footer-links">
+          <Link href="#">Privacy</Link>
+          <Link href="#">Terms</Link>
+          <Link href="#">Contact</Link>
+        </div>
+      </footer>
     </main>
   )
 }
