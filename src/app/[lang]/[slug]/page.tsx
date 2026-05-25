@@ -2,8 +2,8 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { LANGUAGE_CONFIG, TOPIC_SLUGS } from './seo-config'
-import { CALC_LOCALIZATION } from './calculator-localization'
+import { LANGUAGE_CONFIG, TOPIC_SLUGS } from '../../seo-config'
+import { CALC_LOCALIZATION } from '../../calculator-localization'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
