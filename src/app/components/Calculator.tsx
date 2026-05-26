@@ -258,6 +258,7 @@ export default function Calculator({ lang }: CalculatorProps) {
       ampm: resolvedAmpm,
       birth_place: birthPlace,
       time_unknown: timeUnknown && !pada,
+      lang,
     }
   }
 
