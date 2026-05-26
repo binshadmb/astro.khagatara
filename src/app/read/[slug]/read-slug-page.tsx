@@ -197,6 +197,7 @@ export default function ReadingPage({ params }: { params: { slug: string } }) {
         <div style={{marginBottom:'2rem'}}>
           {hook.map((line, i) => (
             <p key={i} style={{
+              fontSize:'1rem',
               color: i === 0 ? 'var(--text)' : 'var(--text-low)',
               lineHeight:'1.8',
               marginBottom:'0.75rem',
