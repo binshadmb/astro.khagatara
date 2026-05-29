@@ -130,7 +130,7 @@ const CALC_LOCALIZATION: Record<string, Record<string, string>> = {
 
 // ─── Card swipe CSS ───────────────────────────────────────────────────────────
 const CARD_CSS = `
-  .swipe-outer { background:#F5F3EF; padding:1.5rem 1rem 2rem; min-height:460px; }
+  .swipe-outer { background:#F5F3EF; padding:0.75rem 1rem 2rem; min-height:460px; margin-top:-56px; position:relative; z-index:10; }
   .progress-dots { display:flex; justify-content:center; gap:8px; margin-bottom:1.5rem; }
   .pdot { height:8px; border-radius:4px; transition:all 0.25s; background:#D0D0D0; width:8px; }
   .pdot.done   { background:#B07A10; width:8px; }
@@ -207,7 +207,7 @@ const CARD_CSS = `
   .loading-spinner { width:36px; height:36px; border:3px solid #E8E4DC; border-top-color:#B07A10; border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 0.75rem; }
   @keyframes spin { to{transform:rotate(360deg)} }
   @keyframes fadeIn { from{opacity:0;transform:translateY(-4px)} to{opacity:1;transform:translateY(0)} }
-  @media(max-width:600px){ .pada-grid{grid-template-columns:repeat(2,1fr);} .cq{font-size:1.15rem;} .swipe-card{padding:1.4rem 1.1rem 1.2rem;} .numbers-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:600px){ .swipe-outer{margin-top:-36px;padding-top:0.65rem;} .pada-grid{grid-template-columns:repeat(2,1fr);} .cq{font-size:1.15rem;} .swipe-card{padding:1.4rem 1.1rem 1.2rem;} .numbers-grid{grid-template-columns:repeat(2,1fr);} }
 `
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -241,7 +241,7 @@ export default function Calculator({ lang }: CalculatorProps) {
   const [timeUnknown,   setTimeUnknown]   = useState(false)
   const [showTimeDis,   setShowTimeDis]   = useState(false)
   const [showExactTime, setShowExactTime] = useState(false)
-  const [gender,        setGender]        = useState('')
+  const [,              setGender]        = useState('')
   const [country,       setCountry]       = useState('')
   const [stateVal,      setStateVal]      = useState('')
   const [city,          setCity]          = useState('')
@@ -253,16 +253,15 @@ export default function Calculator({ lang }: CalculatorProps) {
   const [error,         setError]         = useState('')
   const [card,          setCard]          = useState(0)
   const [anim,          setAnim]          = useState('sc-active')
-  const [cssReady,      setCssReady]      = useState(false)
 
   useEffect(() => {
-    if (!cssReady) {
+    if (!document.getElementById('khagatara-card-css')) {
       const s = document.createElement('style')
+      s.id = 'khagatara-card-css'
       s.textContent = CARD_CSS
       document.head.appendChild(s)
-      setCssReady(true)
     }
-  }, [cssReady])
+  }, [])
 
   const dob = dobYear && dobMonth && dobDay
     ? `${dobYear}-${dobMonth.padStart(2,'0')}-${dobDay.padStart(2,'0')}`
