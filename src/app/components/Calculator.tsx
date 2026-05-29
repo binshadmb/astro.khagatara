@@ -154,6 +154,9 @@ const CARD_CSS = `
   .pada-label { font-size:0.65rem; font-weight:700; color:#0A0A0A; display:block; margin-top:3px; }
   .pada-time  { font-size:0.58rem; color:#6B6B6B; display:block; }
   .pada-name  { font-size:0.58rem; color:#B07A10; font-weight:600; display:block; }
+  .time-exact-wrap { margin-bottom:0.4rem; }
+  .time-exact-toggle { background:none; border:none; color:#6B6B6B; cursor:pointer; font-size:0.7rem; text-decoration:underline; padding:0; margin-bottom:0.4rem; display:block; }
+  .time-exact-toggle:hover { color:#B07A10; }
   .time-row { display:flex; gap:0.5rem; align-items:center; margin-bottom:0.4rem; }
   .time-row .cinput { flex:1; margin:0; }
   .ampm-sel { background:#F7F7F7; border:1.5px solid #D0D0D0; border-radius:10px; color:#0A0A0A; font-size:0.85rem; padding:0.65rem 0.5rem; outline:none; }
@@ -185,8 +188,26 @@ const CARD_CSS = `
   .c-next:disabled { opacity:0.4; cursor:not-allowed; }
   .c-next.gold { background:#B07A10; font-size:0.78rem; padding:0.65rem 1.5rem; }
   .c-next.gold:hover { background:#8A5E0A; }
+  .numbers-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:0.75rem; margin-bottom:1rem; }
+  .number-box { background:#F7F5F0; border-radius:14px; padding:1rem; text-align:center; }
+  .number-value { font-family:'Cormorant Garamond',serif; font-size:2.4rem; font-weight:700; color:#B07A10; line-height:1; }
+  .number-label { font-size:0.65rem; font-weight:700; color:#6B6B6B; letter-spacing:0.08em; text-transform:uppercase; margin-top:4px; }
+  .meaning { font-size:0.82rem; color:#3D3D3D; line-height:1.7; margin-bottom:1rem; }
+  .vedic-section { background:#FAFAF8; border:1px solid #E8E4DC; border-radius:12px; padding:0.9rem 1rem; margin-bottom:1rem; }
+  .vedic-title { font-family:'Cormorant Garamond',serif; font-size:1rem; font-weight:600; color:#B07A10; margin-bottom:0.5rem; }
+  .vedic-row { display:flex; justify-content:space-between; font-size:0.73rem; padding:0.3rem 0; border-bottom:1px solid #EEEBE3; color:#3D3D3D; }
+  .vedic-row:last-child { border-bottom:none; }
+  .premium-blur { font-size:0.75rem; color:#6B6B6B; line-height:1.7; margin-bottom:0.9rem; filter:blur(3.5px); user-select:none; }
+  .btn-primary { width:100%; background:#0A0A0A; border:none; border-radius:10px; color:#fff; cursor:pointer; font-size:0.85rem; font-weight:700; letter-spacing:0.08em; padding:0.85rem; text-transform:uppercase; transition:background 0.18s; }
+  .btn-primary:hover { background:#B07A10; }
+  .btn-primary:disabled { opacity:0.5; cursor:not-allowed; }
+  .payment-note { font-size:0.65rem; color:#9B9B9B; text-align:center; margin-top:0.5rem; }
+  .error { color:#C0392B; font-size:0.78rem; }
+  .loading-state { text-align:center; padding:2rem 1rem; }
+  .loading-spinner { width:36px; height:36px; border:3px solid #E8E4DC; border-top-color:#B07A10; border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 0.75rem; }
+  @keyframes spin { to{transform:rotate(360deg)} }
   @keyframes fadeIn { from{opacity:0;transform:translateY(-4px)} to{opacity:1;transform:translateY(0)} }
-  @media(max-width:600px){ .pada-grid{grid-template-columns:repeat(2,1fr);} .cq{font-size:1.15rem;} .swipe-card{padding:1.4rem 1.1rem 1.2rem;} }
+  @media(max-width:600px){ .pada-grid{grid-template-columns:repeat(2,1fr);} .cq{font-size:1.15rem;} .swipe-card{padding:1.4rem 1.1rem 1.2rem;} .numbers-grid{grid-template-columns:repeat(2,1fr);} }
 `
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -210,28 +231,29 @@ const INDIA_STATES = [
 export default function Calculator({ lang }: CalculatorProps) {
   const t = CALC_LOCALIZATION[lang] ?? CALC_LOCALIZATION['en']
 
-  const [name,        setName]        = useState('')
-  const [dobDay,      setDobDay]      = useState('')
-  const [dobMonth,    setDobMonth]    = useState('')
-  const [dobYear,     setDobYear]     = useState('')
-  const [birthTime,   setBirthTime]   = useState('')
-  const [ampm,        setAmpm]        = useState('AM')
-  const [pada,        setPada]        = useState<1|2|3|4|null>(null)
-  const [timeUnknown, setTimeUnknown] = useState(false)
-  const [showTimeDis, setShowTimeDis] = useState(false)
-  const [gender,      setGender]      = useState('')
-  const [country,     setCountry]     = useState('')
-  const [stateVal,    setStateVal]    = useState('')
-  const [city,        setCity]        = useState('')
-  const [placeStep,   setPlaceStep]   = useState<'country'|'state'|'city'>('country')
+  const [name,          setName]          = useState('')
+  const [dobDay,        setDobDay]        = useState('')
+  const [dobMonth,      setDobMonth]      = useState('')
+  const [dobYear,       setDobYear]       = useState('')
+  const [birthTime,     setBirthTime]     = useState('')
+  const [ampm,          setAmpm]          = useState('AM')
+  const [pada,          setPada]          = useState<1|2|3|4|null>(null)
+  const [timeUnknown,   setTimeUnknown]   = useState(false)
+  const [showTimeDis,   setShowTimeDis]   = useState(false)
+  const [showExactTime, setShowExactTime] = useState(false)
+  const [gender,        setGender]        = useState('')
+  const [country,       setCountry]       = useState('')
+  const [stateVal,      setStateVal]      = useState('')
+  const [city,          setCity]          = useState('')
+  const [placeStep,     setPlaceStep]     = useState<'country'|'state'|'city'>('country')
   const [countrySearch, setCountrySearch] = useState('')
   const [showPlaceDis,  setShowPlaceDis]  = useState(false)
-  const [result,      setResult]      = useState<Result | null>(null)
-  const [loading,     setLoading]     = useState(false)
-  const [error,       setError]       = useState('')
-  const [card,        setCard]        = useState(0)
-  const [anim,        setAnim]        = useState('sc-active')
-  const [cssReady,    setCssReady]    = useState(false)
+  const [result,        setResult]        = useState<Result | null>(null)
+  const [loading,       setLoading]       = useState(false)
+  const [error,         setError]         = useState('')
+  const [card,          setCard]          = useState(0)
+  const [anim,          setAnim]          = useState('sc-active')
+  const [cssReady,      setCssReady]      = useState(false)
 
   useEffect(() => {
     if (!cssReady) {
@@ -248,16 +270,33 @@ export default function Calculator({ lang }: CalculatorProps) {
 
   const birthPlace = city || stateVal || country.replace(/^.{3}/,'').trim()
 
-  const resolvedTime = birthTime || (pada===1?'09:00':pada===2?'15:00':pada===3?'21:00':pada===4?'03:00':'')
-  const resolvedAmpm = birthTime ? ampm : (pada===1||pada===2)?'AM':'PM'
+  // Time resolution:
+  // - If user picked a pada tile, use its midpoint time (exact input is optional/hidden by default)
+  // - If user entered exact time, use that
+  // - If timeUnknown and no pada, empty string
+  const resolvedTime = birthTime
+    ? birthTime
+    : pada === 1 ? '09:00'
+    : pada === 2 ? '15:00'
+    : pada === 3 ? '21:00'
+    : pada === 4 ? '03:00'
+    : ''
+
+  const resolvedAmpm = birthTime
+    ? ampm
+    : (pada === 1 || pada === 2) ? 'AM' : 'PM'
+
+  // Card 1 Next is enabled if date is filled + (pada selected OR timeUnknown OR exact time entered)
+  // Actually we want time to be optional — user just needs date
+  const canProceedFromDOB = !!dob
 
   function buildPayload() {
     return {
       name, dob,
-      birth_time: (timeUnknown && !pada) ? '' : resolvedTime,
+      birth_time: (timeUnknown && !pada && !birthTime) ? '' : resolvedTime,
       ampm: resolvedAmpm,
       birth_place: birthPlace,
-      time_unknown: timeUnknown && !pada,
+      time_unknown: timeUnknown && !pada && !birthTime,
       lang,
     }
   }
@@ -276,16 +315,21 @@ export default function Calculator({ lang }: CalculatorProps) {
   async function calculate() {
     if (!name || !dob) return
     setLoading(true); setError('')
+    // Navigate to card 4 immediately, showing loading state
+    goNext(4)
     try {
-      const res  = await fetch('https://khagatara-api.onrender.com/calculate', {
+      const res = await fetch('https://khagatara-api.onrender.com/calculate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(buildPayload())
       })
       const data = await res.json()
       setResult(data)
-      goNext(4)
-    } catch { setError(t.errorText) }
+    } catch {
+      setError(t.errorText)
+      // Go back to card 3 on error so user can retry
+      goNext(3, true)
+    }
     setLoading(false)
   }
 
@@ -359,9 +403,12 @@ export default function Calculator({ lang }: CalculatorProps) {
                 {YEARS.map(y => <option key={y} value={y}>{y}</option>)}
               </select>
             </div>
+
             <div style={{fontSize:'0.68rem',fontWeight:700,color:'#3D3D3D',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'0.5rem'}}>
-              ⏰ Birth Time
+              ⏰ Birth Time <span style={{fontWeight:400,color:'#9B9B9B',letterSpacing:0,textTransform:'none'}}>(optional)</span>
             </div>
+
+            {/* Pada tiles — selecting one is sufficient, exact time is not required */}
             <div className="pada-grid">
               {([
                 {p:1,emoji:'🌅',label:'Morning',time:'6AM–12PM'},
@@ -370,7 +417,14 @@ export default function Calculator({ lang }: CalculatorProps) {
                 {p:4,emoji:'🌙',label:'Night',  time:'12AM–6AM'},
               ] as {p:1|2|3|4,emoji:string,label:string,time:string}[]).map(({p,emoji,label,time}) => (
                 <button key={p} className={`pada-btn${pada===p?' sel':''}`}
-                  onClick={() => { setPada(p); setTimeUnknown(false); setShowTimeDis(false) }}>
+                  onClick={() => {
+                    setPada(p)
+                    setTimeUnknown(false)
+                    setShowTimeDis(false)
+                    // Collapse exact time input when a pada tile is tapped
+                    setShowExactTime(false)
+                    setBirthTime('')
+                  }}>
                   <span className="pada-emoji">{emoji}</span>
                   <span className="pada-label">{label}</span>
                   <span className="pada-time">{time}</span>
@@ -378,21 +432,51 @@ export default function Calculator({ lang }: CalculatorProps) {
                 </button>
               ))}
             </div>
-            <div style={{fontSize:'0.65rem',color:'#6B6B6B',marginBottom:'0.35rem'}}>or exact time:</div>
-            <div className="time-row">
-              <input type="time" className="cinput" value={birthTime}
-                onChange={e => { setBirthTime(e.target.value); setPada(null); setTimeUnknown(false) }} />
-              <select className="ampm-sel" value={ampm} onChange={e => setAmpm(e.target.value)}>
-                <option>AM</option><option>PM</option>
-              </select>
+
+            {/* Exact time — shown only if user taps the toggle OR if no pada selected */}
+            <div className="time-exact-wrap">
+              {!pada && !timeUnknown && (
+                <>
+                  {!showExactTime ? (
+                    <button className="time-exact-toggle" onClick={() => setShowExactTime(true)}>
+                      + Enter exact time
+                    </button>
+                  ) : (
+                    <div className="time-row">
+                      <input type="time" className="cinput" value={birthTime}
+                        onChange={e => { setBirthTime(e.target.value); setPada(null); setTimeUnknown(false) }} />
+                      <select className="ampm-sel" value={ampm} onChange={e => setAmpm(e.target.value)}>
+                        <option>AM</option><option>PM</option>
+                      </select>
+                    </div>
+                  )}
+                </>
+              )}
+              {pada && (
+                <button className="time-exact-toggle" onClick={() => {
+                  setShowExactTime(true); setPada(null)
+                }}>
+                  Enter exact time instead
+                </button>
+              )}
+              {showExactTime && pada === null && (
+                <div className="time-row" style={{marginTop:'0.3rem'}}>
+                  <input type="time" className="cinput" value={birthTime}
+                    onChange={e => { setBirthTime(e.target.value); setTimeUnknown(false) }} />
+                  <select className="ampm-sel" value={ampm} onChange={e => setAmpm(e.target.value)}>
+                    <option>AM</option><option>PM</option>
+                  </select>
+                </div>
+              )}
             </div>
+
             <button className="dklink" onClick={() => setShowTimeDis(v => !v)}>{t.labelTimeUnknown}</button>
             {showTimeDis && (
               <div className="dis-pop">
                 <strong>⚠️ Birth time affects your Nakshatra Pada</strong> — the quarter defining your
                 personality sub-type, career timing and marriage window. Even approximate is better.
                 <div className="dis-btns">
-                  <button className="dis-btn primary" onClick={() => { setTimeUnknown(true); setShowTimeDis(false); goNext(2) }}>
+                  <button className="dis-btn primary" onClick={() => { setTimeUnknown(true); setPada(null); setBirthTime(''); setShowTimeDis(false); goNext(2) }}>
                     Got it, continue without
                   </button>
                   <button className="dis-btn" onClick={() => setShowTimeDis(false)}>Enter time instead</button>
@@ -401,7 +485,8 @@ export default function Calculator({ lang }: CalculatorProps) {
             )}
             <div className="card-nav">
               <button className="c-back" onClick={goBack}>← Back</button>
-              <button className="c-next" disabled={!dob} onClick={() => goNext(2)}>Next →</button>
+              {/* Next enabled as soon as date is filled — time is optional */}
+              <button className="c-next" disabled={!canProceedFromDOB} onClick={() => goNext(2)}>Next →</button>
             </div>
           </div>
         )}
@@ -451,7 +536,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                       onClick={() => {
                         setCountry(c)
                         if (c.includes('India')) { setPlaceStep('state') }
-                        else { setStateVal(''); setCity(''); goNext(4) }
+                        else { setStateVal(''); setCity(''); calculate() }
                       }}>{c}</button>
                   ))}
                 </div>
@@ -473,7 +558,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                 <div style={{fontSize:'0.68rem',color:'#6B6B6B',marginBottom:'0.5rem'}}>Which city or district?</div>
                 <input className="cinput" placeholder="e.g. Thrissur, Kochi..."
                   value={city} onChange={e => setCity(e.target.value)}
-                  onKeyDown={e => e.key === 'Enter' && city.trim() && goNext(4)} autoFocus />
+                  onKeyDown={e => e.key === 'Enter' && city.trim() && calculate()} autoFocus />
               </>
             )}
             <button className="dklink" style={{marginTop:'0.6rem'}} onClick={() => setShowPlaceDis(v => !v)}>
@@ -484,7 +569,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                 <strong>⚠️ Without birthplace</strong>, Moon sign and Ascendant (Lagna) cannot be
                 calculated. Nakshatra reading will be approximate.
                 <div className="dis-btns">
-                  <button className="dis-btn primary" onClick={() => { setShowPlaceDis(false); goNext(4) }}>
+                  <button className="dis-btn primary" onClick={() => { setShowPlaceDis(false); calculate() }}>
                     Got it, continue without
                   </button>
                   <button className="dis-btn" onClick={() => setShowPlaceDis(false)}>Enter place instead</button>
@@ -497,57 +582,79 @@ export default function Calculator({ lang }: CalculatorProps) {
                 if (placeStep==='state') { setPlaceStep('country'); return }
                 goBack()
               }}>← Back</button>
-              <button className="c-next gold" disabled={loading} onClick={calculate}>
-                {loading ? t.btnCalculating : `✦ ${t.btnCalculate}`}
-              </button>
+              {/* Show calculate button only when place is sufficiently filled */}
+              {(placeStep === 'city' && city.trim()) || (placeStep === 'state' && stateVal) || (placeStep === 'country' && country && !country.includes('India')) ? (
+                <button className="c-next gold" disabled={loading} onClick={calculate}>
+                  {loading ? t.btnCalculating : `✦ ${t.btnCalculate}`}
+                </button>
+              ) : placeStep === 'city' ? (
+                <button className="c-next gold" disabled={!city.trim() || loading} onClick={calculate}>
+                  {loading ? t.btnCalculating : `✦ ${t.btnCalculate}`}
+                </button>
+              ) : null}
             </div>
           </div>
         )}
 
-        {/* ── Card 4: Result ── */}
-        {card === 4 && result && (
+        {/* ── Card 4: Result (or Loading) ── */}
+        {card === 4 && (
           <div className={`swipe-card ${anim}`}>
-            <div className="numbers-grid">
-              <div className="number-box">
-                <div className="number-value">{result.life_path}</div>
-                <div className="number-label">{t.gridLifePath}</div>
+            {loading || !result ? (
+              /* Loading state — shown while API call is in flight */
+              <div className="loading-state">
+                <div className="loading-spinner" />
+                <div style={{fontFamily:'Cormorant Garamond,serif',fontSize:'1.1rem',color:'#0A0A0A',marginBottom:'0.4rem'}}>
+                  Reading your stars…
+                </div>
+                <div style={{fontSize:'0.72rem',color:'#9B9B9B'}}>
+                  Calculating your Vedic chart
+                </div>
               </div>
-              <div className="number-box">
-                <div className="number-value">{result.name_number}</div>
-                <div className="number-label">{t.gridNameNumber}</div>
-              </div>
-              <div className="number-box">
-                <div className="number-value">{result.soul_urge}</div>
-                <div className="number-label">{t.gridSoulUrge}</div>
-              </div>
-              <div className="number-box">
-                <div className="number-value">{result.personality}</div>
-                <div className="number-label">{t.gridPersonality}</div>
-              </div>
-            </div>
-            <p className="meaning">{result.meaning}</p>
-            <div className="vedic-section">
-              <div className="vedic-title">{t.titleVedic}</div>
-              <div className="vedic-row"><span>{t.labelMoonSign}</span><span>{result.rashi}</span></div>
-              <div className="vedic-row">
-                <span>{t.labelBirthStar}</span>
-                <span>{result.nakshatra} ({t.labelPada} {result.nakshatra_pada})</span>
-              </div>
-              <div className="vedic-row">
-                <span>{t.labelCurrentDasha}</span>
-                <span>{result.dasha_lord} ({result.dasha_years} {t.labelYears})</span>
-              </div>
-            </div>
-            <div className="premium-blur">{t.premiumText}</div>
-            <button className="btn-primary" onClick={getFullReport} disabled={loading}>
-              {loading ? t.btnLoading : t.btnReport}
-            </button>
-            <p className="payment-note">{t.paymentNote}</p>
-            <div className="card-nav" style={{marginTop:'0.5rem'}}>
-              <button className="c-back" onClick={() => { setResult(null); goNext(0, true) }}>
-                ← Start over
-              </button>
-            </div>
+            ) : (
+              <>
+                <div className="numbers-grid">
+                  <div className="number-box">
+                    <div className="number-value">{result.life_path}</div>
+                    <div className="number-label">{t.gridLifePath}</div>
+                  </div>
+                  <div className="number-box">
+                    <div className="number-value">{result.name_number}</div>
+                    <div className="number-label">{t.gridNameNumber}</div>
+                  </div>
+                  <div className="number-box">
+                    <div className="number-value">{result.soul_urge}</div>
+                    <div className="number-label">{t.gridSoulUrge}</div>
+                  </div>
+                  <div className="number-box">
+                    <div className="number-value">{result.personality}</div>
+                    <div className="number-label">{t.gridPersonality}</div>
+                  </div>
+                </div>
+                <p className="meaning">{result.meaning}</p>
+                <div className="vedic-section">
+                  <div className="vedic-title">{t.titleVedic}</div>
+                  <div className="vedic-row"><span>{t.labelMoonSign}</span><span>{result.rashi}</span></div>
+                  <div className="vedic-row">
+                    <span>{t.labelBirthStar}</span>
+                    <span>{result.nakshatra} ({t.labelPada} {result.nakshatra_pada})</span>
+                  </div>
+                  <div className="vedic-row">
+                    <span>{t.labelCurrentDasha}</span>
+                    <span>{result.dasha_lord} ({result.dasha_years} {t.labelYears})</span>
+                  </div>
+                </div>
+                <div className="premium-blur">{t.premiumText}</div>
+                <button className="btn-primary" onClick={getFullReport} disabled={loading}>
+                  {loading ? t.btnLoading : t.btnReport}
+                </button>
+                <p className="payment-note">{t.paymentNote}</p>
+                <div className="card-nav" style={{marginTop:'0.5rem'}}>
+                  <button className="c-back" onClick={() => { setResult(null); setCard(0); setAnim('sc-active') }}>
+                    ← Start over
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         )}
 
