@@ -130,7 +130,7 @@ const CALC_LOCALIZATION: Record<string, Record<string, string>> = {
 
 // ─── Card swipe CSS ───────────────────────────────────────────────────────────
 const CARD_CSS = `
-  .swipe-outer { background:#F5F3EF; padding:0.75rem 1rem 2rem; min-height:460px; margin-top:-56px; position:relative; z-index:10; }
+  .swipe-outer { background:#F5F3EF; padding:0.75rem 1rem 2rem; min-height:460px; margin-top:24px; position:relative; z-index:10; }
   .progress-dots { display:flex; justify-content:center; gap:8px; margin-bottom:1.5rem; }
   .pdot { height:8px; border-radius:4px; transition:all 0.25s; background:#D0D0D0; width:8px; }
   .pdot.done   { background:#B07A10; width:8px; }
@@ -207,7 +207,7 @@ const CARD_CSS = `
   .loading-spinner { width:36px; height:36px; border:3px solid #E8E4DC; border-top-color:#B07A10; border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 0.75rem; }
   @keyframes spin { to{transform:rotate(360deg)} }
   @keyframes fadeIn { from{opacity:0;transform:translateY(-4px)} to{opacity:1;transform:translateY(0)} }
-  @media(max-width:600px){ .swipe-outer{margin-top:-36px;padding-top:0.65rem;} .pada-grid{grid-template-columns:repeat(2,1fr);} .cq{font-size:1.15rem;} .swipe-card{padding:1.4rem 1.1rem 1.2rem;} .numbers-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(max-width:600px){ .swipe-outer{margin-top:18px;padding-top:0.65rem;} .pada-grid{grid-template-columns:repeat(2,1fr);} .cq{font-size:1.15rem;} .swipe-card{padding:1.4rem 1.1rem 1.2rem;} .numbers-grid{grid-template-columns:repeat(2,1fr);} }
 `
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
@@ -285,8 +285,7 @@ export default function Calculator({ lang }: CalculatorProps) {
     ? ampm
     : (pada === 1 || pada === 2) ? 'AM' : 'PM'
 
-  // Card 1 Next is enabled if date is filled + (pada selected OR timeUnknown OR exact time entered)
-  // Actually we want time to be optional — user just needs date
+  // Date is required; birth time stays optional on its own slide.
   const canProceedFromDOB = !!dob
 
   function buildPayload() {
@@ -314,8 +313,8 @@ export default function Calculator({ lang }: CalculatorProps) {
   async function calculate() {
     if (!name || !dob) return
     setLoading(true); setError('')
-    // Navigate to card 4 immediately, showing loading state
-    goNext(4)
+    // Navigate to the result card immediately, showing loading state
+    goNext(5)
     try {
       const res = await fetch('https://khagatara-api.onrender.com/calculate', {
         method: 'POST',
@@ -326,8 +325,8 @@ export default function Calculator({ lang }: CalculatorProps) {
       setResult(data)
     } catch {
       setError(t.errorText)
-      // Go back to card 3 on error so user can retry
-      goNext(3, true)
+      // Go back to place of birth on error so user can retry
+      goNext(4, true)
     }
     setLoading(false)
   }
@@ -353,7 +352,7 @@ export default function Calculator({ lang }: CalculatorProps) {
     c.toLowerCase().includes(countrySearch.toLowerCase())
   )
 
-  const dots = [0,1,2,3,4]
+  const dots = [0,1,2,3,4,5]
 
   return (
     <div className="swipe-outer">
@@ -384,7 +383,7 @@ export default function Calculator({ lang }: CalculatorProps) {
           </div>
         )}
 
-        {/* ── Card 1: DOB + Time ── */}
+        {/* ── Card 1: Date of Birth ── */}
         {card === 1 && (
           <div className={`swipe-card ${anim}`}>
             <div className="cq">🎂 Hello {name.split(' ')[0]} — when were you born?</div>
@@ -402,7 +401,18 @@ export default function Calculator({ lang }: CalculatorProps) {
                 {YEARS.map(y => <option key={y} value={y}>{y}</option>)}
               </select>
             </div>
+            <p className="chint">Your date of birth is enough to continue. Birth time comes next.</p>
+            <div className="card-nav">
+              <button className="c-back" onClick={goBack}>← Back</button>
+              <button className="c-next" disabled={!canProceedFromDOB} onClick={() => goNext(2)}>Next →</button>
+            </div>
+          </div>
+        )}
 
+        {/* ── Card 2: Time of Birth ── */}
+        {card === 2 && (
+          <div className={`swipe-card ${anim}`}>
+            <div className="cq">⏰ What time were you born?</div>
             <div style={{fontSize:'0.68rem',fontWeight:700,color:'#3D3D3D',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'0.5rem'}}>
               ⏰ Birth Time <span style={{fontWeight:400,color:'#9B9B9B',letterSpacing:0,textTransform:'none'}}>(optional)</span>
             </div>
@@ -475,7 +485,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                 <strong>⚠️ Birth time affects your Nakshatra Pada</strong> — the quarter defining your
                 personality sub-type, career timing and marriage window. Even approximate is better.
                 <div className="dis-btns">
-                  <button className="dis-btn primary" onClick={() => { setTimeUnknown(true); setPada(null); setBirthTime(''); setShowTimeDis(false); goNext(2) }}>
+                  <button className="dis-btn primary" onClick={() => { setTimeUnknown(true); setPada(null); setBirthTime(''); setShowTimeDis(false); goNext(3) }}>
                     Got it, continue without
                   </button>
                   <button className="dis-btn" onClick={() => setShowTimeDis(false)}>Enter time instead</button>
@@ -484,14 +494,13 @@ export default function Calculator({ lang }: CalculatorProps) {
             )}
             <div className="card-nav">
               <button className="c-back" onClick={goBack}>← Back</button>
-              {/* Next enabled as soon as date is filled — time is optional */}
-              <button className="c-next" disabled={!canProceedFromDOB} onClick={() => goNext(2)}>Next →</button>
+              <button className="c-next" onClick={() => goNext(3)}>Next →</button>
             </div>
           </div>
         )}
 
-        {/* ── Card 2: Gender ── */}
-        {card === 2 && (
+        {/* ── Card 3: Gender ── */}
+        {card === 3 && (
           <div className={`swipe-card ${anim}`}>
             <div className="cq">✨ You are...</div>
             <div className="gender-grid">
@@ -500,7 +509,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                 {val:'female',     emoji:'👩', label:t.genderFemale},
                 {val:'prefer_not', emoji:'🌈', label:t.genderOther},
               ] as {val:string,emoji:string,label:string}[]).map(({val,emoji,label}) => (
-                <button key={val} className="gender-btn" onClick={() => { setGender(val); goNext(3) }}>
+                <button key={val} className="gender-btn" onClick={() => { setGender(val); goNext(4) }}>
                   <span className="gender-emoji">{emoji}</span>
                   <span className="gender-label">{label}</span>
                 </button>
@@ -514,8 +523,8 @@ export default function Calculator({ lang }: CalculatorProps) {
           </div>
         )}
 
-        {/* ── Card 3: Place of Birth ── */}
-        {card === 3 && (
+        {/* ── Card 4: Place of Birth ── */}
+        {card === 4 && (
           <div className={`swipe-card ${anim}`}>
             <div className="cq">🌍 Where were you born?</div>
             {(country || stateVal) && (
@@ -595,8 +604,8 @@ export default function Calculator({ lang }: CalculatorProps) {
           </div>
         )}
 
-        {/* ── Card 4: Result (or Loading) ── */}
-        {card === 4 && (
+        {/* ── Card 5: Result (or Loading) ── */}
+        {card === 5 && (
           <div className={`swipe-card ${anim}`}>
             {loading || !result ? (
               /* Loading state — shown while API call is in flight */
