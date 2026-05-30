@@ -494,7 +494,9 @@ export default function Calculator({ lang }: CalculatorProps) {
       })
       const data = await res.json()
       if (!res.ok || !data.checkout_url) throw new Error(data.detail || 'Payment failed')
-      window.location.href = data.checkout_url
+      const checkoutUrl = new URL(data.checkout_url)
+      checkoutUrl.searchParams.set('mother_tongue', motherTongue)
+      window.location.href = checkoutUrl.toString()
     } catch (err: unknown) {
       console.error(err); setError(t.errorPayment); alert(t.errorPayment)
     }
