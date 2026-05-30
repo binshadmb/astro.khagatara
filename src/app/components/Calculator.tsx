@@ -227,6 +227,156 @@ const INDIA_STATES = [
   'Telangana','Odisha','Bihar','Madhya Pradesh','Assam','Goa',
 ]
 
+// ─── Mother Tongue Options ────────────────────────────────────────────────────
+const MOTHER_TONGUE_OPTIONS = [
+  // ── Non-Latin scripts first ──────────────────────────────────────────
+  { code: 'ar',    native: 'العربية',        english: 'Arabic',             flag: '🇸🇦' },
+  { code: 'fa',    native: 'فارسی',           english: 'Persian (Farsi)',    flag: '🇮🇷' },
+  { code: 'prs',   native: 'دری',             english: 'Dari',               flag: '🇦🇫' },
+  { code: 'ps',    native: 'پښتو',            english: 'Pashto',             flag: '🇦🇫' },
+  { code: 'ur',    native: 'اردو',            english: 'Urdu',               flag: '🇵🇰' },
+  { code: 'ks',    native: 'کٲشُر',           english: 'Kashmiri',           flag: '🇮🇳' },
+  { code: 'sd',    native: 'سنڌي',            english: 'Sindhi',             flag: '🇵🇰' },
+  { code: 'ug',    native: 'ئۇيغۇرچە',        english: 'Uyghur',             flag: '🇨🇳' },
+  { code: 'dv',    native: 'ދިވެހި',           english: 'Dhivehi',            flag: '🇲🇻' },
+  { code: 'he',    native: 'עברית',            english: 'Hebrew',             flag: '🇮🇱' },
+  { code: 'hi',    native: 'हिन्दी',           english: 'Hindi',              flag: '🇮🇳' },
+  { code: 'mr',    native: 'मराठी',            english: 'Marathi',            flag: '🇮🇳' },
+  { code: 'ne',    native: 'नेपाली',           english: 'Nepali',             flag: '🇳🇵' },
+  { code: 'mai',   native: 'मैथिली',           english: 'Maithili',           flag: '🇮🇳' },
+  { code: 'doi',   native: 'डोगरी',            english: 'Dogri',              flag: '🇮🇳' },
+  { code: 'kok',   native: 'कोंकणी',           english: 'Konkani',            flag: '🇮🇳' },
+  { code: 'sa',    native: 'संस्कृतम्',         english: 'Sanskrit',           flag: '🇮🇳' },
+  { code: 'pa',    native: 'ਪੰਜਾਬੀ',            english: 'Punjabi',            flag: '🇮🇳' },
+  { code: 'gu',    native: 'ગુજરાતી',           english: 'Gujarati',           flag: '🇮🇳' },
+  { code: 'or',    native: 'ଓଡ଼ିଆ',             english: 'Odia',               flag: '🇮🇳' },
+  { code: 'bn',    native: 'বাংলা',             english: 'Bengali',            flag: '🇧🇩' },
+  { code: 'as',    native: 'অসমীয়া',           english: 'Assamese',           flag: '🇮🇳' },
+  { code: 'mni',   native: 'ꯃꯤꯇꯩꯂꯣꯟ',          english: 'Meitei (Manipuri)',  flag: '🇮🇳' },
+  { code: 'sat',   native: 'ᱥᱟᱱᱛᱟᱲᱤ',          english: 'Santali',            flag: '🇮🇳' },
+  { code: 'ml',    native: 'മലയാളം',           english: 'Malayalam',          flag: '🇮🇳' },
+  { code: 'ta',    native: 'தமிழ்',             english: 'Tamil',              flag: '🇮🇳' },
+  { code: 'te',    native: 'తెలుగు',            english: 'Telugu',             flag: '🇮🇳' },
+  { code: 'kn',    native: 'ಕನ್ನಡ',             english: 'Kannada',            flag: '🇮🇳' },
+  { code: 'si',    native: 'සිංහල',             english: 'Sinhala',            flag: '🇱🇰' },
+  { code: 'my',    native: 'မြန်မာဘာသာ',        english: 'Burmese',            flag: '🇲🇲' },
+  { code: 'th',    native: 'ภาษาไทย',           english: 'Thai',               flag: '🇹🇭' },
+  { code: 'lo',    native: 'ພາສາລາວ',           english: 'Lao',                flag: '🇱🇦' },
+  { code: 'km',    native: 'ភាសាខ្មែរ',          english: 'Khmer',              flag: '🇰🇭' },
+  { code: 'dz',    native: 'རྫོང་ཁ',             english: 'Dzongkha',           flag: '🇧🇹' },
+  { code: 'ti',    native: 'ትግርኛ',              english: 'Tigrinya',           flag: '🇪🇷' },
+  { code: 'am',    native: 'አማርኛ',              english: 'Amharic',            flag: '🇪🇹' },
+  { code: 'om',    native: 'Afaan Oromoo',      english: 'Oromo',              flag: '🇪🇹' },
+  { code: 'zh-cn', native: '中文（简体）',         english: 'Chinese Simplified', flag: '🇨🇳' },
+  { code: 'zh-tw', native: '中文（繁體）',         english: 'Chinese Traditional',flag: '🇹🇼' },
+  { code: 'yue',   native: '廣東話',              english: 'Cantonese',          flag: '🇭🇰' },
+  { code: 'ja',    native: '日本語',              english: 'Japanese',           flag: '🇯🇵' },
+  { code: 'ko',    native: '한국어',              english: 'Korean',             flag: '🇰🇷' },
+  { code: 'mn',    native: 'Монгол',             english: 'Mongolian',          flag: '🇲🇳' },
+  { code: 'ka',    native: 'ქართული',            english: 'Georgian',           flag: '🇬🇪' },
+  { code: 'hy',    native: 'Հայերեն',            english: 'Armenian',           flag: '🇦🇲' },
+  { code: 'ru',    native: 'Русский',            english: 'Russian',            flag: '🇷🇺' },
+  { code: 'uk',    native: 'Українська',         english: 'Ukrainian',          flag: '🇺🇦' },
+  { code: 'be',    native: 'Беларуская',         english: 'Belarusian',         flag: '🇧🇾' },
+  { code: 'bg',    native: 'Български',          english: 'Bulgarian',          flag: '🇧🇬' },
+  { code: 'mk',    native: 'Македонски',         english: 'Macedonian',         flag: '🇲🇰' },
+  { code: 'sr',    native: 'Српски',             english: 'Serbian',            flag: '🇷🇸' },
+  { code: 'kk',    native: 'Қазақша',            english: 'Kazakh',             flag: '🇰🇿' },
+  { code: 'ky',    native: 'Кыргызча',           english: 'Kyrgyz',             flag: '🇰🇬' },
+  { code: 'tg',    native: 'Тоҷикӣ',             english: 'Tajik',              flag: '🇹🇯' },
+  { code: 'el',    native: 'Ελληνικά',           english: 'Greek',              flag: '🇬🇷' },
+  // ── Latin-script languages alphabetically ────────────────────────────
+  { code: 'af',    native: 'Afrikaans',          english: 'Afrikaans',          flag: '🇿🇦' },
+  { code: 'ak',    native: 'Akan',               english: 'Akan',               flag: '🇬🇭' },
+  { code: 'ay',    native: 'Aymar aru',          english: 'Aymara',             flag: '🇧🇴' },
+  { code: 'az',    native: 'Azərbaycanca',       english: 'Azerbaijani',        flag: '🇦🇿' },
+  { code: 'bal',   native: 'بلوچی',              english: 'Balochi',            flag: '🇵🇰' },
+  { code: 'bem',   native: 'Ichibemba',          english: 'Bemba',              flag: '🇿🇲' },
+  { code: 'bm',    native: 'Bamanankan',         english: 'Bambara',            flag: '🇲🇱' },
+  { code: 'br',    native: 'Brezhoneg',          english: 'Breton',             flag: '🏴󠁦󠁲󠁢󠁲󠁥󠁿' },
+  { code: 'bs',    native: 'Bosanski',           english: 'Bosnian',            flag: '🇧🇦' },
+  { code: 'ca',    native: 'Català',             english: 'Catalan',            flag: '🇪🇸' },
+  { code: 'ceb',   native: 'Cebuano',            english: 'Cebuano',            flag: '🇵🇭' },
+  { code: 'co',    native: 'Corsu',              english: 'Corsican',           flag: '🇫🇷' },
+  { code: 'cs',    native: 'Čeština',            english: 'Czech',              flag: '🇨🇿' },
+  { code: 'cy',    native: 'Cymraeg',            english: 'Welsh',              flag: '🏴󠁧󠁢󠁷󠁬󠁳󠁿' },
+  { code: 'da',    native: 'Dansk',              english: 'Danish',             flag: '🇩🇰' },
+  { code: 'de',    native: 'Deutsch',            english: 'German',             flag: '🇩🇪' },
+  { code: 'ee',    native: 'Eʋegbe',             english: 'Ewe',                flag: '🇬🇭' },
+  { code: 'en',    native: 'English',            english: 'English',            flag: '🇬🇧' },
+  { code: 'es',    native: 'Español',            english: 'Spanish',            flag: '🇪🇸' },
+  { code: 'et',    native: 'Eesti',              english: 'Estonian',           flag: '🇪🇪' },
+  { code: 'eu',    native: 'Euskara',            english: 'Basque',             flag: '🇪🇸' },
+  { code: 'ff',    native: 'Pulaar',             english: 'Fula',               flag: '🇸🇳' },
+  { code: 'fi',    native: 'Suomi',              english: 'Finnish',            flag: '🇫🇮' },
+  { code: 'fil',   native: 'Filipino',           english: 'Filipino',           flag: '🇵🇭' },
+  { code: 'fj',    native: 'Vosa Vakaviti',      english: 'Fijian',             flag: '🇫🇯' },
+  { code: 'fo',    native: 'Føroyskt',           english: 'Faroese',            flag: '🇫🇴' },
+  { code: 'fr',    native: 'Français',           english: 'French',             flag: '🇫🇷' },
+  { code: 'fy',    native: 'Frysk',              english: 'Frisian',            flag: '🇳🇱' },
+  { code: 'ga',    native: 'Gaeilge',            english: 'Irish',              flag: '🇮🇪' },
+  { code: 'gd',    native: 'Gàidhlig',           english: 'Scottish Gaelic',    flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿' },
+  { code: 'gl',    native: 'Galego',             english: 'Galician',           flag: '🇪🇸' },
+  { code: 'gn',    native: "Avañe'ẽ",            english: 'Guaraní',            flag: '🇵🇾' },
+  { code: 'ha',    native: 'Hausa',              english: 'Hausa',              flag: '🇳🇬' },
+  { code: 'haw',   native: 'ʻŌlelo Hawaiʻi',    english: 'Hawaiian',           flag: '🇺🇸' },
+  { code: 'hil',   native: 'Hiligaynon',         english: 'Hiligaynon',         flag: '🇵🇭' },
+  { code: 'hr',    native: 'Hrvatski',           english: 'Croatian',           flag: '🇭🇷' },
+  { code: 'ht',    native: 'Kreyòl ayisyen',     english: 'Haitian Creole',     flag: '🇭🇹' },
+  { code: 'hu',    native: 'Magyar',             english: 'Hungarian',          flag: '🇭🇺' },
+  { code: 'id',    native: 'Bahasa Indonesia',   english: 'Indonesian',         flag: '🇮🇩' },
+  { code: 'ig',    native: 'Igbo',               english: 'Igbo',               flag: '🇳🇬' },
+  { code: 'ilo',   native: 'Ilokano',            english: 'Ilocano',            flag: '🇵🇭' },
+  { code: 'is',    native: 'Íslenska',           english: 'Icelandic',          flag: '🇮🇸' },
+  { code: 'it',    native: 'Italiano',           english: 'Italian',            flag: '🇮🇹' },
+  { code: 'jv',    native: 'Basa Jawa',          english: 'Javanese',           flag: '🇮🇩' },
+  { code: 'ku',    native: 'Kurdî',              english: 'Kurdish',            flag: '🇮🇶' },
+  { code: 'lb',    native: 'Lëtzebuergesch',     english: 'Luxembourgish',      flag: '🇱🇺' },
+  { code: 'lg',    native: 'Luganda',            english: 'Luganda',            flag: '🇺🇬' },
+  { code: 'ln',    native: 'Lingála',            english: 'Lingala',            flag: '🇨🇩' },
+  { code: 'lt',    native: 'Lietuvių',           english: 'Lithuanian',         flag: '🇱🇹' },
+  { code: 'lv',    native: 'Latviešu',           english: 'Latvian',            flag: '🇱🇻' },
+  { code: 'mg',    native: 'Malagasy',           english: 'Malagasy',           flag: '🇲🇬' },
+  { code: 'mi',    native: 'Te Reo Māori',       english: 'Māori',              flag: '🇳🇿' },
+  { code: 'mk',    native: 'Македонски',         english: 'Macedonian',         flag: '🇲🇰' },
+  { code: 'ms',    native: 'Bahasa Melayu',      english: 'Malay',              flag: '🇲🇾' },
+  { code: 'mt',    native: 'Malti',              english: 'Maltese',            flag: '🇲🇹' },
+  { code: 'nah',   native: 'Nāhuatl',            english: 'Nahuatl',            flag: '🇲🇽' },
+  { code: 'nl',    native: 'Nederlands',         english: 'Dutch',              flag: '🇳🇱' },
+  { code: 'no',    native: 'Norsk',              english: 'Norwegian',          flag: '🇳🇴' },
+  { code: 'nr',    native: 'isiNdebele',         english: 'Ndebele (South)',    flag: '🇿🇦' },
+  { code: 'ny',    native: 'Chichewa',           english: 'Chichewa',           flag: '🇲🇼' },
+  { code: 'oc',    native: 'Occitan',            english: 'Occitan',            flag: '🇫🇷' },
+  { code: 'pl',    native: 'Polski',             english: 'Polish',             flag: '🇵🇱' },
+  { code: 'pt',    native: 'Português',          english: 'Portuguese',         flag: '🇧🇷' },
+  { code: 'ro',    native: 'Română',             english: 'Romanian',           flag: '🇷🇴' },
+  { code: 'rw',    native: 'Kinyarwanda',        english: 'Kinyarwanda',        flag: '🇷🇼' },
+  { code: 'sk',    native: 'Slovenčina',         english: 'Slovak',             flag: '🇸🇰' },
+  { code: 'sl',    native: 'Slovenščina',        english: 'Slovenian',          flag: '🇸🇮' },
+  { code: 'sm',    native: 'Gagana Samoa',       english: 'Samoan',             flag: '🇼🇸' },
+  { code: 'sn',    native: 'ChiShona',           english: 'Shona',              flag: '🇿🇼' },
+  { code: 'so',    native: 'Soomaali',           english: 'Somali',             flag: '🇸🇴' },
+  { code: 'sq',    native: 'Shqip',              english: 'Albanian',           flag: '🇦🇱' },
+  { code: 'st',    native: 'Sesotho',            english: 'Sotho',              flag: '🇱🇸' },
+  { code: 'su',    native: 'Basa Sunda',         english: 'Sundanese',          flag: '🇮🇩' },
+  { code: 'sv',    native: 'Svenska',            english: 'Swedish',            flag: '🇸🇪' },
+  { code: 'sw',    native: 'Kiswahili',          english: 'Swahili',            flag: '🇰🇪' },
+  { code: 'tk',    native: 'Türkmençe',          english: 'Turkmen',            flag: '🇹🇲' },
+  { code: 'tn',    native: 'Setswana',           english: 'Tswana',             flag: '🇧🇼' },
+  { code: 'to',    native: 'Lea faka-Tonga',     english: 'Tongan',             flag: '🇹🇴' },
+  { code: 'tpi',   native: 'Tok Pisin',          english: 'Tok Pisin',          flag: '🇵🇬' },
+  { code: 'tr',    native: 'Türkçe',             english: 'Turkish',            flag: '🇹🇷' },
+  { code: 'ts',    native: 'Xitsonga',           english: 'Tsonga',             flag: '🇿🇦' },
+  { code: 'uz',    native: "O'zbek",             english: 'Uzbek',              flag: '🇺🇿' },
+  { code: 've',    native: 'Tshivenḓa',          english: 'Venda',              flag: '🇿🇦' },
+  { code: 'vi',    native: 'Tiếng Việt',         english: 'Vietnamese',         flag: '🇻🇳' },
+  { code: 'wo',    native: 'Wolof',              english: 'Wolof',              flag: '🇸🇳' },
+  { code: 'xh',    native: 'isiXhosa',           english: 'Xhosa',              flag: '🇿🇦' },
+  { code: 'yo',    native: 'Yorùbá',             english: 'Yoruba',             flag: '🇳🇬' },
+  { code: 'zgh',   native: 'ⵜⴰⵎⴰⵣⵉⵖⵜ',          english: 'Tamazight',          flag: '🇲🇦' },
+  { code: 'zu',    native: 'isiZulu',            english: 'Zulu',               flag: '🇿🇦' },
+  { code: 'other', native: 'Other',              english: 'Other',              flag: '🌐' },
+]
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function Calculator({ lang }: CalculatorProps) {
   const t = CALC_LOCALIZATION[lang] ?? CALC_LOCALIZATION['en']
@@ -241,6 +391,8 @@ export default function Calculator({ lang }: CalculatorProps) {
   const [timeUnknown,   setTimeUnknown]   = useState(false)
   const [showTimeDis,   setShowTimeDis]   = useState(false)
   const [showExactTime, setShowExactTime] = useState(false)
+  const [motherTongue,  setMotherTongue]  = useState('')
+  const [mtOpen,        setMtOpen]        = useState(false)
   const [,              setGender]        = useState('')
   const [country,       setCountry]       = useState('')
   const [stateVal,      setStateVal]      = useState('')
@@ -295,6 +447,7 @@ export default function Calculator({ lang }: CalculatorProps) {
       ampm: resolvedAmpm,
       birth_place: birthPlace,
       time_unknown: timeUnknown && !pada && !birthTime,
+      mother_tongue: motherTongue,
       lang,
     }
   }
@@ -314,7 +467,7 @@ export default function Calculator({ lang }: CalculatorProps) {
     if (!name || !dob) return
     setLoading(true); setError('')
     // Navigate to the result card immediately, showing loading state
-    goNext(5)
+    goNext(6)
     try {
       const res = await fetch('https://khagatara-api.onrender.com/calculate', {
         method: 'POST',
@@ -326,7 +479,7 @@ export default function Calculator({ lang }: CalculatorProps) {
     } catch {
       setError(t.errorText)
       // Go back to place of birth on error so user can retry
-      goNext(4, true)
+      goNext(5, true)
     }
     setLoading(false)
   }
@@ -352,7 +505,7 @@ export default function Calculator({ lang }: CalculatorProps) {
     c.toLowerCase().includes(countrySearch.toLowerCase())
   )
 
-  const dots = [0,1,2,3,4,5]
+  const dots = [0,1,2,3,4,5,6]
 
   return (
     <div className="swipe-outer">
@@ -409,8 +562,79 @@ export default function Calculator({ lang }: CalculatorProps) {
           </div>
         )}
 
-        {/* ── Card 2: Time of Birth ── */}
+        {/* ── Card 2: Mother Tongue ── */}
         {card === 2 && (
+          <div className={`swipe-card ${anim}`}>
+            <div className="cq">🌐 {name.split(' ')[0]} — what&apos;s your mother tongue?</div>
+            {/* Collapsible dropdown */}
+            <div style={{position:'relative',marginBottom:'1rem'}}>
+              <button
+                onClick={() => setMtOpen(v => !v)}
+                style={{
+                  width:'100%', display:'flex', alignItems:'center', justifyContent:'space-between',
+                  background:'#F7F7F7', border:'1.5px solid ' + (motherTongue ? '#B07A10' : '#D0D0D0'),
+                  borderRadius: mtOpen ? '10px 10px 0 0' : '10px',
+                  padding:'0.75rem 1rem', cursor:'pointer', transition:'all 0.2s',
+                  fontSize:'1.1rem', color: motherTongue ? '#0A0A0A' : '#A0A0A0',
+                }}>
+                <span style={{fontFamily: motherTongue ? 'inherit' : 'inherit'}}>
+                  {motherTongue
+                    ? MOTHER_TONGUE_OPTIONS.find(o => o.code === motherTongue)?.native
+                    : 'Select your language…'}
+                </span>
+                <span style={{
+                  display:'inline-block', transition:'transform 0.25s',
+                  transform: mtOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                  fontSize:'0.85rem', color:'#6B6B6B'
+                }}>▼</span>
+              </button>
+              {mtOpen && (
+                <div style={{
+                  position:'absolute', top:'100%', left:0, right:0, zIndex:20,
+                  background:'#FFFFFF', border:'1.5px solid #B07A10', borderTop:'none',
+                  borderRadius:'0 0 10px 10px',
+                  boxShadow:'0 8px 24px rgba(0,0,0,0.1)',
+                  maxHeight:'260px', overflowY:'auto',
+                  animation:'fadeIn 0.18s ease',
+                }}>
+                  {MOTHER_TONGUE_OPTIONS.map((opt, i) => (
+                    <button key={opt.code}
+                      onClick={() => { setMotherTongue(opt.code); setMtOpen(false) }}
+                      style={{
+                        width:'100%', display:'flex', alignItems:'center', gap:'0.75rem',
+                        background: motherTongue === opt.code ? '#FDF3E0' : 'transparent',
+                        border:'none', borderBottom: i < MOTHER_TONGUE_OPTIONS.length - 1 ? '1px solid #F0EDE6' : 'none',
+                        padding:'0.7rem 1rem', cursor:'pointer', textAlign:'left',
+                        transition:'background 0.15s',
+                      }}
+                      onMouseEnter={e => { if (motherTongue !== opt.code) (e.currentTarget as HTMLButtonElement).style.background = '#FAF6EE' }}
+                      onMouseLeave={e => { if (motherTongue !== opt.code) (e.currentTarget as HTMLButtonElement).style.background = 'transparent' }}
+                    >
+                      <span style={{fontSize:'1.4rem', lineHeight:1}}>{opt.flag}</span>
+                      <div>
+                        <div style={{fontSize:'1rem', color:'#0A0A0A', lineHeight:1.2}}>{opt.native}</div>
+                        <div style={{fontSize:'0.62rem', color:'#9B9B9B', marginTop:'2px', letterSpacing:'0.04em'}}>{opt.english}</div>
+                      </div>
+                      {motherTongue === opt.code && (
+                        <span style={{marginLeft:'auto', color:'#B07A10', fontSize:'0.9rem'}}>✓</span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <p className="chint" style={{marginBottom:'1.1rem'}}>
+              Helps personalise your reading in the right vibration.
+            </p>
+            <div className="card-nav">
+              <button className="c-back" onClick={goBack}>← Back</button>
+              <button className="c-next" disabled={!motherTongue} onClick={() => goNext(3)}>Next →</button>
+            </div>
+          </div>
+        )}
+
+        {/* ── Card 3: Time of Birth ── */}
+        {card === 3 && (
           <div className={`swipe-card ${anim}`}>
             <div className="cq">⏰ What time were you born?</div>
             <div style={{fontSize:'0.68rem',fontWeight:700,color:'#3D3D3D',letterSpacing:'0.08em',textTransform:'uppercase',marginBottom:'0.5rem'}}>
@@ -485,7 +709,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                 <strong>⚠️ Birth time affects your Nakshatra Pada</strong> — the quarter defining your
                 personality sub-type, career timing and marriage window. Even approximate is better.
                 <div className="dis-btns">
-                  <button className="dis-btn primary" onClick={() => { setTimeUnknown(true); setPada(null); setBirthTime(''); setShowTimeDis(false); goNext(3) }}>
+                  <button className="dis-btn primary" onClick={() => { setTimeUnknown(true); setPada(null); setBirthTime(''); setShowTimeDis(false); goNext(4) }}>
                     Got it, continue without
                   </button>
                   <button className="dis-btn" onClick={() => setShowTimeDis(false)}>Enter time instead</button>
@@ -494,13 +718,13 @@ export default function Calculator({ lang }: CalculatorProps) {
             )}
             <div className="card-nav">
               <button className="c-back" onClick={goBack}>← Back</button>
-              <button className="c-next" onClick={() => goNext(3)}>Next →</button>
+              <button className="c-next" onClick={() => goNext(4)}>Next →</button>
             </div>
           </div>
         )}
 
-        {/* ── Card 3: Gender ── */}
-        {card === 3 && (
+        {/* ── Card 4: Gender ── */}
+        {card === 4 && (
           <div className={`swipe-card ${anim}`}>
             <div className="cq">✨ You are...</div>
             <div className="gender-grid">
@@ -509,7 +733,7 @@ export default function Calculator({ lang }: CalculatorProps) {
                 {val:'female',     emoji:'👩', label:t.genderFemale},
                 {val:'prefer_not', emoji:'🌈', label:t.genderOther},
               ] as {val:string,emoji:string,label:string}[]).map(({val,emoji,label}) => (
-                <button key={val} className="gender-btn" onClick={() => { setGender(val); goNext(4) }}>
+                <button key={val} className="gender-btn" onClick={() => { setGender(val); goNext(5) }}>
                   <span className="gender-emoji">{emoji}</span>
                   <span className="gender-label">{label}</span>
                 </button>
@@ -523,8 +747,8 @@ export default function Calculator({ lang }: CalculatorProps) {
           </div>
         )}
 
-        {/* ── Card 4: Place of Birth ── */}
-        {card === 4 && (
+        {/* ── Card 5: Place of Birth ── */}
+        {card === 5 && (
           <div className={`swipe-card ${anim}`}>
             <div className="cq">🌍 Where were you born?</div>
             {(country || stateVal) && (
@@ -604,8 +828,8 @@ export default function Calculator({ lang }: CalculatorProps) {
           </div>
         )}
 
-        {/* ── Card 5: Result (or Loading) ── */}
-        {card === 5 && (
+        {/* ── Card 6: Result (or Loading) ── */}
+        {card === 6 && (
           <div className={`swipe-card ${anim}`}>
             {loading || !result ? (
               /* Loading state — shown while API call is in flight */
