@@ -187,9 +187,23 @@ const DOWNLOAD_LABELS: Record<string, { screen: string; pdf: string }> = {
   sw: { screen: 'Tazama kwa Kiswahili', pdf: 'Pakua kwa Kiswahili' },
   id: { screen: 'Lihat dalam Bahasa Indonesia', pdf: 'Unduh dalam Bahasa Indonesia' },
   vi: { screen: 'Xem bằng tiếng Việt', pdf: 'Tải xuống bằng tiếng Việt' },
+  cy: { screen: 'Gweld yn Gymraeg', pdf: 'Lawrlwythwch eich adroddiad PDF' },
 }
 
 const DEFAULT_LABELS = { screen: 'View in English', pdf: 'Download Your PDF Report' }
+
+function getLanguageLabels(code: string, options: typeof MOTHER_TONGUE_OPTIONS) {
+  if (DOWNLOAD_LABELS[code]) return DOWNLOAD_LABELS[code]
+  if (code === 'en') return DEFAULT_LABELS
+
+  const option = options.find(o => o.code === code)
+  const languageName = option?.native || option?.english || code.toUpperCase()
+
+  return {
+    screen: `View in ${languageName}`,
+    pdf: `Download PDF in ${languageName}`,
+  }
+}
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 function SuccessContent() {
@@ -207,8 +221,9 @@ function SuccessContent() {
     ? MOTHER_TONGUE_OPTIONS
     : [{ code: urlLang, native: urlLang, english: urlLang.toUpperCase(), flag: '🌐' }, ...MOTHER_TONGUE_OPTIONS]
 
-  const screenLabel = (DOWNLOAD_LABELS[screenLang] ?? DEFAULT_LABELS).screen
-  const pdfLabel = (DOWNLOAD_LABELS[pdfLang] ?? DEFAULT_LABELS).pdf
+  const screenLabel = getLanguageLabels(screenLang, languageOptions).screen
+  const pdfLabel = getLanguageLabels(pdfLang, languageOptions).pdf
+  const pdfOption = languageOptions.find(o => o.code === pdfLang)
   const viewReadingUrl = sessionId
     ? `https://khagatara-api.onrender.com/view-reading?session_id=${encodeURIComponent(sessionId)}&lang=${encodeURIComponent(screenLang)}`
     : null
@@ -320,7 +335,9 @@ function SuccessContent() {
                 display: 'block',
                 textAlign: 'center',
                 textDecoration: 'none',
-                background: '#2a2d4a',
+                background: 'linear-gradient(90deg, #18f0ff, #8bffb0)',
+                color: '#071018',
+                boxShadow: '0 0 18px rgba(24,240,255,0.24)',
                 marginTop: '0.4rem',
                 marginBottom: '0.5rem',
               }}
@@ -351,7 +368,10 @@ function SuccessContent() {
             </select>
             <a href={pdfUrl} download className="cta-btn"
               style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}>
-              ⬇ {pdfLabel}
+              <span style={{ display: 'block' }}>⬇ {pdfLabel}</span>
+              <span style={{ display: 'block', marginTop: '0.25rem', fontSize: '0.72rem', letterSpacing: '0.08em', opacity: 0.78 }}>
+                Download in {pdfOption?.english ?? pdfLang}
+              </span>
             </a>
           </div>
         )}
