@@ -209,6 +209,9 @@ function SuccessContent() {
 
   const screenLabel = (DOWNLOAD_LABELS[screenLang] ?? DEFAULT_LABELS).screen
   const pdfLabel = (DOWNLOAD_LABELS[pdfLang] ?? DEFAULT_LABELS).pdf
+  const viewReadingUrl = sessionId
+    ? `https://khagatara-api.onrender.com/view-reading?session_id=${encodeURIComponent(sessionId)}&lang=${encodeURIComponent(screenLang)}`
+    : null
 
   const statusLabel: Record<Status, string> = {
     pending:    'Consulting the stars…',
@@ -307,6 +310,24 @@ function SuccessContent() {
           <div style={{ fontSize: '0.7rem', color: '#c8b89a', marginTop: '0.4rem', textAlign: 'center', fontStyle: 'italic' }}>
             {screenLabel}
           </div>
+          {viewReadingUrl && (
+            <a
+              href={viewReadingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn"
+              style={{
+                display: 'block',
+                textAlign: 'center',
+                textDecoration: 'none',
+                background: '#2a2d4a',
+                marginTop: '0.4rem',
+                marginBottom: '0.5rem',
+              }}
+            >
+              {screenLabel}
+            </a>
+          )}
         </div>
 
         {/* PDF language dropdown + download button */}
