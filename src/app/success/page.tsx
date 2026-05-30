@@ -216,6 +216,7 @@ function SuccessContent() {
 
   const [screenLang, setScreenLang] = useState(urlLang)
   const [pdfLang, setPdfLang] = useState(urlLang)
+  const [accountOpen, setAccountOpen] = useState(false)
 
   const languageOptions = MOTHER_TONGUE_OPTIONS.some(o => o.code === urlLang)
     ? MOTHER_TONGUE_OPTIONS
@@ -241,7 +242,7 @@ function SuccessContent() {
 
   return (
     <main className="page">
-      <div className="card" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="card" style={{ position: 'relative', overflow: 'hidden', maxWidth: 900 }}>
 
         <div style={{
           position: 'absolute', inset: -100, pointerEvents: 'none',
@@ -249,147 +250,177 @@ function SuccessContent() {
           animation: 'pulseGlow 4s infinite',
         }} />
 
-        <div className="success-icon">✨</div>
+        <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
+          <div className="success-icon">✨</div>
 
-        <h1 className="success-title">
-          {status === 'done' ? 'Your Cosmic Blueprint is Ready' : 'Your Cosmic Blueprint is Being Forged'}
-        </h1>
+          <h1 className="success-title">
+            {status === 'done' ? 'Your Cosmic Blueprint is Ready' : 'Your Cosmic Blueprint is Being Forged'}
+          </h1>
 
-        <p className="success-text">
-          {status === 'error'
-            ? 'Payment received. Generation is taking a bit longer — your PDF will arrive by email within 5 minutes.'
-            : 'Payment received successfully. Your personalized Khagatara report is now being generated.'}
-        </p>
-
-        {/* Delivery box */}
-        <div className="success-note" style={{ marginBottom: '1.5rem' }}>
-          <div style={{ color: '#c8b89a', fontSize: '0.62rem', letterSpacing: '0.18em', opacity: 0.85, marginBottom: 8, textTransform: 'uppercase' }}>
-            Report Delivery Email
-          </div>
-          <div style={{ color: '#e8c547', fontSize: '1.1rem', fontWeight: 700, wordBreak: 'break-word' }}>
-            {email || 'Email used at checkout'}
-          </div>
-          <div style={{ color: '#c8b89a', marginTop: 8, opacity: 0.9, fontSize: '0.8rem' }}>
-            Usually delivered within 1–3 minutes.
-          </div>
-          {sessionId && (
-            <div style={{ color: '#9a8878', marginTop: 8, fontSize: '0.68rem', opacity: 0.75, wordBreak: 'break-all' }}>
-              Order ref: {sessionId}
-            </div>
-          )}
-        </div>
-
-        {/* Progress bar */}
-        <div style={{ marginBottom: '1.25rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
-            <span style={{ fontSize: '0.68rem', color: '#c8b89a', letterSpacing: '0.08em' }}>
-              {statusLabel[status]}
-            </span>
-            <span style={{ fontSize: '0.68rem', color: '#e8c547', fontWeight: 700 }}>{Math.round(progress)}%</span>
-          </div>
-          <div style={{ width: '100%', height: 6, background: 'rgba(255,255,255,0.06)', borderRadius: 999, overflow: 'hidden' }}>
-            <div style={{
-              height: '100%',
-              width: `${progress}%`,
-              background: 'linear-gradient(90deg, #c8901a, #e8c547)',
-              borderRadius: 999,
-              transition: 'width 0.8s ease',
-            }} />
-          </div>
-        </div>
-
-        {/* Debug strip — remove before going live */}
-        {debugMsg && (
-          <p style={{ fontSize: '0.6rem', color: '#5a4a3a', marginTop: 4, fontFamily: 'monospace' }}>
-            {debugMsg}
+          <p className="success-text">
+            {status === 'error'
+              ? 'Payment received. Generation is taking a bit longer — your PDF will arrive by email within 5 minutes.'
+              : 'Payment received successfully. Your personalized Khagatara report is now being generated.'}
           </p>
-        )}
+        </div>
 
-        {/* Screen language dropdown */}
-        <div style={{ marginBottom: '0.75rem' }}>
-          <div style={{ fontSize: '0.6rem', color: '#9a8878', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
-            View reading in
+        <div className="success-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', alignItems: 'start' }}>
+          <div>
+            {/* Delivery box */}
+            <div className="success-note" style={{ marginBottom: '1.25rem' }}>
+              <div style={{ color: '#c8b89a', fontSize: '0.62rem', letterSpacing: '0.18em', opacity: 0.85, marginBottom: 8, textTransform: 'uppercase' }}>
+                Report Delivery Email
+              </div>
+              <div style={{ color: '#e8c547', fontSize: '1.1rem', fontWeight: 700, wordBreak: 'break-word' }}>
+                {email || 'Email used at checkout'}
+              </div>
+              <div style={{ color: '#c8b89a', marginTop: 8, opacity: 0.9, fontSize: '0.8rem' }}>
+                Usually delivered within 1–3 minutes.
+              </div>
+              {sessionId && (
+                <div style={{ color: '#9a8878', marginTop: 8, fontSize: '0.68rem', opacity: 0.75, wordBreak: 'break-all' }}>
+                  Order ref: {sessionId}
+                </div>
+              )}
+            </div>
+
+            {/* Progress bar */}
+            <div style={{ marginBottom: '1.25rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
+                <span style={{ fontSize: '0.68rem', color: '#c8b89a', letterSpacing: '0.08em' }}>
+                  {statusLabel[status]}
+                </span>
+                <span style={{ fontSize: '0.68rem', color: '#e8c547', fontWeight: 700 }}>{Math.round(progress)}%</span>
+              </div>
+              <div style={{ width: '100%', height: 6, background: 'rgba(255,255,255,0.06)', borderRadius: 999, overflow: 'hidden' }}>
+                <div style={{
+                  height: '100%',
+                  width: `${progress}%`,
+                  background: 'linear-gradient(90deg, #c8901a, #e8c547)',
+                  borderRadius: 999,
+                  transition: 'width 0.8s ease',
+                }} />
+              </div>
+            </div>
+
+            {/* Debug strip — remove before going live */}
+            {debugMsg && (
+              <p style={{ fontSize: '0.6rem', color: '#5a4a3a', marginTop: 4, fontFamily: 'monospace' }}>
+                {debugMsg}
+              </p>
+            )}
+
+            {/* Screen language dropdown */}
+            <div style={{ marginBottom: '0.75rem' }}>
+              <div style={{ fontSize: '0.6rem', color: '#9a8878', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
+                View reading in
+              </div>
+              <select
+                value={screenLang}
+                onChange={e => setScreenLang(e.target.value)}
+                style={{
+                  width: '100%', background: '#1a1b26', border: '1px solid #2e2535',
+                  borderRadius: 8, color: '#cdd6f4', fontSize: '0.82rem',
+                  padding: '0.6rem 0.9rem', outline: 'none', cursor: 'pointer',
+                }}>
+                {languageOptions.map(o => (
+                  <option key={o.code} value={o.code}>{o.flag} {o.native} — {o.english}</option>
+                ))}
+              </select>
+              <div style={{ fontSize: '0.7rem', color: '#c8b89a', marginTop: '0.4rem', textAlign: 'center', fontStyle: 'italic' }}>
+                {screenLabel}
+              </div>
+              {viewReadingUrl && (
+                <a
+                  href={viewReadingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-btn"
+                  style={{
+                    display: 'block',
+                    textAlign: 'center',
+                    textDecoration: 'none',
+                    background: 'linear-gradient(90deg, #18f0ff, #8bffb0)',
+                    color: '#071018',
+                    boxShadow: '0 0 18px rgba(24,240,255,0.24)',
+                    marginTop: '0.4rem',
+                    marginBottom: '0.5rem',
+                  }}
+                >
+                  {screenLabel}
+                </a>
+              )}
+            </div>
+
+            {/* PDF language dropdown + download button */}
+            {status === 'done' && pdfUrl && (
+              <div style={{ marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '0.6rem', color: '#9a8878', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
+                  Download PDF in
+                </div>
+                <select
+                  value={pdfLang}
+                  onChange={e => setPdfLang(e.target.value)}
+                  style={{
+                    width: '100%', background: '#1a1b26', border: '1px solid #2e2535',
+                    borderRadius: 8, color: '#cdd6f4', fontSize: '0.82rem',
+                    padding: '0.6rem 0.9rem', outline: 'none', cursor: 'pointer',
+                    marginBottom: '0.75rem',
+                  }}>
+                  {languageOptions.map(o => (
+                    <option key={o.code} value={o.code}>{o.flag} {o.native} — {o.english}</option>
+                  ))}
+                </select>
+                <a href={pdfUrl} download className="cta-btn"
+                  style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}>
+                  <span style={{ display: 'block' }}>⬇ {pdfLabel}</span>
+                  <span style={{ display: 'block', marginTop: '0.25rem', fontSize: '0.72rem', letterSpacing: '0.08em', opacity: 0.78 }}>
+                    Download in {pdfOption?.english ?? pdfLang}
+                  </span>
+                </a>
+              </div>
+            )}
+
+            {status !== 'done' && (
+              <p style={{ fontSize: '0.72rem', color: '#9a8878', letterSpacing: '0.06em', marginTop: '0.75rem', textAlign: 'center' }}>
+                Please do not close this page while your report is processing.
+              </p>
+            )}
+
+            <p style={{ fontSize: '0.7rem', color: '#9a8878', letterSpacing: '0.04em', marginTop: '1rem', textAlign: 'center', lineHeight: 1.6 }}>
+              If your PDF does not arrive within 5 minutes, contact:{' '}
+              <span style={{ color: '#e8c547', fontWeight: 700 }}>info@khagatara.com</span>
+            </p>
           </div>
-          <select
-            value={screenLang}
-            onChange={e => setScreenLang(e.target.value)}
-            style={{
-              width: '100%', background: '#1a1b26', border: '1px solid #2e2535',
-              borderRadius: 8, color: '#cdd6f4', fontSize: '0.82rem',
-              padding: '0.6rem 0.9rem', outline: 'none', cursor: 'pointer',
-            }}>
-            {languageOptions.map(o => (
-              <option key={o.code} value={o.code}>{o.flag} {o.native} — {o.english}</option>
-            ))}
-          </select>
-          <div style={{ fontSize: '0.7rem', color: '#c8b89a', marginTop: '0.4rem', textAlign: 'center', fontStyle: 'italic' }}>
-            {screenLabel}
-          </div>
-          {viewReadingUrl && (
-            <a
-              href={viewReadingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn"
+
+          <div style={{ background: '#0d0b0f', border: '0.5px solid #2e2535', borderRadius: 12, overflow: 'hidden' }}>
+            <button
+              onClick={() => setAccountOpen(v => !v)}
               style={{
-                display: 'block',
-                textAlign: 'center',
-                textDecoration: 'none',
-                background: 'linear-gradient(90deg, #18f0ff, #8bffb0)',
-                color: '#071018',
-                boxShadow: '0 0 18px rgba(24,240,255,0.24)',
-                marginTop: '0.4rem',
-                marginBottom: '0.5rem',
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                background: 'none',
+                border: 'none',
+                padding: '1rem 1.25rem',
+                cursor: 'pointer',
               }}
             >
-              {screenLabel}
-            </a>
-          )}
-        </div>
-
-        {/* PDF language dropdown + download button */}
-        {status === 'done' && pdfUrl && (
-          <div style={{ marginBottom: '0.5rem' }}>
-            <div style={{ fontSize: '0.6rem', color: '#9a8878', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
-              Download PDF in
-            </div>
-            <select
-              value={pdfLang}
-              onChange={e => setPdfLang(e.target.value)}
-              style={{
-                width: '100%', background: '#1a1b26', border: '1px solid #2e2535',
-                borderRadius: 8, color: '#cdd6f4', fontSize: '0.82rem',
-                padding: '0.6rem 0.9rem', outline: 'none', cursor: 'pointer',
-                marginBottom: '0.75rem',
-              }}>
-              {languageOptions.map(o => (
-                <option key={o.code} value={o.code}>{o.flag} {o.native} — {o.english}</option>
-              ))}
-            </select>
-            <a href={pdfUrl} download className="cta-btn"
-              style={{ display: 'block', textAlign: 'center', textDecoration: 'none' }}>
-              <span style={{ display: 'block' }}>⬇ {pdfLabel}</span>
-              <span style={{ display: 'block', marginTop: '0.25rem', fontSize: '0.72rem', letterSpacing: '0.08em', opacity: 0.78 }}>
-                Download in {pdfOption?.english ?? pdfLang}
+              <div>
+                <div style={{ color: '#e8c547', fontSize: '0.68rem', letterSpacing: '0.16em', textTransform: 'uppercase', textAlign: 'left' }}>🌟 Save Your Reading</div>
+                <div style={{ color: '#c8b89a', fontSize: '0.65rem', marginTop: 3, letterSpacing: '0.04em' }}>Create an account to access anytime</div>
+              </div>
+              <span style={{ color: '#9a8878', fontSize: '0.85rem', transition: 'transform 0.25s', transform: accountOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                ▼
               </span>
-            </a>
+            </button>
+            {accountOpen && (
+              <div style={{ padding: '0 1.25rem 1.25rem', borderTop: '0.5px solid #2a2330' }}>
+                <AccountForm email={email} sessionId={sessionId ?? undefined} />
+              </div>
+            )}
           </div>
-        )}
-
-        {status !== 'done' && (
-          <p style={{ fontSize: '0.72rem', color: '#9a8878', letterSpacing: '0.06em', marginTop: '0.75rem', textAlign: 'center' }}>
-            Please do not close this page while your report is processing.
-          </p>
-        )}
-
-        <p style={{ fontSize: '0.7rem', color: '#9a8878', letterSpacing: '0.04em', marginTop: '1rem', textAlign: 'center', lineHeight: 1.6 }}>
-          If your PDF does not arrive within 5 minutes, contact:{' '}
-          <span style={{ color: '#e8c547', fontWeight: 700 }}>info@khagatara.com</span>
-        </p>
-
-        {/* Account creation */}
-        <div style={{ marginTop: '2rem', borderTop: '0.5px solid #2a2330', paddingTop: '1.5rem' }}>
-          <AccountForm email={email} sessionId={sessionId ?? undefined} />
         </div>
 
         <Link href="/" className="btn-link" style={{ marginTop: '1.5rem', display: 'block' }}>
@@ -421,6 +452,11 @@ function SuccessContent() {
         @keyframes pulseGlow {
           0%, 100% { opacity: 0.5; }
           50%       { opacity: 1; }
+        }
+        @media (max-width: 640px) {
+          .success-grid {
+            grid-template-columns: 1fr !important;
+          }
         }
         select option { background: #1a1b26; }
       `}</style>
