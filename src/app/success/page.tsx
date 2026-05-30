@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Suspense, useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'   // ← THE FIX
+import { MOTHER_TONGUE_OPTIONS } from '../lib/languages'
 
 // ─── Account creation form ────────────────────────────────────────────────────
 function AccountForm({ email, sessionId }: { email?: string; sessionId?: string }) {
@@ -189,44 +190,6 @@ const DOWNLOAD_LABELS: Record<string, { screen: string; pdf: string }> = {
 }
 
 const DEFAULT_LABELS = { screen: 'View in English', pdf: 'Download Your PDF Report' }
-
-const MOTHER_TONGUE_OPTIONS = [
-  { code: 'en', native: 'English', english: 'English', flag: '🇬🇧' },
-  { code: 'ml', native: 'മലയാളം', english: 'Malayalam', flag: '🇮🇳' },
-  { code: 'hi', native: 'हिन्दी', english: 'Hindi', flag: '🇮🇳' },
-  { code: 'ta', native: 'தமிழ்', english: 'Tamil', flag: '🇮🇳' },
-  { code: 'te', native: 'తెలుగు', english: 'Telugu', flag: '🇮🇳' },
-  { code: 'kn', native: 'ಕನ್ನಡ', english: 'Kannada', flag: '🇮🇳' },
-  { code: 'ar', native: 'العربية', english: 'Arabic', flag: '🇸🇦' },
-  { code: 'fa', native: 'فارسی', english: 'Persian (Farsi)', flag: '🇮🇷' },
-  { code: 'ur', native: 'اردو', english: 'Urdu', flag: '🇵🇰' },
-  { code: 'he', native: 'עברית', english: 'Hebrew', flag: '🇮🇱' },
-  { code: 'zh-cn', native: '中文（简体）', english: 'Chinese Simplified', flag: '🇨🇳' },
-  { code: 'zh-tw', native: '中文（繁體）', english: 'Chinese Traditional', flag: '🇹🇼' },
-  { code: 'yue', native: '廣東話', english: 'Cantonese', flag: '🇭🇰' },
-  { code: 'ja', native: '日本語', english: 'Japanese', flag: '🇯🇵' },
-  { code: 'ko', native: '한국어', english: 'Korean', flag: '🇰🇷' },
-  { code: 'ru', native: 'Русский', english: 'Russian', flag: '🇷🇺' },
-  { code: 'uk', native: 'Українська', english: 'Ukrainian', flag: '🇺🇦' },
-  { code: 'el', native: 'Ελληνικά', english: 'Greek', flag: '🇬🇷' },
-  { code: 'am', native: 'አማርኛ', english: 'Amharic', flag: '🇪🇹' },
-  { code: 'ti', native: 'ትግርኛ', english: 'Tigrinya', flag: '🇪🇷' },
-  { code: 'my', native: 'မြန်မာဘာသာ', english: 'Burmese', flag: '🇲🇲' },
-  { code: 'th', native: 'ภาษาไทย', english: 'Thai', flag: '🇹🇭' },
-  { code: 'km', native: 'ភាសាខ្មែរ', english: 'Khmer', flag: '🇰🇭' },
-  { code: 'bn', native: 'বাংলা', english: 'Bengali', flag: '🇧🇩' },
-  { code: 'pa', native: 'ਪੰਜਾਬੀ', english: 'Punjabi', flag: '🇮🇳' },
-  { code: 'gu', native: 'ગુજરાતી', english: 'Gujarati', flag: '🇮🇳' },
-  { code: 'es', native: 'Español', english: 'Spanish', flag: '🇪🇸' },
-  { code: 'pt', native: 'Português', english: 'Portuguese', flag: '🇵🇹' },
-  { code: 'fr', native: 'Français', english: 'French', flag: '🇫🇷' },
-  { code: 'de', native: 'Deutsch', english: 'German', flag: '🇩🇪' },
-  { code: 'it', native: 'Italiano', english: 'Italian', flag: '🇮🇹' },
-  { code: 'tr', native: 'Türkçe', english: 'Turkish', flag: '🇹🇷' },
-  { code: 'sw', native: 'Kiswahili', english: 'Swahili', flag: '🇹🇿' },
-  { code: 'id', native: 'Bahasa Indonesia', english: 'Indonesian', flag: '🇮🇩' },
-  { code: 'vi', native: 'Tiếng Việt', english: 'Vietnamese', flag: '🇻🇳' },
-]
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 function SuccessContent() {
