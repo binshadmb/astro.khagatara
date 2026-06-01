@@ -70,12 +70,6 @@ function getHook(slug: string): string[] {
 
 const RAZORPAY_KEY = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID ?? ''
 
-declare global {
-  interface Window {
-    Razorpay: new (options: Record<string, unknown>) => { open(): void }
-  }
-}
-
 export default function ReadingPage({ params }: { params: { slug: string } }) {
   const { slug } = params
   const reading = READING_DEFS.find(r => r.slug === slug)
