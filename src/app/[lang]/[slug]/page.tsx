@@ -64,7 +64,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const premiumPage = getPremiumLanding(slug)
 
   if (premiumPage && isKnownLanguage(lang)) {
-    const videoUrl = absoluteUrl(premiumPage.video.src)
     const posterUrl = absoluteUrl(premiumPage.video.poster)
 
     return {
@@ -77,7 +76,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         type: 'website',
         url: `${SITE_URL}/${lang}/${slug}`,
         ...(posterUrl ? { images: [posterUrl] } : {}),
-        videos: [{ url: videoUrl }],
       },
       twitter: {
         card: 'summary_large_image',
