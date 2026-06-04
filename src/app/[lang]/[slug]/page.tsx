@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import ClientTopicPage from './ClientTopicPage'
 import PremiumLandingPage from '../../premiumLandingPage'
 import { LANGUAGE_CONFIG, TOPIC_DEFS } from '../../seo-config'
-import { getPremiumLanding } from '../../premiumLandingMap'
+import { PREMIUM_LANDING_SLUGS, getPremiumLanding } from '../../premiumLandingMap'
 
 const SITE_URL = 'https://www.khagatara.com'
 const LANG_CODES = LANGUAGE_CONFIG.map(([code]) => code)
@@ -18,6 +18,14 @@ function isKnownLanguage(lang: string) {
 
 function topicSlugsFor(lang: string) {
   return TOPIC_DEFS.map((topic) => topic.slugs[lang] ?? topic.defaultSlug)
+}
+
+function absoluteUrl(url: string): string
+function absoluteUrl(url?: string): string | undefined
+function absoluteUrl(url?: string) {
+  if (!url) return undefined
+  if (url.startsWith('http://') || url.startsWith('https://')) return url
+  return `${SITE_URL}${url.startsWith('/') ? url : `/${url}`}`
 }
 
 function premiumAlternates(slug: string) {
@@ -36,9 +44,14 @@ function premiumAlternates(slug: string) {
 
 export function generateStaticParams() {
   const params: { lang: string; slug: string }[] = []
+  const seen = new Set<string>()
 
   for (const lang of LANG_CODES) {
-    for (const slug of topicSlugsFor(lang)) {
+    for (const slug of [...topicSlugsFor(lang), ...PREMIUM_LANDING_SLUGS]) {
+      const key = `${lang}/${slug}`
+      if (seen.has(key)) continue
+
+      seen.add(key)
       params.push({ lang, slug })
     }
   }
@@ -51,6 +64,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const premiumPage = getPremiumLanding(slug)
 
   if (premiumPage && isKnownLanguage(lang)) {
+    const videoUrl = absoluteUrl(premiumPage.video.src)
+    const posterUrl = absoluteUrl(premiumPage.video.poster)
+
     return {
       title: premiumPage.title,
       description: premiumPage.description,
@@ -60,12 +76,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         description: premiumPage.description,
         type: 'website',
         url: `${SITE_URL}/${lang}/${slug}`,
-        videos: [{ url: `${SITE_URL}${premiumPage.video.src}` }],
+        ...(posterUrl ? { images: [posterUrl] } : {}),
+        videos: [{ url: videoUrl }],
       },
       twitter: {
         card: 'summary_large_image',
         title: premiumPage.title,
         description: premiumPage.description,
+        ...(posterUrl ? { images: [posterUrl] } : {}),
       },
     }
   }
