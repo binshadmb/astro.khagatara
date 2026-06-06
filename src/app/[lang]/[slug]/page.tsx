@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const premiumPage = getPremiumLanding(slug)
 
   if (premiumPage && isKnownLanguage(lang)) {
-    const posterUrl = absoluteUrl(premiumPage.video.poster)
+    const previewImageUrl = absoluteUrl('/images/before-after/after-placeholder.jpg')
 
     return {
       title: premiumPage.title,
@@ -75,13 +75,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         description: premiumPage.description,
         type: 'website',
         url: `${SITE_URL}/${lang}/${slug}`,
-        ...(posterUrl ? { images: [posterUrl] } : {}),
+        images: [previewImageUrl],
       },
       twitter: {
         card: 'summary_large_image',
         title: premiumPage.title,
         description: premiumPage.description,
-        ...(posterUrl ? { images: [posterUrl] } : {}),
+        images: [previewImageUrl],
       },
     }
   }
