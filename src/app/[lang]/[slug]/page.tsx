@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import ClientTopicPage from './ClientTopicPage'
 import PremiumLandingPage from '../../premiumLandingPage'
 import { LANGUAGE_CONFIG, TOPIC_DEFS } from '../../seo-config'
-import { PREMIUM_LANDING_SLUGS, getPremiumLanding } from '../../premiumLandingMap'
+import { getPremiumLanding } from '../../premiumLandingMap'
 
 const SITE_URL = 'https://www.khagatara.com'
 const LANG_CODES = LANGUAGE_CONFIG.map(([code]) => code)
@@ -47,7 +47,7 @@ export function generateStaticParams() {
   const seen = new Set<string>()
 
   for (const lang of LANG_CODES) {
-    for (const slug of [...topicSlugsFor(lang), ...PREMIUM_LANDING_SLUGS]) {
+    for (const slug of topicSlugsFor(lang)) {
       const key = `${lang}/${slug}`
       if (seen.has(key)) continue
 
