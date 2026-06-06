@@ -8,6 +8,8 @@ import { getPremiumLanding } from '../../premiumLandingMap'
 const SITE_URL = 'https://www.khagatara.com'
 const LANG_CODES = LANGUAGE_CONFIG.map(([code]) => code)
 
+export const revalidate = 86400
+
 type PageProps = {
   params: Promise<{ lang: string; slug: string }>
 }
