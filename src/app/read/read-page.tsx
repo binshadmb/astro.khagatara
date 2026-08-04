@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { READING_DEFS, CATEGORY_ORDER, type ReadingDef } from '../reading-slugs'
-import { siteUrl } from '../seo'
+import { siteUrl } from '../layout'
 
 export const metadata: Metadata = {
   title: 'Readings — Unlock Hidden Truths About Your Life | Khagatara',
