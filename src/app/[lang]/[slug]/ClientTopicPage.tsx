@@ -33,6 +33,7 @@ export default function Home({ params }: HomeProps) {
 
   // Resolve strings: use the lang's translations if available, else fall back to English
   const t = CALC_LOCALIZATION[lang] ?? CALC_LOCALIZATION['en']
+  const langDirection = LANGUAGE_CONFIG.find(([code]) => code === lang)?.[2] ?? 'ltr'
 
   const [name, setName] = useState('')
   const [dob, setDob] = useState('')
@@ -132,7 +133,7 @@ export default function Home({ params }: HomeProps) {
   const compatSlug       = TOPIC_SLUGS?.compatibility?.[lang]    ?? 'numerology-compatibility'
 
   return (
-    <main className="page">
+    <main className="page" dir={langDirection}>
       <nav className="nav">
         <div className="nav-logo">
           <div className="tri-wrap" aria-hidden="true">
@@ -143,6 +144,7 @@ export default function Home({ params }: HomeProps) {
           <span className="logo-txt">khagatara</span>
         </div>
         <div className="nav-links">
+          {lang !== 'en' && <Link href="/">Home</Link>}
           <Link href={`/${lang}/${numerologySlug}`}>Readings</Link>
           <Link href={`/${lang}/${astrologySlug}`}>Astrology</Link>
           <Link href={`/${lang}/${birthChartSlug}`}>Birth Chart</Link>
