@@ -3,7 +3,9 @@
 // Set `active: true` to display the promo card globally on all 700 pages.
 
 export const BOOK_PROMO_CONFIG = {
-  active: true,
+  active: false, // Was `true` with a placeholder checkoutUrl below (checkout.stripe.com/demo) —
+                 // that means every real visitor who clicked "Buy" hit a dead checkout page.
+                 // Set back to true once checkoutUrl is a real Stripe Payment Link.
   price: '€4.99',
   checkoutUrl: 'https://checkout.stripe.com/demo', // Replace with your live Stripe payment or checkout link
   
