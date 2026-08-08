@@ -335,20 +335,45 @@ export default function Calculator({ lang }: CalculatorProps) {
     setLoading(false)
   }
 
-  async function getFullReport(provider: 'stripe' | 'paypal' = 'stripe') {
+  async function getFullReport(provider: 'razorpay' | 'stripe' | 'paypal') {
     setLoading(true)
     try {
-      const endpoint = provider === 'paypal' ? 'create-checkout-paypal' : 'create-checkout'
-      const res  = await fetch(`https://khagatara-api.onrender.com/${endpoint}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(buildPayload())
-      })
-      const data = await res.json()
-      if (!res.ok || !data.checkout_url) throw new Error(data.detail || 'Payment failed')
-      const checkoutUrl = new URL(data.checkout_url)
-      checkoutUrl.searchParams.set('mother_tongue', motherTongue)
-      window.location.href = checkoutUrl.toString()
+      if (provider === 'razorpay') {
+        const res = await fetch('https://khagatara-api.onrender.com/create-checkout-inr', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(buildPayload())
+        })
+        const data = await res.json()
+        if (!res.ok) throw new Error(data.detail || 'Payment failed')
+
+        const rzp = new (window as any).Razorpay({
+          key:         data.key_id,
+          amount:      data.amount,
+          currency:    data.currency,
+          order_id:    data.order_id,
+          name:        'Khagatara',
+          description: 'Your Complete Vedic Blueprint',
+          prefill:     { name: data.name },
+          theme:       { color: '#c8901a' },
+          handler: function() {
+            window.location.href = `https://khagatara.com/success?mother_tongue=${motherTongue}`
+          }
+        })
+        rzp.open()
+      } else {
+        const endpoint = provider === 'paypal' ? 'create-checkout-paypal' : 'create-checkout'
+        const res  = await fetch(`https://khagatara-api.onrender.com/${endpoint}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(buildPayload())
+        })
+        const data = await res.json()
+        if (!res.ok || !data.checkout_url) throw new Error(data.detail || 'Payment failed')
+        const checkoutUrl = new URL(data.checkout_url)
+        checkoutUrl.searchParams.set('mother_tongue', motherTongue)
+        window.location.href = checkoutUrl.toString()
+      }
     } catch (err: unknown) {
       console.error(err); setError(t.errorPayment); alert(t.errorPayment)
     }
@@ -731,6 +756,9 @@ export default function Calculator({ lang }: CalculatorProps) {
                 </div>
                 <div className="premium-blur">{t.premiumText}</div>
                 <div style={{ display: 'grid', gap: '8px' }}>
+                  <button className="btn-primary" onClick={() => getFullReport('razorpay')} disabled={loading}>
+                    {loading ? t.btnLoading : `${t.btnReport} — ₹99 (Razorpay)`}
+                  </button>
                   <button className="btn-primary" onClick={() => getFullReport('stripe')} disabled={loading}>
                     {loading ? t.btnLoading : `${t.btnReport} — Card`}
                   </button>

@@ -45,12 +45,6 @@ export default function Home({ params }: HomeProps) {
   const [result, setResult] = useState<Result | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
-  const [isIndia, setIsIndia] = useState(false)
-
-  useEffect(() => {
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone
-    setIsIndia(tz.startsWith('Asia/Kolkata') || tz.startsWith('Asia/Calcutta'))
-  }, [])
 
   const showDisclaimer = timeUnknown || gender === 'prefer_not'
 
@@ -83,10 +77,10 @@ export default function Home({ params }: HomeProps) {
     setLoading(false)
   }
 
-  async function getFullReport(provider: 'stripe' | 'paypal' = 'stripe') {
+  async function getFullReport(provider: 'razorpay' | 'stripe' | 'paypal') {
     setLoading(true)
     try {
-      if (isIndia) {
+      if (provider === 'razorpay') {
         const res = await fetch('https://khagatara-api.onrender.com/create-checkout-inr', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -333,32 +327,29 @@ export default function Home({ params }: HomeProps) {
             {t.premiumText}
           </div>
 
-          {isIndia ? (
+          <div className="grid gap-2">
+            <button
+              className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+              onClick={() => getFullReport('razorpay')}
+              disabled={loading}
+            >
+              {loading ? t.btnLoading : 'Get Full Report — ₹99 (Razorpay)'}
+            </button>
             <button
               className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
               onClick={() => getFullReport('stripe')}
               disabled={loading}
             >
-              {loading ? t.btnLoading : 'Get Full Report - ₹99'}
+              {loading ? t.btnLoading : `${t.btnReport} — Card`}
             </button>
-          ) : (
-            <div className="grid gap-2">
-              <button
-                className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
-                onClick={() => getFullReport('stripe')}
-                disabled={loading}
-              >
-                {loading ? t.btnLoading : `${t.btnReport} — Card`}
-              </button>
-              <button
-                className="w-full bg-[#003087] text-white font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
-                onClick={() => getFullReport('paypal')}
-                disabled={loading}
-              >
-                {loading ? t.btnLoading : `${t.btnReport} — PayPal`}
-              </button>
-            </div>
-          )}
+            <button
+              className="w-full bg-[#003087] text-white font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+              onClick={() => getFullReport('paypal')}
+              disabled={loading}
+            >
+              {loading ? t.btnLoading : `${t.btnReport} — PayPal`}
+            </button>
+          </div>
           <p className="payment-note text-center text-[var(--text-low)] text-[0.7rem] mt-2 font-mono">
             {t.paymentNote}
           </p>
