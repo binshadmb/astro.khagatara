@@ -83,7 +83,7 @@ export default function Home({ params }: HomeProps) {
     setLoading(false)
   }
 
-  async function getFullReport() {
+  async function getFullReport(provider: 'stripe' | 'paypal' = 'stripe') {
     setLoading(true)
     try {
       if (isIndia) {
@@ -110,7 +110,8 @@ export default function Home({ params }: HomeProps) {
         })
         rzp.open()
       } else {
-        const res = await fetch('https://khagatara-api.onrender.com/create-checkout', {
+        const endpoint = provider === 'paypal' ? 'create-checkout-paypal' : 'create-checkout'
+        const res = await fetch(`https://khagatara-api.onrender.com/${endpoint}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(buildPayload())
@@ -332,13 +333,32 @@ export default function Home({ params }: HomeProps) {
             {t.premiumText}
           </div>
 
-          <button
-            className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
-            onClick={getFullReport}
-            disabled={loading}
-          >
-            {loading ? t.btnLoading : isIndia ? 'Get Full Report - ₹99' : t.btnReport}
-          </button>
+          {isIndia ? (
+            <button
+              className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+              onClick={() => getFullReport('stripe')}
+              disabled={loading}
+            >
+              {loading ? t.btnLoading : 'Get Full Report - ₹99'}
+            </button>
+          ) : (
+            <div className="grid gap-2">
+              <button
+                className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+                onClick={() => getFullReport('stripe')}
+                disabled={loading}
+              >
+                {loading ? t.btnLoading : `${t.btnReport} — Card`}
+              </button>
+              <button
+                className="w-full bg-[#003087] text-white font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+                onClick={() => getFullReport('paypal')}
+                disabled={loading}
+              >
+                {loading ? t.btnLoading : `${t.btnReport} — PayPal`}
+              </button>
+            </div>
+          )}
           <p className="payment-note text-center text-[var(--text-low)] text-[0.7rem] mt-2 font-mono">
             {t.paymentNote}
           </p>

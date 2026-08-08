@@ -335,10 +335,11 @@ export default function Calculator({ lang }: CalculatorProps) {
     setLoading(false)
   }
 
-  async function getFullReport() {
+  async function getFullReport(provider: 'stripe' | 'paypal' = 'stripe') {
     setLoading(true)
     try {
-      const res  = await fetch('https://khagatara-api.onrender.com/create-checkout', {
+      const endpoint = provider === 'paypal' ? 'create-checkout-paypal' : 'create-checkout'
+      const res  = await fetch(`https://khagatara-api.onrender.com/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(buildPayload())
@@ -729,9 +730,19 @@ export default function Calculator({ lang }: CalculatorProps) {
                   </div>
                 </div>
                 <div className="premium-blur">{t.premiumText}</div>
-                <button className="btn-primary" onClick={getFullReport} disabled={loading}>
-                  {loading ? t.btnLoading : t.btnReport}
-                </button>
+                <div style={{ display: 'grid', gap: '8px' }}>
+                  <button className="btn-primary" onClick={() => getFullReport('stripe')} disabled={loading}>
+                    {loading ? t.btnLoading : `${t.btnReport} — Card`}
+                  </button>
+                  <button
+                    className="btn-primary"
+                    style={{ background: '#003087' }}
+                    onClick={() => getFullReport('paypal')}
+                    disabled={loading}
+                  >
+                    {loading ? t.btnLoading : `${t.btnReport} — PayPal`}
+                  </button>
+                </div>
                 <p className="payment-note">{t.paymentNote}</p>
                 <div className="card-nav" style={{marginTop:'0.5rem'}}>
                   <button className="c-back" onClick={() => { setResult(null); setCard(0); setAnim('sc-active') }}>

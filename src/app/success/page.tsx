@@ -209,8 +209,23 @@ function getLanguageLabels(code: string, options: typeof MOTHER_TONGUE_OPTIONS) 
 function SuccessContent() {
   const searchParams = useSearchParams()           // ← reads URL params correctly in client components
   const email     = searchParams.get('email')    ?? undefined
-  const sessionId = searchParams.get('session_id') ?? searchParams.get('sessionid')
+  const paypalToken = searchParams.get('token')   // PayPal's redirect appends ?token={order_id}&PayerID=...
+  const sessionId = searchParams.get('session_id') ?? searchParams.get('sessionid') ?? paypalToken
   const urlLang   = searchParams.get('mother_tongue') ?? 'en'
+
+  const [captureTriggered, setCaptureTriggered] = useState(false)
+
+  // PayPal doesn't auto-capture on redirect back — the order has to be
+  // explicitly captured here. Stripe/Razorpay confirm via their own webhooks,
+  // so this only fires when a PayPal `token` is present.
+  useEffect(() => {
+    if (!paypalToken || captureTriggered) return
+    setCaptureTriggered(true)
+    fetch(
+      `https://khagatara-api.onrender.com/capture-checkout-paypal?order_id=${encodeURIComponent(paypalToken)}`,
+      { method: 'POST' }
+    ).catch(err => console.error('PayPal capture failed:', err))
+  }, [paypalToken, captureTriggered])
 
   const { status, downloadUrl, progress, debugMsg } = useReportPolling(sessionId)
 
