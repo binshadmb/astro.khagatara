@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import FloatingDonateButton from './components/FloatingDonateButton'
 
 export const siteUrl = 'https://astro.khagatara.com'
 
@@ -28,7 +29,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script src="https://checkout.razorpay.com/v1/checkout.js" async></script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingDonateButton
+          hostedButtonId={process.env.NEXT_PUBLIC_PAYPAL_DONATE_BUTTON_ID || ''}
+        />
+      </body>
     </html>
   )
 }

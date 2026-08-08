@@ -409,7 +409,10 @@ export default function Home({ params }: HomeProps) {
       </section>
 
       <footer className="footer">
-        <div className="footer-txt">© 2026 khagatara.com</div>
+        <div className="footer-txt">
+          © 2026 khagatara.com
+          <span style={{ opacity: 0.6, marginLeft: 6 }}>· Developer: Binshad MB · 2025–2026</span>
+        </div>
         <div className="footer-links">
           <Link href="#">Privacy</Link>
           <Link href="#">Terms</Link>
