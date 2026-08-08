@@ -756,15 +756,14 @@ export default function Calculator({ lang }: CalculatorProps) {
                 </div>
                 <div className="premium-blur">{t.premiumText}</div>
                 <div style={{ display: 'grid', gap: '8px' }}>
-                  <button className="btn-primary" onClick={() => getFullReport('razorpay')} disabled={loading}>
+                  <button className="btn-primary btn-razorpay" onClick={() => getFullReport('razorpay')} disabled={loading}>
                     {loading ? t.btnLoading : `${t.btnReport} — ₹99 (Razorpay)`}
                   </button>
                   <button className="btn-primary" onClick={() => getFullReport('stripe')} disabled={loading}>
                     {loading ? t.btnLoading : `${t.btnReport} — Card`}
                   </button>
                   <button
-                    className="btn-primary"
-                    style={{ background: '#003087' }}
+                    className="btn-primary btn-paypal"
                     onClick={() => getFullReport('paypal')}
                     disabled={loading}
                   >

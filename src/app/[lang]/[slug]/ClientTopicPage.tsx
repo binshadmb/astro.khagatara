@@ -329,7 +329,7 @@ export default function Home({ params }: HomeProps) {
 
           <div className="grid gap-2">
             <button
-              className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-[var(--background)] font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+              className="w-full bg-gradient-to-r from-[#072654] to-[#3395ff] text-white font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-125 hover:shadow-[0_0_20px_rgba(51,149,255,0.5)] active:scale-[0.99] transition-all"
               onClick={() => getFullReport('razorpay')}
               disabled={loading}
             >
@@ -343,7 +343,7 @@ export default function Home({ params }: HomeProps) {
               {loading ? t.btnLoading : `${t.btnReport} — Card`}
             </button>
             <button
-              className="w-full bg-[#003087] text-white font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-110 active:scale-[0.99] transition-all"
+              className="w-full bg-[#003087] text-white font-extrabold py-3 rounded-md uppercase tracking-wider text-sm shadow-lg hover:brightness-125 hover:shadow-[0_0_20px_rgba(0,48,135,0.5)] active:scale-[0.99] transition-all"
               onClick={() => getFullReport('paypal')}
               disabled={loading}
             >
